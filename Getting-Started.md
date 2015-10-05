@@ -5,7 +5,7 @@
   * **[Linux](SetupLinux)**
   * **[Windows](SetupWindows)**
 
-![http://sdrtrunk.googlecode.com/svn/wiki/images/Overview.png](http://sdrtrunk.googlecode.com/svn/wiki/images/Overview.png)
+![](images/Overview.png)
 
 [Application Overview](ApplicationOverview.md)
 
