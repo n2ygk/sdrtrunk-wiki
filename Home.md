@@ -2,8 +2,8 @@
 
 SDRTrunk is a java based application for decoding and trunk tracking multiple analog and digital radio channels across multiple USB dongle tuners and/or sound card inputs from scanner radios.
 
-* [Getting Started](GettingStarted.md)
-* [User's Manual](UserManual.md)
+* [Getting Started](GettingStarted)
+* [User's Manual](UserManual)
 * [Download](https://drive.google.com/folderview?id=0B7BHsssXUq8eOHBTNndCczZTd0k&usp=sharing)
 * [Support](https://groups.google.com/forum/#!forum/sdrtrunk)
 
@@ -11,8 +11,8 @@ This application uses some of the fantastic components available from JIDE Softw
 
 **Operating Systems**
 
-* [Linux](SetupLinux.md)
-* [Windows](SetupWindows.md)
+* [Linux](SetupLinux)
+* [Windows](SetupWindows)
 * Any operating system supported by Java and libusb, however other systems have not yet been tested 
 
 **Requirements**
