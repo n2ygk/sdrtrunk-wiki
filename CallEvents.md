@@ -1,6 +1,6 @@
 # Call Events #
 
-The call events window displays a history of the radio calls decoded for a channel.  Select a channel in the [decoding channels](DecodingChannels.md) window to display the call event history for that channel.
+The call events window displays a history of the radio calls decoded for a channel.  Select a channel in the [decoding channels](DecodingChannels) window to display the call event history for that channel.
 
 Note: call events continue to be displayed for the last selected channel, allowing you to select and then deselect a channel in order to turn off the audio for that channel and continue to see all call events.
 

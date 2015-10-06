@@ -2,8 +2,8 @@
 
 SDRTrunk is a java based application for decoding and trunk tracking multiple analog and digital radio channels across multiple USB dongle tuners and/or sound card inputs from  scanner radios.
 
-  * **[Getting Started](GettingStarted.md)**
-  * **[User's Manual](UserManual.md)
+  * **[Getting Started](GettingStarted)**
+  * **[User's Manual](UserManual)
   ***[Download](https://drive.google.com/folderview?id=0B7BHsssXUq8eOHBTNndCczZTd0k&usp=sharing)
 
 This application uses some of the fantastic components available from [JIDE Software](http://www.jidesoft.com).
@@ -20,7 +20,7 @@ This application uses some of the fantastic components available from [JIDE Soft
 
   * **[Java 7](http://www.java.com/en/download/index.jsp)** or newer
 
-### Supported [Tuners](Tuner.md) ###
+### Supported [Tuners](Tuner) ###
   * Airspy - coming soon
   * Funcube Dongle Pro
   * Funcube Dongle Pro Plus
@@ -30,15 +30,15 @@ This application uses some of the fantastic components available from [JIDE Soft
   * Sound card(s) connected to scanner audio output
 
 ### Decoders ###
-  * [APCO-25](APCO25.md) Phase 1 - C4FM and CQPSK/LSM - coming soon
-  * [Fleetsync II](Fleetsync2.md)
-  * [LJ-1200](LJ1200.md)
-  * [LTR](LTR.md)
-  * [LTR-Net](LTRNet.md)
-  * [MDC-1200](MDC1200.md)
-  * [MPT-1327](MPT1327.md)
-  * [Passport](Passport.md)
-  * [Tait CCDI 1200 ANI/GPS](Tait.md)
+  * [APCO-25](APCO25) Phase 1 - C4FM and CQPSK/LSM - coming soon
+  * [Fleetsync II](Fleetsync2)
+  * [LJ-1200](LJ1200)
+  * [LTR](LTR)
+  * [LTR-Net](LTRNet)
+  * [MDC-1200](MDC1200)
+  * [MPT-1327](MPT1327)
+  * [Passport](Passport)
+  * [Tait CCDI 1200 ANI/GPS](Tait)
 
 Note: nomitive use of protocol names are for identification.  Registered trademarks are the property of their respective owners.
 
@@ -46,4 +46,4 @@ Note: nomitive use of protocol names are for identification.  Registered tradema
 
 The source code is available on this website
 
-  * [Downloading and Compiling](Building.md) sdrtrunk
+  * [Downloading and Compiling](Building) sdrtrunk

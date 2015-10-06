@@ -4,7 +4,7 @@ Fleetsync is a digital radio identifier, status, GPS, and data protocol that is 
 
 ## Using Fleetsync Decoder ##
 
-Select the Fleetsync decoder in the **Aux** tab of the channel configuration window.  If you are decoding a conventional channel, then use the [NBFM](NBFM.md) decoder as the primary decoder.  The Fleetsync auxiliary decoder can be used in addition to any of the primary analog trunked radio decoders.
+Select the Fleetsync decoder in the **Aux** tab of the channel configuration window.  If you are decoding a conventional channel, then use the [NBFM](NBFM) decoder as the primary decoder.  The Fleetsync auxiliary decoder can be used in addition to any of the primary analog trunked radio decoders.
 
 ## GPS ##
 

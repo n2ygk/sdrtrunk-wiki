@@ -2,7 +2,7 @@
 
 The event log contains logging information about decoded messages from one of the decoder channels.  Each channel will generate a log file that starts with a time stamp and ends with the channel name and a .log suffix.
 
-Note: see [ApplicationLog](ApplicationLog.md) for details about logging of application information.
+Note: see [ApplicationLog](ApplicationLog) for details about logging of application information.
 
 # Location #
 

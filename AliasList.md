@@ -1,6 +1,6 @@
 # Alias List #
 
-Contains a list of [Alias Groups](AliasGroup.md) and [Aliases](Alias.md) used by the decoder to assign an alias name to one or more identifiers produced by the decoder.
+Contains a list of [Alias Groups](AliasGroup) and [Aliases](Alias) used by the decoder to assign an alias name to one or more identifiers produced by the decoder.
 
 ![](images/AliasList.png)
 

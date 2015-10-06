@@ -17,7 +17,7 @@ Right-click on the Alias and select **Delete**
   * **Name** - display name for the alias
   * **Map Color** - for decoders that produce (GPS) locations where the entity can be plotted on the map, designates the color of the label and history trail used for that entity
   * **Map Icon** - picture to display with the alias
-  * **[Icon Manager](IconManager.md)** - tool for managing and importing new pictures to use with Aliases.
+  * **[Icon Manager](IconManager)** - tool for managing and importing new pictures to use with Aliases.
   * **Save** - saves any changes to the alias
   * **Reset** - resets the alias with the last saved values
 

@@ -1,6 +1,6 @@
 # Application Log #
 
-The application log contains logging information about the application.  Note: see [EventLog](EventLog.md) for details about logging of decoded channel messages.
+The application log contains logging information about the application.  Note: see [EventLog](EventLog) for details about logging of decoded channel messages.
 
 # Location #
 

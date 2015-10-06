@@ -17,7 +17,7 @@ Each LCN transmits the same site configuration message set.  The HSC transmits t
 The HSC will support traffic calls if the primary traffic channels become saturated.  In addition, the HSC will reflect all traffic call activity from all traffic channels on the site.  An effective strategy for determining site usage is to monitor the HSC and then look at the call event table to see call activity for the entire site.
 
 ## Activity Summary ##
-The [Activity Summary](ActivitySummary.md) information window displays all decoded information about the current site (site id, channels, frequencies, talkgroups, etc.).
+The [Activity Summary](ActivitySummary) information window displays all decoded information about the current site (site id, channels, frequencies, talkgroups, etc.).
 
 ## Talkgroups ##
 

@@ -2,9 +2,9 @@
 
 The playlist contains a folder for each of the following:
 
-  * [Alias Lists](AliasList.md)
-  * [Channel Maps](ChannelMap.md)
-  * [Systems](System.md)
+  * [Alias Lists](AliasList)
+  * [Channel Maps](ChannelMap)
+  * [Systems](System)
 
 Note: the Systems, Channel Maps and Alias Lists folders cannot be deleted or changed.
 

@@ -21,24 +21,24 @@ This application uses some of the fantastic components available from JIDE Softw
 
 **Supported Tuners**
 
-* [Funcube Dongle Pro](FuncubeDonglePro.md)
-* [Funcube Dongle Pro Plus](FuncubeDongleProPlus.md)
-* [HackRF](HackRF.md)
-* [RTL-2832 with E4000 Tuner](E4000.md)
-* [RTL-2832 with R820T Tuner](R820T.md)
-* [Sound card(s) connected to scanner audio output](SoundCard.md) 
+* [Funcube Dongle Pro](FuncubeDonglePro)
+* [Funcube Dongle Pro Plus](FuncubeDongleProPlus)
+* [HackRF](HackRF)
+* [RTL-2832 with E4000 Tuner](E4000)
+* [RTL-2832 with R820T Tuner](R820T)
+* [Sound card(s) connected to scanner audio output](SoundCard) 
 
 **Decoders**
 
-* [APCO-25 Phase 1](P25Phase1.md) - C4FM and CQPSK/LSM
-* [Fleetsync II](Fleetsync2.md)
-* [LJ-1200](LJ1200.md)
-* [LTR](LTR.md)
-* [LTR-Net](LTRNet.md)
-* [MDC-1200](MDC1200.md)
-* [MPT-1327](MPT1327.md)
-* [Passport](Passport.md)
-* [Tait CCDI 1200](Tait1200.md) ANI/GPS 
+* [APCO-25 Phase 1](P25Phase1) - C4FM and CQPSK/LSM
+* [Fleetsync II](Fleetsync2)
+* [LJ-1200](LJ1200)
+* [LTR](LTR)
+* [LTR-Net](LTRNet)
+* [MDC-1200](MDC1200)
+* [MPT-1327](MPT1327)
+* [Passport](Passport)
+* [Tait CCDI 1200](Tait1200) ANI/GPS 
 
 Note: nomitive use of protocol names are for identification. Registered trademarks are the property of their respective owners.
 
@@ -46,4 +46,4 @@ Note: nomitive use of protocol names are for identification. Registered trademar
 
 Source code is available on this website
 
-* [Downloading and Compiling sdrtrunk](Building.md) 
+* [Downloading and Compiling sdrtrunk](Building) 

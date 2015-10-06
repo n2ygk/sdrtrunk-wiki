@@ -2,12 +2,12 @@
 
 ### Setup ###
 
-  * [Linux](SetupLinux.md)
-  * [Windows](SetupWindows.md)
+  * [Linux](SetupLinux)
+  * [Windows](SetupWindows)
 
 ![](images/Overview.png)
 
-[Application Overview](ApplicationOverview.md)
+[Application Overview](ApplicationOverview)
 
 ### Quick Start - SDR Dongle ###
 
@@ -26,7 +26,7 @@ call events and decoded messages.
 
 ### Quick Start - Sound Card / Scanner Audio ###
 
-1.  Create a new [channel](Channel.md)
+1.  Create a new [channel](Channel)
 
 2.  In the channel editor select the correct **Mixer** and **Channel** in the source tab, corresponding to where you have patched your scanner audio into the computer.
 
@@ -34,4 +34,4 @@ call events and decoded messages.
 
 4.  Hit **Save**.
 
-5.  Select the channel in the [decoding channels](DecodingChannels.md) window to hear the pass-through audio.
+5.  Select the channel in the [decoding channels](DecodingChannels) window to hear the pass-through audio.

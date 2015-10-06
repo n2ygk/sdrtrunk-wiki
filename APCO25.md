@@ -15,7 +15,7 @@ sdrtrunk will attempt to discover the library and can then decode imbe audio.
 
 [JMBE library](https://github.com/DSheirer/jmbe)
 
-[How To Setup JMBE](JMBE.md)
+[How To Setup JMBE](JMBE)
 
 ## Traffic Channel Following ##
 The decoder currently does not automatically follow trunked traffic channels.

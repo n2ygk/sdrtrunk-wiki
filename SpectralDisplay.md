@@ -11,7 +11,7 @@ Right-click anywhere in the spectral display to show a list of context-specific 
 
 ### Channel Menu ###
 
-Channels defined in the [Playlist](Playlist.md) are also displayed in the spectral display window.  Each channel exposes a context menu allowing you to start/stop the channel decoder, or view the [ActivitySummary](ActivitySummary.md) for currently decoding channels
+Channels defined in the [Playlist](Playlist) are also displayed in the spectral display window.  Each channel exposes a context menu allowing you to start/stop the channel decoder, or view the [ActivitySummary](ActivitySummary) for currently decoding channels
 
 ### Frequency Menu ###
 
@@ -24,7 +24,7 @@ The color menu allows you to change any of the global color settings used by all
   * **Background** - background color for the spectral display
   * **Channel** - channel overlay color for channels that are defined in the configuration, but are currently not processing (decoding) or selected
   * **Channel Processing** - channel overlay color for any channels that are currently processing (decoding)
-  * **Channel Selected** - channel overlay color for the channel that is currently selected in the [Decoding Channels](DecodingChannels.md) window.
+  * **Channel Selected** - channel overlay color for the channel that is currently selected in the [Decoding Channels](DecodingChannels) window.
   * **Cursor** - color used for the cursor and frequency readout
   * **Gradient Bottom** - bottom color for the gradient used to display the frequency spectrum
   * **Gradient Top** - top color for the gradient used to display the frequency spectrum
@@ -38,6 +38,6 @@ The display menu allows you to change settings associated with Fast Fourier Tran
   * **Frame Rate** - determines the number of times per second that the FFT is calculated and the spectral display is updated.
   * **Window Type** - specifies the windowing method to use prior to calculating the FFT.
 
-## Changing Displayed [Tuner](Tuner.md) ##
+## Changing Displayed [Tuner](Tuner) ##
 
-Right-click on the desired tuner in the [Configuration](Configuration.md) window and select **Show in Main Spectrum**, or choose **New Spectrum Window** to create a new, separate Spectral Display and Waterfall.
+Right-click on the desired tuner in the [Configuration](Configuration) window and select **Show in Main Spectrum**, or choose **New Spectrum Window** to create a new, separate Spectral Display and Waterfall.

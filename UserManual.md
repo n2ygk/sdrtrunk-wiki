@@ -1,57 +1,57 @@
 # SDRTrunk User's Manual #
 
-#[Application Overview](ApplicationOverview.md)#
+#[Application Overview](ApplicationOverview)#
 
-* [Call Events](CallEvents.md)
-* [Decoding Channels List](DecodingChannels.md)
-* [Editor](Editor.md)
-* [Map](Map.md)
-* [Messages](Messages.md)
-* [Spectral Display](SpectralDisplay.md)
-* [Waterfall Display](WaterfallDisplay.md)
+* [Call Events](CallEvents)
+* [Decoding Channels List](DecodingChannels)
+* [Editor](Editor)
+* [Map](Map)
+* [Messages](Messages)
+* [Spectral Display](SpectralDisplay)
+* [Waterfall Display](WaterfallDisplay)
 
 #Aliases#
 
-* [Alias List](AliasList.md)
-* [Alias Group](AliasGroup.md)
-* [Alias](Alias.md)
-* [Alias Actions](AliasAction.md)
+* [Alias List](AliasList)
+* [Alias Group](AliasGroup)
+* [Alias](Alias)
+* [Alias Actions](AliasAction)
 
 #Auxiliary Decoders#
 
-* [Fleetsync II](Fleetsync2.md)
-* [MDC1200](MDC1200.md)
+* [Fleetsync II](Fleetsync2)
+* [MDC1200](MDC1200)
 
-#[Configuration](Configuration.md)#
+#[Configuration](Configuration)#
 
-* [Alias Lists](AliasList.md)
-* [Channel Maps](ChannelMap.md)
-* [Playlist](Playlist.md)
+* [Alias Lists](AliasList)
+* [Channel Maps](ChannelMap)
+* [Playlist](Playlist)
 
 #Decoders#
 
-* [LTR](LTR.md)
-* [LTRNet](LTRNet.md)
-* [MPT1327](MPT1327.md)
-* [NBFM](NBFM.md)
-* [Passport](Passport.md)
+* [LTR](LTR)
+* [LTRNet](LTRNet)
+* [MPT1327](MPT1327)
+* [NBFM](NBFM)
+* [Passport](Passport)
 
 #Logging#
 
-* [Application Log](ApplicationLog.md)
-* [Event Log](EventLogger.md)
+* [Application Log](ApplicationLog)
+* [Event Log](EventLogger)
 
-#[Recorder](Recorder.md)#
+#[Recorder](Recorder)#
 
-#Source and [Tuners](Tuner.md)#
+#Source and [Tuners](Tuner)#
 
-* [Sound Card](SoundCard.md)
-* [Ettus Research B100](B100.md)
-* [Funcube Dongle Pro](FuncubeDonglePro.md)
-* [Funcube Dongle Pro Plus](FuncubeDongleProPlus.md)
-* [RTL-2832 with E4000 Tuner](E4000.md)
-* [RTL-2832 with FC0013 Tuner](FC0013.md)
-* [RTL-2832 with R820T Tuner](R820T.md)
+* [Sound Card](SoundCard)
+* [Ettus Research B100](B100)
+* [Funcube Dongle Pro](FuncubeDonglePro)
+* [Funcube Dongle Pro Plus](FuncubeDongleProPlus)
+* [RTL-2832 with E4000 Tuner](E4000)
+* [RTL-2832 with FC0013 Tuner](FC0013)
+* [RTL-2832 with R820T Tuner](R820T)
 
-#[ScreenCapture](ScreenCapture.md) Screen Captures#
+#[ScreenCapture](ScreenCapture) Screen Captures#
 
