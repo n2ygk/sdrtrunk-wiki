@@ -2,10 +2,10 @@
 
 ### Setup ###
 
-  * **[Linux](SetupLinux)**
-  * **[Windows](SetupWindows)**
+  * [Linux](SetupLinux.md)
+  * [Windows](SetupWindows.md)
 
-![http://sdrtrunk.googlecode.com/svn/wiki/images/Overview.png](http://sdrtrunk.googlecode.com/svn/wiki/images/Overview.png)
+![](images/Overview.png)
 
 [Application Overview](ApplicationOverview.md)
 
@@ -26,7 +26,7 @@ call events and decoded messages.
 
 ### Quick Start - Sound Card / Scanner Audio ###
 
-1.  Create a new [channel](Channel)
+1.  Create a new [channel](Channel.md)
 
 2.  In the channel editor select the correct **Mixer** and **Channel** in the source tab, corresponding to where you have patched your scanner audio into the computer.
 
