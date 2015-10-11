@@ -49,5 +49,14 @@ tuner.
 
 If you've never setup your airspy for linux, you'll need to add permissions to allow users to access the airspy:
 
-1. Copy the file **\config\52-airspy.rules** from the sdrtrunk application folder to your **\etc\udev\rules.d** folder.  You'll need root permissions to access the rules.d folder.
-2. After creating the rules file, either reboot or run the command **udevadm control --reload-rules** as root to instruct udev to reload all rule files.
+1. Copy the file **\config\52-airspy.rules** from the sdrtrunk application folder to your **\etc\udev\rules.d** folder.
+ 
+    sudo cp 52-airspy.rules \etc\udev\rules.d
+
+2. Set file permissions.
+
+    sudo chmod u=rw,g=r,o=r 52-airspy.rules
+
+3. Refresh the udev rules
+
+    sudo udevadm control --reload-rules
