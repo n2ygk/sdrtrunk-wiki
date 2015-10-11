@@ -8,10 +8,10 @@ The Tuners folder contains a listing of all recognized tuners that are automatic
 
 The following tuners are currently supported or will soon be supported by the SDRTrunk application.  Additional tuner support may be added in the future.
 
+  * [Airspy](Airspy)
   * [Funcube Dongle Pro](FuncubeDonglePro) (1.0)
   * [Funcube Dongle Pro Plus](FuncubeDongleProPlus) (2.0)
   * [RTL-2832 with Elonics E4000](E4000)
-
   * [Ettus B100/WBX Daughter Card](B100)** - (planned).  SDRTrunk will recognize the B100 but it will not allow you to use or configure the B100
   * [HackRF](HackRF)
   * [RTL-2832 with Rafael Micro R820T](R820T)
