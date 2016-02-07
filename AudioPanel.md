@@ -1,7 +1,7 @@
 # Audio Panel #
 
 The audio panel controls the audio that is played from the decoding channels to
-either you computer speakers or headphones.  Audio from each decoding channel
+either your computer speakers or headphones.  Audio from each decoding channel
 is automatically routed to the Audio Manager and the audio manager automatically
 routes the highest priority audio to the speakers.
 
