@@ -70,6 +70,32 @@ Choose either C4FM or LSM Simulcast (CQPSK) modulation in the channel configurat
 decoder tab.  When you select the P25 Decoder from the drop-down list, the
 modulation selector list will appear.
 
+## Monitoring a P25 Trunked System ##
+
+Setup a channel to decode the trunked system's control channel only.  The decoder 
+will automatically detect when additional traffic channels are allocated for 
+calls and will create temporary decoding channels in the application to process 
+each of these calls.  
+
+You do NOT need to create decoding channel configurations for each of the 
+traffic channel frequencies used by the system because the control channel will 
+tell the sdrtrunk application every thing that it needs to know in order to 
+setup a temporary decoding channel.
+
+### Traffic Channel Pool ###
+
+When configuring the P25 control channel decode configuration, use the Traffic
+Channel Pool setting to set the maximum number of temporary traffic channels 
+that can be running at the same time.  The sdrtrunk application will create
+channel configurations up to this maximum number and reuse the channel 
+configurations for subsequent calls.
+
+The default value of 4 traffic channels in the pool is suitable for a modern
+powerful processor.  You may have to reduce this pool size if you are using a 
+lower powered CPU.  Monitor the computer's CPU and memory consumption and adjust
+this value as needed.  Note: you'll have to stop and restart the decoding after
+you change the traffic channel pool size value and save it.
+
 ## P25 Decoding Example ##
 
 The following screenshot shows the application configured to decode one P25

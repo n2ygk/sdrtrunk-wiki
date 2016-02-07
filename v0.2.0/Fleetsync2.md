@@ -2,10 +2,6 @@
 
 Fleetsync is a digital radio identifier, status, GPS, and data protocol that is normally used in addition to other trunked radio protocols and/or on conventional radio channels. The decoder decodes Automatic Number Identification (ANI), Acknowledgements, Status and GPS messages.  If you discover additional message types, please share them with the author for inclusion in the decoder.
 
-## Using Fleetsync Decoder ##
-
-Select the Fleetsync decoder in the **Aux** tab of the channel configuration window.  If you are decoding a conventional channel, then use the [NBFM](NBFM) decoder as the primary decoder.  The Fleetsync auxiliary decoder can be used in addition to any of the primary analog trunked radio decoders.
-
 ## GPS ##
 
 GPS data bursts normally occur on a conventional radio channel, separate from normal voice communications.  Each mobile radio has a unique timestamp that tells it when to broadcast, so that users don't broadcast on top of each other.  In addition to the defined time to transmit, radios are told how often to broadcast.  Broadcast updates of 1, 3, 5 and 6 minute intervals have been observed.
@@ -27,3 +23,13 @@ Add the following aliases to each alias list you are using for Fleetsync:
   * 099-0999 Broadcast Call
   * `*``*``*`-0999 Fleet Call
   * 099-`*``*``*``*` Supervisor Call
+  
+## Decoder Setup - Conventional or Repeater Network ##
+
+Setup a decoding channel with a NBFM decoder and select MDC1200 in the aux
+decoder configuration tab.
+
+## Decoder Setup - Analog Trunked Network ##
+
+Setup a decoding channel with one of the analog trunked radio decoders (LTR,
+LTRNet, Passport, etc) and select MDC1200 in the aux decoder configuration tab.  

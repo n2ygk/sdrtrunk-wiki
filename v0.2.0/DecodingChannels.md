@@ -22,7 +22,7 @@ the channel information and the current state of the channel.
  
 ![](images/channel_state.png)
 
-* **Decoder** - name of the primary decoder and related display fields that are unique to each decoder
+* **Decoder** - primary and auxiliary decoders and related display fields that are specific to each decoder
 * **Frequency** - frequency for the channel or audio input source name
 * **Logging & Recording** - indicates logging (LOG) and recording (AUDIO/BASEBAND) options are enabled for this channel
 * **Name** - name of the channel
