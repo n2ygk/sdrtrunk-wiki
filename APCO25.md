@@ -65,9 +65,10 @@ When aliasing talkgroups and radio addresses, ensure you include the full 4 or 6
 character talkgroup or address with leading zeros.
 
 Add these trunking system unit ID values to your alias list:
-*FFFFFD* = (Trunking) System Controller.  
-*FFFFFE* = Registration Controller
-*FFFFFF* = All Call 
+
+**FFFFFD** = (Trunking) System Controller.  
+**FFFFFE** = Registration Controller
+**FFFFFF** = All Call 
 
 ## Modulation ##
 
