@@ -1,4 +1,4 @@
-1. Install Java JRE version 7 or newer from http://www.oracle.com/java
+1. Install Java JRE version 7 or newer from http://www.oracle.com/java.  Note: if you are using airspy or hackrf, your computer should have 8GB or more of memory and you should use the 64-bit (x64) version of the java JRE.
 
 2. Verify java installation:
 
