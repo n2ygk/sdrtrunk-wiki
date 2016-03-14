@@ -12,7 +12,7 @@ Java HotSpot (TM) 64-bit Server VM
 
 3. Download the sdrtrunk application and decompress the file.
 
-4. Install udev rules file for any tuners you'll be using into the /etc/udev/rules.d/ directory.  The **funcube-dongle.rules**, **52-airspy.rules**, **53-hackrf.rules**, and **rtl-sdr.rules** files are included in the /config folder
+4. Install udev rules file for any tuners you'll be using into the /etc/udev/rules.d/ directory.  The **funcube-dongle.rules**, **52-airspy.rules**, **53-hackrf.rules**, and **rtl-sdr.rules** files are included in the /config directory
 
 5. Run the SDRTrunk start script:
 
