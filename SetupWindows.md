@@ -1,6 +1,6 @@
-1. Install Java JRE version 7 or newer from http://www.oracle.com/java
+1. Install Java JRE version 7 or newer from http://www.oracle.com/java.  Note: if you are using the airspy or hackrf tuners, your computer should have 8GB of memory or more and use the 64-bit (x64) version of the java JRE.
 
-2. Verify java installation:
+2. In a command prompt, verify your java installation:
 
 ```
 c:\ java -version
@@ -10,8 +10,10 @@ Java(TM) SE Runtime Environment (build 1.7.0_55)
 Java HotSpot (TM) 64-bit Server VM
 ```
 
-3. Run the SDRTrunk start script:
+3. Download the sdrtrunk application and unzip the file.
+
+4. Run the SDRTrunk start script:
 
 ```
-C:\SDRTRunk\run_SDRTrunk.bat
+(unzip folder)\sdrtrunk\run_sdrtrunk_windows.bat
 ```
