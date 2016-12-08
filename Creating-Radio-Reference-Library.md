@@ -18,9 +18,11 @@ Additionally, download the following two jars and store them in the same Axis 1.
 
 Open a command prompt and navigate to the libs folder and execute this command:
 
-**java -classpath commons-discovery-0.2.jar:axis.jar:commons-logging-1.0.4.jar:jaxrpc.jar:saaj.jar:wsdl4j-    1.5.1.jar:java-mail-1.4.jar:activation-1.1.jar:log4j-1.2.8.jar org.apache.axis.wsdl.WSDL2Java -B http://api.radioreference.com/soap2/?wsdl&v=latest**
+**java -classpath commons-discovery-0.2.jar:axis.jar:commons-logging-1.0.4.jar:jaxrpc.jar:saaj.jar:wsdl4j-    1.5.1.jar:java-mail-1.4.jar:activation-1.1.jar:log4j-1.2.8.jar org.apache.axis.wsdl.WSDL2Java -B http://api.radioreference.com/soap2/?wsdl&v=14**
 
 This will create a folder /com in the /libs folder and will also generate (-B option) an ant build script.
+
+Change the wsdl version from 14 to the latest version number.
 
 Edit the build.xml file and change the jar name in this line from ?wsdl to radioreference-14.jar:
 **<jar jarfile="radioreference-14.jar" basedir="${build.classes}" >**
