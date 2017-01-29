@@ -55,7 +55,7 @@ For example, if you have a call from radio ID 123456 to talkgroup ABCD and the r
 
 ### Viewing Streaming Status
 
-Select the View menu at the top of the application window and click on the **Show Streaming Status** menu item to turn on the streaming status panel at the bottom of the application window.  This allows you to view the 'Now Playing' window, channel details windows, and monitor your streaming status at the same time.
+Select the View menu at the top of the application window and click on the **Show Streaming Status** menu item to turn on the streaming status panel at the bottom of the application window.  This allows you to view the 'Now Playing' window, channel details windows, and monitor your streaming status at the same time.  Note: this status panel is read-only.  You can only make changes to stream configurations in the **Streaming** tab.
 
 ## Streaming Configurations
 
