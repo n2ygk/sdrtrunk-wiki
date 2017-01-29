@@ -25,7 +25,7 @@ The following servers are supported:
 1. Click the **Streaming** tab
 2. Click the **New** button and select the streaming server type
 3. Create a unique name for the channel (each stream requires a unique name)
-4. Fill in the server-specific stream details
+4. Fill in the server-specific stream details.  See **Streaming Configurations** below
 5. Click **Save**
 6. Attach this stream to one or more Aliases.
 
@@ -48,7 +48,7 @@ For example, if you have a call from radio ID 123456 to talkgroup ABCD and the r
 
 Select the View menu at the top of the application window and click on the **Show Streaming Status** menu item to turn on the streaming status panel at the bottom of the application window.  This allows you to view the 'Now Playing' window, channel details windows, and monitor your streaming status at the same time.
 
-## Streaming Configuration
+## Streaming Configurations
 
 ### All Server Configurations
 * **Delay** - this delays streaming of queued audio calls by the specified minutes (0-60 minutes).  Calls will remain in the queue and will not be streamed until the call start time plus the delay minutes has elapsed.
