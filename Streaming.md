@@ -1,3 +1,5 @@
+This feature is available with sdrtrunk versions **0.3.0** and newer.
+
 # Overview
 
 The application supports streaming of multiple audio calls to multiple remote audio streaming servers.  Audio calls are temporarily recorded to disk in MP3 audio format.  The temporary recording is then queued for broadcast with one or more audio streams.  Streaming uses aliases to identify which stream(s) will broadcast the audio recording.  Each temporary recording contains metadata about the call that is also forwarded to the streaming server.
