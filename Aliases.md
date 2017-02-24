@@ -31,7 +31,7 @@ allowing multiple search and row filtering options.
 
 Each of the single alias editor options are described later in this document.
 
-![Figure 2: Alias Table and Multiple Alias Editor](images/Aliases.png)
+![Figure 2: Alias Table and Multiple Alias Editor](images/MultipleAliasEditor.png)
 **Figure 2:** Alias Table and Multiple Alias Editor
 
 Figure 2 shows the multiple alias editor.  By selecting multiple rows of
