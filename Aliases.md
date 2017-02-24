@@ -19,6 +19,7 @@ Aliases also allow you to define audio monitoring priority, recording, and
 network audio streaming of audio associated with the alias when active.
 
 ![Figure 1: Alias Table and Single Alias Editor](images/Aliases.png)
+**Figure 1:** Alias Table and Single Alias Editor
 
 Figure 1 presents the Alias tab showing the alias table and the single alias 
 editor.  In this view, you can select an individual alias row in the table 
@@ -31,6 +32,7 @@ allowing multiple search and row filtering options.
 Each of the single alias editor options are described later in this document.
 
 ![Figure 2: Alias Table and Multiple Alias Editor](images/Aliases.png)
+**Figure 2:** Alias Table and Multiple Alias Editor
 
 Figure 2 shows the multiple alias editor.  By selecting multiple rows of
 aliases, you can modify individual settings across a set of aliases with a 
@@ -41,6 +43,27 @@ or select from the list, and click **Save** to change that setting for all
 selected aliases. 
 
 Each of the multiple alias editor options are described later in this document
+
+Creating, Deleting and Copying Aliases
+---
+Use the three buttons at the bottom of the alias table to create new aliases,
+copy one or more existing aliases, or delete one or more aliases.
+
+#### New Button
+Click the new button to create a new alias.  The new alias appears at the bottom
+of the alias table.  Select the new alias and use the single alias editor pane at
+the right to edit the alias settings and save the changes with the **Save** button 
+at the bottom of the alias editor.
+
+#### Copy Button
+Select one or more aliases that you have already created and click the Copy button
+to create duplicate copies of the selected aliases.  You can then edit each of the
+alias copies individually.  This is a convenient feature when you are creating
+many aliases that are mostly the same and you only have to change a few settings.
+
+#### Delete Button
+Select one or more aliases and click the Delete button to remove the selected 
+aliases from the list.
 
 Single Alias Editor - Alias Tab
 ---
@@ -110,7 +133,13 @@ copy of the audio or identifier.
 Select an existing item in the list that you want to remove from the alias 
 and click the Delete button.
 
-#### Audio and Identifier Items
+Audio and Identifier Items
+---
+The following alias identifiers and audio items can be attached to any alias.
+Multiple identifiers and identifier types can be attached to each alias.  Most
+alias identifiers also support wildcard (*) characters.  Click the **Help ...**
+link in any of the identifier editor windows to view tips and comments on 
+how to format identifier values for each of the identifier types.
 
 ##### ESN
 Electronic Serial Number (ESN) identifiers used in specific decoders like 
@@ -169,7 +198,34 @@ way to the right.
 
 Single Alias Editor - Action Tab
 ---
-(to be continued)
+You can attach one ore more alias actions to each alias.  Alias actions are 
+performed when any of the identifiers attached to the alias are active on any
+radio channels.  Each alias action provides timing and periodicity settings that
+allow you to customize how and how often the action will be performed.  Each 
+action also provides a **Test** button that allows you to test the action.
+
+#### New Button
+Click the new button and select from the list of available alias actions.
+
+#### Clone Button
+Select one or more alias actions and click the clone button to create an exact
+copy of each selected alias action.  You can then modify each of the action
+copies.
+
+#### Delete Button
+Select one ore more alias actions and click the delete button to remove the 
+alias action from the alias.
+
+#### Beep Alias Action
+Generates a beep on your computer when the alias is active on one of the channels.
+
+#### Play Clip Alias Action
+Plays a sound clip over your computer speakers when the alias is active.
+
+#### Run Script Alias Action
+Executes a computer script when the alias is active.  Create a script that is 
+compatible with your computer operating system and store it on the hard drive
+and then select the script in the script editor window.
 
 Multiple Alias Editor
 ---
@@ -206,9 +262,10 @@ tab.
 #### Priority
 Each alias can have an audio monitoring priority.  Assign a value of 1 to 100
 where 1 is the highest priority and 100 is the lowest priority.  Slide the 
-audio priority all the way to the right to select the **Do Not Monitor** 
+audio priority all the way to the right to select a **Do Not Monitor** 
 priority.  Audio from any alias with Do Not Monitor will not be played over 
-the local speakers.
+the local speakers.  If you do not assign an audio priority to an alias, it 
+will default to a priority of 100 (lowest).
 
 #### Streaming
 Each alias can be streamed over one or more internet audio streaming
