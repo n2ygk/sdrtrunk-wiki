@@ -180,10 +180,11 @@ MPT-1327 decoders.
 Talkgroup or radio identifier.  This identifer is used by the P25, LTR 
 Standard, and Tait 1200 decoders.
 
-##### Audio Broadcast Channel
+##### Audio Broadcast Channel (Streaming)
 This audio setting designates an audio broadcast (streaming) channel.  Any
 audio calls associated with the alias will be streamed across the specified
-streaming channel.
+streaming channel. See the [Streaming](Streaming.md) page for details on 
+configuring audio streaming channels.
 
 ##### Audio Non-Recordable
 This audio setting designates the alias as non-recordable.  If you wish to
