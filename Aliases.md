@@ -183,7 +183,7 @@ Standard, and Tait 1200 decoders.
 ##### Audio Broadcast Channel (Streaming)
 This audio setting designates an audio broadcast (streaming) channel.  Any
 audio calls associated with the alias will be streamed across the specified
-streaming channel. See the [Streaming](Streaming.md) page for details on 
+streaming channel. See the [Streaming](Streaming) page for details on 
 configuring audio streaming channels.
 
 ##### Audio Non-Recordable

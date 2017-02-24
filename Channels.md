@@ -94,11 +94,11 @@ affect decoding.
 
 #### Alias List
 Choose an alias list name from the drop-down list, or type a new alias list name.
-The values in the list are pulled from any [Aliases](wiki/Aliases.md) that you may 
+The values in the list are pulled from any [Aliases](Aliases) that you may 
 have already created.  
 
 If you type a new alias list name for your channel configuration, be sure to use
-that alias list name for any aliases that you create in the [Aliases](wiki/Aliases.md)
+that alias list name for any aliases that you create in the [Aliases](Aliases)
 table.  When you start your channel decoding, any aliases with the matching alias
 list name will be assembled into an alias list for use with the channel.  If you
 add new aliases while your channel is currently decoding, they will be automatically
@@ -150,7 +150,7 @@ channel configuration.  The **Decoder Editor** is shown in Figure 3.  The applic
 allows you to specify exactly one primary decoder and one or more auxiliary 
 decoders.  See below for details on auxiliary decoders.
 
-Refer to the [Decoders](wiki/Decoders.md) page for details and configuration for each
+Refer to the [Decoders](Decoders) page for details and configuration for each
 primary decoder type.
 
 ![Figure 4: Channels Table - Aux Decoders Editor](images/ChannelsAuxDecoderEditor.png)
@@ -165,7 +165,7 @@ signalling that may be included in certain radio systems.  These in-band
 signalling types are normally used for radio identification or data/GPS 
 transmissions in older analog radio systems.
 
-Refer to the [Decoders](wiki/Decoders.md) page for details and configuration for each
+Refer to the [Decoders](Decoders) page for details and configuration for each
 auxiliary decoder type.
 
 ![Figure 5: Channels Table - Logging Editor](images/ChannelsLoggingEditor.png)
