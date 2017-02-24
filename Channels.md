@@ -4,13 +4,13 @@ Channels
 ---
 Channels are configurations that you create for each radio frequency channel that
 you want to monitor.  The channel configuration contains the basic information 
-needed to tune to a radio channel frequency, attach one ore more protocol-specific
+needed to tune to a radio channel frequency, attach one or more protocol-specific
 decoders, specify an alias list, and setup logging and recording options.
 
-You can create channel configurations for all radio channels that you might want to 
+**TIP:** Create channel configurations for all radio channels that you might want to 
 monitor.  Click the **Enable** button in the channel configuration editor to start
-a channel decoding.  If you shut down the application and restart it later, all of
-the channels that were enabled will automatically start again.
+a channel decoding.  If you shut down the application and restart it later, any
+channels that were enabled will automatically start again.
 
 ![Figure 1: Channels Table - Name/Alias Editor](images/ChannelsNameEditor.png)
 **Figure 1:** Channels Table - Name/Alias Editor
@@ -22,9 +22,10 @@ Viewing, Sorting, and Filtering Channels
 ---
 
 #### Sorting
-Click the column name to apply alphabetical sorting.  An arrow appears to the right
-of the column name to indicate if the list is sorted ascending or descending.  By
-clicking the column name you can toggle the ascending or descending order.
+Click the column name in the channels table to apply alphabetical sorting.  An 
+arrow appears to the right of the column name to indicate if the list is sorted 
+ascending or descending.  By clicking the column name you can toggle the ascending 
+or descending order.
 
 #### Filtering
 Each of the columns in the channels table contain a column heading with a drop-down
@@ -88,16 +89,16 @@ The following are settings that can be modified in the **Name/Alias** section ta
 of the channel editor.  The **Name/Alias** editor is shown in Figure 1.
 
 #### Name
-The channel name is the textual value that you specify.  This value does not 
+The channel name is a textual value that you specify.  This value does not 
 affect decoding.
 
 #### Alias List
 Choose an alias list name from the drop-down list, or type a new alias list name.
-The values in the list are pulled from the set of [Aliases](Aliases.md) that you
-already created.  
+The values in the list are pulled from any [Aliases](wiki/Aliases.md) that you may 
+have already created.  
 
 If you type a new alias list name for your channel configuration, be sure to use
-that alias list name for any aliases that you create in the [Aliases](Aliases.md)
+that alias list name for any aliases that you create in the [Aliases](wiki/Aliases.md)
 table.  When you start your channel decoding, any aliases with the matching alias
 list name will be assembled into an alias list for use with the channel.  If you
 add new aliases while your channel is currently decoding, they will be automatically
@@ -149,7 +150,7 @@ channel configuration.  The **Decoder Editor** is shown in Figure 3.  The applic
 allows you to specify exactly one primary decoder and one or more auxiliary 
 decoders.  See below for details on auxiliary decoders.
 
-Refer to the [Decoders](Decoders.md) page for details and configuration for each
+Refer to the [Decoders](wiki/Decoders.md) page for details and configuration for each
 primary decoder type.
 
 ![Figure 4: Channels Table - Aux Decoders Editor](images/ChannelsAuxDecoderEditor.png)
@@ -164,7 +165,7 @@ signalling that may be included in certain radio systems.  These in-band
 signalling types are normally used for radio identification or data/GPS 
 transmissions in older analog radio systems.
 
-Refer to the [Decoders](Decoders.md) page for details and configuration for each
+Refer to the [Decoders](wiki/Decoders.md) page for details and configuration for each
 auxiliary decoder type.
 
 ![Figure 5: Channels Table - Logging Editor](images/ChannelsLoggingEditor.png)
