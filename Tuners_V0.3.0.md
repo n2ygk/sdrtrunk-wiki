@@ -29,9 +29,9 @@ be added in the future.
   * [Airspy](Airspy_V0.3.0)
   * [Funcube Dongle Pro](FuncubeDonglePro_V0.3.0) (1.0)
   * [Funcube Dongle Pro Plus](FuncubeDongleProPlus_V0.3.0) (2.0)
-  * [HackRF](HackRF)
-  * [RTL-2832 with Elonics E4000](E4000)
-  * [RTL-2832 with Rafael Micro R820T or R820T2](R820T)
+  * [HackRF](HackRF_V0.3.0)
+  * [RTL-2832 with Elonics E4000](E4000_V0.3.0)
+  * [RTL-2832 with Rafael Micro R820T or R820T2](R820T_V0.3.0)
 
 Tuner Management
 ---
