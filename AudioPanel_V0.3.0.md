@@ -69,6 +69,6 @@ audio volume of each channel via this context menu.
 Each channel will show a RED M in the panel when the audio is muted either via
 the master mute button, or by the channel mute context menu, as shown in Figure 3.
 
-![Audio Panel with Muted Audio](images/AudioPanelStereo_V0.3.0.png)
+![Audio Panel with Muted Audio](images/AudioPanelMuted_V0.3.0.png)
 
 **Figure 3:** Audio Playback Panel with Muted Audio
