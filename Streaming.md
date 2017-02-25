@@ -2,10 +2,10 @@
 
 Streaming Overview
 ---
-The application supports streaming of multiple audio calls to multiple remote 
-audio streaming servers.  Audio calls are temporarily recorded to disk in MP3 
-audio format.  The temporary recording is then queued for broadcast with one or 
-more audio streams.  Streaming uses aliases to identify which stream(s) will 
+The SDRTrunk application supports streaming of multiple audio calls to multiple 
+remote audio streaming servers.  Audio calls are temporarily recorded to disk in 
+MP3 audio format.  The temporary recording is then queued for broadcast with one 
+or more audio streams.  Streaming uses aliases to identify which stream(s) will 
 broadcast the audio recording.  Each temporary recording contains metadata about 
 the call that is also forwarded to the streaming server.
 
@@ -22,6 +22,54 @@ metadata is updated to read '_Scanning..._'.
 
 ![Figure 1: Streaming Tab](images/Streaming.png)
 **Figure 1:** Streaming Tab
+
+Figure 1 shows the streaming configuration tab where you can add, copy and delete
+streaming configurations.  The following describes the streaming tabel columns:
+
+#### Streaming
+Show an icon identifying the streaming server type.
+
+#### Name
+The name assigned to the streaming channel.  This is also the name that can be
+selected when choosing a broadcast channel to add to an alias.
+
+#### Status
+Shows the status of the connection. 
+* **Configuration Error** - the broadcast channel configuration contais an error
+* **Connected** - connected to the remote streaming server and streaming audio
+* **Connecting** - attempting to connect to the remote streaming server
+* **Disabled** - the **Enable** button in the stream configuration is not checked
+and this broadcast channel has been disabled for streaming.
+* **Disconnected** - the stream is disconnected.  This normally occurs when the 
+connection is interrupted and the application will normally attempt to reconnect.
+* **Error** - there is an error with the stream configuration or remote server.
+* **Invalid User Name/Password** - user name or password is incorrect
+* **Invalid Mount/Stream ID** - the mount point or stream ID is not recognized by
+the remote server
+* **Max Sources Exceeded** - the remote server rejected the connection because 
+there are too many audio sources currently connected
+* **Mount Point In Use** - your mount point is already in use.  This can happen
+if you disconnect from the server and reconnect too quickly.  Waiting a few seconds
+and restarting the connection will normally clear this error.
+* **No Server** - the remote streaming server is not available.
+* **Temporary Broadcast Error** - general temporary error
+* **Unsupported Audio Format** - the remote server does not support MP3 audio
+
+#### Queued
+The number of MP3 audio recordings that are waiting to be streamed
+
+#### Streamed
+The number of MP3 audio recordings that have been streamed this session.
+
+#### Aged Off
+The number of MP3 audio recordings that were removed from the streaming queue
+because the start time of the recording exceeded the maximum wait time or Age
+Limit.  When this value grows large relative to the streamed count on a daily 
+basis, consider removing some of the aliases that you have assigned to be 
+streamed over this broadcast channel because the volume of call audio is 
+exceeding the application's ability to stream the audio in a timely manner.  
+It is normal for some calls to be aged off during periods of increased audio
+volume.
 
 ## Supported Servers
 
@@ -75,8 +123,8 @@ Channel C attached, then the call would be streamed to all three channels.
 1. Select the broadcast channel from the drop-down list
 1. Click **Save**
 
-![Figure 2: Streaming Status Panel](images/StreamingStatusPanel.png)
-**Figure 2:** Streaming Status Panel with Now Playing
+![Figure 2: Now Playing with Streaming Status Panel](images/StreamingStatusPanel.png)
+**Figure 2:** Now Playing with Streaming Status Panel Showing
 
 ## Streaming Status Panel
 
