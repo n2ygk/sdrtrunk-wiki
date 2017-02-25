@@ -9,6 +9,7 @@ attempts to reconfigure your tuner to the same settings used the last time that 
 software.
 
 ![Figure 1: Tuners](images/Tuners_V0.3.0.png)
+
 **Figure 1:** Tuners View 
 
 The tuners view contains three sections with all available tuners listed in the top section, tuner 
