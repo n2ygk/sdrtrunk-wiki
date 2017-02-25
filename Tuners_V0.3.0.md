@@ -25,7 +25,7 @@ Supported Tuners
 The following tuners are currently supported by the SDRTrunk application.  Additional tuner support will 
 be added in the future.
 
-  * [Airspy](Airspy)
+  * [Airspy](Airspy_V0.3.0)
   * [Funcube Dongle Pro](FuncubeDonglePro) (1.0)
   * [Funcube Dongle Pro Plus](FuncubeDongleProPlus) (2.0)
   * [HackRF](HackRF)
