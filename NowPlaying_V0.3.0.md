@@ -121,7 +121,7 @@ Message, GPS location, status, or additional details about the event.
 ![Figure 4: Now Playing with Channel Messages View](images/NowPlayingMessagesView_V0.3.0.png)
 **Figure 4:** Now Playing with Channel Messages View
 
-Messges View
+Messages View
 ---
 The channel messages table displays messages being decoded by the primary decoder for the
 channel.
