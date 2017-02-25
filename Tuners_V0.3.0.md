@@ -27,7 +27,7 @@ The following tuners are currently supported by the SDRTrunk application.  Addit
 be added in the future.
 
   * [Airspy](Airspy_V0.3.0)
-  * [Funcube Dongle Pro](FuncubeDonglePro) (1.0)
+  * [Funcube Dongle Pro](FuncubeDonglePro_V0.3.0) (1.0)
   * [Funcube Dongle Pro Plus](FuncubeDongleProPlus) (2.0)
   * [HackRF](HackRF)
   * [RTL-2832 with Elonics E4000](E4000)
