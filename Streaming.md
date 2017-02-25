@@ -1,12 +1,27 @@
-This feature is available with sdrtrunk versions **0.3.0** and newer.
+**Version:** 0.3.0
 
-# Overview
+Streaming Overview
+---
+The application supports streaming of multiple audio calls to multiple remote 
+audio streaming servers.  Audio calls are temporarily recorded to disk in MP3 
+audio format.  The temporary recording is then queued for broadcast with one or 
+more audio streams.  Streaming uses aliases to identify which stream(s) will 
+broadcast the audio recording.  Each temporary recording contains metadata about 
+the call that is also forwarded to the streaming server.
 
-The application supports streaming of multiple audio calls to multiple remote audio streaming servers.  Audio calls are temporarily recorded to disk in MP3 audio format.  The temporary recording is then queued for broadcast with one or more audio streams.  Streaming uses aliases to identify which stream(s) will broadcast the audio recording.  Each temporary recording contains metadata about the call that is also forwarded to the streaming server.
+This concept allows you to create simple single channel audio streams or very 
+complex audio streams that are combined from multiple radio systems or radio 
+users. For example, you could monitor a group on a P25 system and a related 
+separate group on an LTR system and combine all calls from both systems into a 
+single broadcast channel.
 
-This concept allows you to create simple single channel audio streams or very complex audio streams that are combined from multiple radio systems or radio users. For example, you could monitor a group on a P25 system and a related separate group on an LTR system and combine all calls from both systems into a single broadcast channel.
+Temporary audio recordings that are queued for streaming in the order received.  
+When the streaming queue is empty, MP3 silence frames are streamed to maintain a 
+consistent connection to the remote server.  When silence is streaming, the 
+metadata is updated to read '_Scanning..._'.
 
-Temporary audio recordings that are queued for streaming in the order received.  When the streaming queue is empty, MP3 silence frames are streamed to maintain a consistent connection to the remote server.  When silence is streaming, the metadata is updated to read 'Scanning...'.
+![Figure 1: Streaming Tab](images/Streaming.png)
+**Figure 1:** Streaming Tab
 
 ## Supported Servers
 
@@ -27,15 +42,22 @@ The following servers are supported:
 1. Click the **Streaming** tab
 2. Click the **New** button and select the streaming server type
 3. Create a unique name for the channel (each stream requires a unique name)
-4. Fill in the server-specific stream details.  See **Streaming Configurations** below
+4. Fill in the server-specific stream details.  See **Streaming Configurations** 
+below
 5. Click **Save**
 6. Attach this stream to one or more Aliases.
 
 ## [Aliases](Alias) and Broadcast Channels
 
-Aliases are used for designating specific radio users and/or groups for streaming.  You can attach one or more Broadcast Channel identifiers to each alias.  When a call occurs, it is temporarily recorded to disk in MP3 format.  Once the recording is complete, it is queued for broadcast with each broadcast channel that is listed for each and every alias involved in the call.  
+Aliases are used for designating specific radio users and/or groups for streaming.  
+You can attach one or more Broadcast Channel identifiers to each alias.  When a 
+call occurs, it is temporarily recorded to disk in MP3 format.  Once the recording 
+is complete, it is queued for broadcast with each broadcast channel that is listed 
+for each and every alias involved in the call.  
 
-For example, if you have a call from radio ID 123456 to talkgroup ABCD and the radio ID has Channel A and Channel B attached, and the talkgroup has Channel B and Channel C attached, then the call would be streamed to all three channels. 
+For example, if you have a call from radio ID 123456 to talkgroup ABCD and the 
+radio ID has Channel A and Channel B attached, and the talkgroup has Channel B and 
+Channel C attached, then the call would be streamed to all three channels. 
 
 ### Attaching a Broadcast Channel to an Individual Alias
 1. Create an [Alias List](AliasList) and attach it to your decoding [Channel Configuration](Channel)
@@ -53,9 +75,17 @@ For example, if you have a call from radio ID 123456 to talkgroup ABCD and the r
 1. Select the broadcast channel from the drop-down list
 1. Click **Save**
 
-### Viewing Streaming Status
+![Figure 2: Streaming Status Panel](images/StreamingStatusPanel.png)
+**Figure 2:** Streaming Status Panel with Now Playing
 
-Select the View menu at the top of the application window and click on the **Show Streaming Status** menu item to turn on the streaming status panel at the bottom of the application window.  This allows you to view the 'Now Playing' window, channel details windows, and monitor your streaming status at the same time.  Note: this status panel is read-only.  You can only make changes to stream configurations in the **Streaming** tab.
+## Streaming Status Panel
+
+Select the View menu at the top of the application window and click on the 
+**Show Streaming Status** menu item to turn on the streaming status panel at the 
+bottom of the application window as shown in Figure 2.  This allows you to view 
+the 'Now Playing' window, channel details windows, and monitor your streaming 
+status at the same time. **Note:** this status panel is read-only.  You can only 
+make changes to stream configurations in the **Streaming** tab.
 
 ## Streaming Configurations
 
@@ -72,8 +102,8 @@ Select the View menu at the top of the application window and click on the **Sho
 * **Server** - Broadcastify server URL for your feed
 * **Port** - Broadcastify server port for your feed
 * **Mount** - mount point for your feed
-* **Password* - password for your feed
-* **Feed ID* - your feed identifier
+* **Password** - password for your feed
+* **Feed ID** - your feed identifier
 
 ### Icecast v2.3 and v2.4+
 * **Name** - unique name for your feed
@@ -81,26 +111,26 @@ Select the View menu at the top of the application window and click on the **Sho
 * **Port** - server port for your feed
 * **Mount** - mount point for your feed
 * **User Name** - (v2.4+ only) user name for your feed
-* **Password* - password for your feed
-* **Description* - description of the feed contents
-* **Genre* - genre of the feed contents
-* **Public* - designates the feed as Public (checked) or Private (not checked)
+* **Password** - password for your feed
+* **Description** - description of the feed contents
+* **Genre** - genre of the feed contents
+* **Public** - designates the feed as Public (checked) or Private (not checked)
 
 ### Shoutcast v1.x
 * **Name** - unique name for your feed
 * **Server** - server URL for your feed
 * **Port** - server port for your feed
-* **Password* - password for your feed
-* **Genre* - genre of the feed contents
-* **Description* - description of the feed contents
-* **Public* - designates the feed as Public (checked) or Private (not checked)
+* **Password** - password for your feed
+* **Genre** - genre of the feed contents
+* **Description** - description of the feed contents
+* **Public** - designates the feed as Public (checked) or Private (not checked)
 
 ### Shoutcast v2.x
 * **Name** - unique name for your feed
 * **Server** - server URL for your feed
 * **Port** - server port for your feed
-* **Stream ID* - numeric ID for your feed
-* **User ID* - user name/ID for your feed
-* **Password* - password for your feed
-* **Genre* - genre of the feed contents
-* **Public* - designates the feed as Public (checked) or Private (not checked)
+* **Stream ID** - numeric ID for your feed
+* **User ID** - user name/ID for your feed
+* **Password** - password for your feed
+* **Genre** - genre of the feed contents
+* **Public** - designates the feed as Public (checked) or Private (not checked)
