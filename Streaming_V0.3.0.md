@@ -128,24 +128,42 @@ Channel C attached, then the call would be streamed to all three channels.
 
 ## Streaming Status Panel
 
-Select the View menu at the top of the application window and click on the 
+Select the **View** menu at the top of the application window and click on the 
 **Show Streaming Status** menu item to turn on the streaming status panel at the 
 bottom of the application window as shown in Figure 2.  This allows you to view 
-the 'Now Playing' window, channel details windows, and monitor your streaming 
+the **Now Playing**' window, channel details windows, and monitor your streaming 
 status at the same time. **Note:** this status panel is read-only.  You can only 
 make changes to stream configurations in the **Streaming** tab.
 
 ## Streaming Configurations
 
 ### All Server Configurations
-* **Delay** - this delays streaming of queued audio calls by the specified minutes (0-60 minutes).  Calls will remain in the queue and will not be streamed until the call start time plus the delay minutes has elapsed.
-* **Age Limit** - time limit for retaining audio recordings in the broadcast queue (1-60 minutes).  If a call remains in the queue too long, it is automatically deleted once the call start time plus delay plus age limit has elapsed.  This feature ensures that your streaming queue doesn't grow to the point that streaming will never catch up.  It also ensures that what you're streaming is relatively recent audio.  Note: if you see that a large number of your calls are being aged off (deleted prior to broadcast), consider changing/reducing the number of aliases that you have designated for that stream, or increase the age limit value to allow for temporary increases in activity.
-* **Enabled** - enables or disables a stream.  Use this check box to turn streaming on or off.
-* **Save** - saves any changes you have made to the configuration.  If a stream is running when you make changes, the stream will be disconnected and then recreated with the new settings.
-* **Reset** - resets the editor window to the saved configuration values after you have made changes to the editor.
+* **Delay** - this delays streaming of queued audio calls by the specified 
+minutes (0-60 minutes).  Calls will remain in the queue and will not be streamed 
+until the call start time plus the delay minutes has elapsed.
+* **Age Limit** - time limit for retaining audio recordings in the broadcast 
+queue (1-60 minutes).  If a call remains in the queue too long, it is 
+automatically deleted once the call start time plus delay plus age limit has 
+elapsed.  This feature ensures that your streaming queue doesn't grow to the 
+point that streaming will never catch up.  It also ensures that what you're 
+streaming is relatively recent audio.  Note: if you see that a large number of 
+your calls are being aged off (deleted prior to broadcast), consider 
+changing/reducing the number of aliases that you have designated for that 
+stream, or increase the age limit value to allow for temporary increases in 
+activity.
+* **Enabled** - enables or disables a stream.  Use this check box to turn 
+streaming on or off.
+* **Save** - saves any changes you have made to the configuration.  If a stream 
+is running when you make changes, the stream will be disconnected and then 
+recreated with the new settings.
+* **Reset** - resets the editor window to the saved configuration values after 
+you have made changes to the editor.
 
 ### Broadcastify
-* **Lookup ...** - click this button to lookup your stream provider details on Broadcastify and auto-configure your stream.  Enter your user name and password in the dialog window.  Click **Get Feeds** and then select one of the streams/feeds that appear in the list.  Click **Ok**.
+* **Lookup ...** - click this button to lookup your stream provider details on 
+Broadcastify and auto-configure your stream.  Enter your user name and password 
+in the dialog window.  Click **Get Feeds** and then select one of the 
+streams/feeds that appear in the list.  Click **Ok**.
 * **Name** - name of your feed
 * **Server** - Broadcastify server URL for your feed
 * **Port** - Broadcastify server port for your feed

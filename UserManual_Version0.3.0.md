@@ -18,12 +18,27 @@ radio systems when decoding the system control channel.
 trunked radio control channels and automatically generating traffic channels for
 each system.
 
+Spectral Display
+---
+* [Spectral Display](SpectralDisplay_V0.3.0)
+
+Audio Playback
+---
+* [Audio Panel](AudioPanel_V0.3.0)
+
 Configuration Tabs and Views
 ---
-* [Now Playing](NowPlaying)
-* [Aliases](Aliases)
-* [Channels](Channels)
-* [Map](Map)
-* [Streaming](Streaming)
-* [Tuners](Tuner)
+* [Now Playing](NowPlaying_V0.3.0)
+* [Aliases](Aliases_V0.3.0)
+* [Channels](Channels_V0.3.0)
+* [Map](Map_V0.3.0)
+* [Streaming](Streaming_V0.3.0)
+* [Tuners](Tuners_V0.3.0)
+
+Decoders
+---
+* [Decoders_V0.3.0]
+
+Menu Items
+---
 
