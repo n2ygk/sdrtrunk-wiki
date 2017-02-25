@@ -24,7 +24,7 @@ the value causes the frequency display to move to the left and vice-versa.
 #### LNA
 LNA gain setting
 
-#### Enahance
+#### Enhance
 LNA enhance gain setting
 
 #### Mixer
