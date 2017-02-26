@@ -1,7 +1,19 @@
-**Version:** 0.3.0 and newer
+**Version:** 0.3.0
 
 Aliases
 ---
+Table of Contents
+---
+* [Creating, Deleting and Copying Aliases](#creating,-deleting-and-copying-aliases)
+* [Single Alias Editor - Alias Tab](#single-alias-editor---alias-tab)
+* [Single Alias Editor - Audio/Identifier Tab](#single-alias-editor---audio/identifier-tab)
+  * [Audio and Identifier Items](#audio-and-identifier-items)
+* [Single Alias Editor - Action Tab](#single-alias-editor---action-tab)
+* [Multiple Alias Editor](#multiple-alias-editor)
+* [Examples](#examples)
+  * [Example: Create Aliases for an Alias List](#example:-create-aliases-for-an-alias-list)
+  * [Example: P25 Aliases](#example:-p25-aliases)
+
 Aliases are a powerful feature in sdrtrunk that enable you to assign meaning to 
 many of the logical identifiers found in radio communication systems.  An 
 alias can represent one or more radios, radio groups, people, vehicles, 
@@ -19,6 +31,7 @@ Aliases also allow you to define audio monitoring priority, recording, and
 network audio streaming of audio associated with the alias when active.
 
 ![Figure 1: Alias Table and Single Alias Editor](images/Aliases.png)
+
 **Figure 1:** Alias Table and Single Alias Editor
 
 Figure 1 presents the Alias tab showing the alias table and the single alias 
@@ -32,6 +45,7 @@ allowing multiple search and row filtering options.
 Each of the single alias editor options are described later in this document.
 
 ![Figure 2: Alias Table and Multiple Alias Editor](images/MultipleAliasEditor.png)
+
 **Figure 2:** Alias Table and Multiple Alias Editor
 
 Figure 2 shows the multiple alias editor.  By selecting multiple rows of
@@ -272,3 +286,100 @@ will default to a priority of 100 (lowest).
 Each alias can be streamed over one or more internet audio streaming
 channels.  Internet streaming channels can be configured in the **Streaming**
 tab.
+
+Examples
+---
+
+![Figure 3: New Alias](images/AliasCreateNew_V0.3.0.png)
+
+**Figure 3:** Create New Alias
+
+Example: Create Aliases for an Alias List
+---
+1. Click the Aliases tab in the middle of the application window
+1. Click the **New** button to create a new alias.  The alias will be added to the list as shown 
+in **Figure 3** and it will be loaded into the alias editor on the right-hand side of the application window.
+1. Add the following attributes to your alias:
+   * **Name:** ABC Truck 1
+   * **List:** ABC Trucking
+   * **Group:** Local Delivery
+   * **Color:** Blue
+   * **Icon:** Van
+1. Click the **Save** button
+1. The completed alias is shown in Figure 4
+
+Repeat these steps and add three more aliases with the following details:
+
+1. Alias:
+   * **Name:** ABC Truck 2
+   * **List:** ABC Trucking
+   * **Group:** Local Delivery
+   * **Color:** Blue
+   * **Icon:** Van
+1. Alias:
+   * **Name:** ABC Truck 10
+   * **List:** ABC Trucking
+   * **Group:** Bus Fleet
+   * **Color:** Green
+   * **Icon:** Transport Bus
+1. Alias:
+   * **Name:** ABC Truck 11
+   * **List:** ABC Trucking
+   * **Group:** Bus Fleet
+   * **Color:** Green
+   * **Icon:** Transport Bus
+1. Your completed aliases should resemble the aliases shown in **Figure 4**.
+
+![Figure 4: New Aliases - ABC Trucking](images/AliasExampleABCTrucking_V0.3.0.png)
+
+**Figure 4:** New Aliases - ABC Trucking Alias List
+
+Example: P25 Aliases
+---
+In this example, we're going to attach P25 radio identifiers and talkgroups to the ABC Trucking aliases 
+created in the [first example](#example:-create-aliases-for-an-alias-list).  
+
+Individual P25 radios can call other P25 radios, or they can call a talkgroup and the call is placed 
+to all radios that belong to that talkgroup.  P25 radio identifiers are up to six hexadecimal characters 
+long and P25 talkgroups are up to four hexadecimal characters long.  In order for sdrtrunk to correctly
+match radio identifiers and talkgroups, add leading zeros to talkgroups or radio identifiers to make
+the value either four (talkgroup) or six (radio identifer) hexadecimal characters long.
+
+In the first part of this example we're going to attach individual P25 radio identifiers to the four 
+ABC Truck aliases we created earlier.
+
+1. Select the alias for **ABC Truck 1** in the alias table.
+1. Click the **Audio/Identifier** tab in the alias editor.
+1. Click the **New button** at the bottom of the alias editor and select **Talkgroup**.
+1. Type A1234B in the talkgroup field.
+1. Click the **Save** button.
+1. The completed P25 alias identifier is shown in Figure 5 below.
+
+Repeat these steps and add the following P25 radio identifiers to the remaining ABC Trucking aliases:
+* ABC Truck 2: **A1234C**
+* ABC Truck 10: **A12400**
+* ABC Truck 11: **A12401**
+
+![Figure 5: Adding a P25 Radio Identifier to ABC Truck 1 Alias](images/AliasExampleRadioIdentifier_V0.3.0.png)
+
+**Figure 5:** Adding a P25 Radio Identifier to ABC Truck 1 Alias
+
+Now that we have the P25 radio identifiers attached to the four ABC Truck aliases, let's setup two 
+P25 talkgroup aliases.
+
+1. Select the alias for **ABC Trucking-Local** in the alias table.
+1. Click the **Audio/Identifier** tab in the alias editor.
+1. Click the **New button** at the bottom of the alias editor and select **Talkgroup**.
+1. Type **0012** in the talkgroup field.
+1. Click the **Save** button.
+1. The completed P25 alias identifier is shown in Figure 6 below.
+
+Repeat these steps to add a talkgroup to the **ABC Trucking-Buses** alias.
+* ABC Trucking-Buses: **0013**
+
+![Figure 6: Adding a P25 Talkgroup to ABC Trucking-Local Alias](images/AliasExampleTalkgroup_V0.3.0.png)
+
+**Figure 6:** Adding a P25 Talkgroup to ABC Trucking-Local Alias
+
+
+
