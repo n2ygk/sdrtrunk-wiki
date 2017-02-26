@@ -11,8 +11,8 @@ Table of Contents
 * [Single Alias Editor - Action Tab](#single-alias-editor---action-tab)
 * [Multiple Alias Editor](#multiple-alias-editor)
 * [Examples](#examples)
-  * [Example: Create Aliases for an Alias List](#example:-create-aliases-for-an-alias-list)
-  * [Example: P25 Aliases](#example:-p25-aliases)
+  * [Example: Create Aliases for an Alias List](#example-create-aliases-for-an-alias-list)
+  * [Example: P25 Aliases](#example-p25-aliases)
 
 Aliases are a powerful feature in sdrtrunk that enable you to assign meaning to 
 many of the logical identifiers found in radio communication systems.  An 
@@ -337,7 +337,7 @@ Repeat these steps and add three more aliases with the following details:
 Example: P25 Aliases
 ---
 In this example, we're going to attach P25 radio identifiers and talkgroups to the ABC Trucking aliases 
-created in the [first example](#example:-create-aliases-for-an-alias-list).  
+created in the [first example](#example-create-aliases-for-an-alias-list).  
 
 Individual P25 radios can call other P25 radios, or they can call a talkgroup and the call is placed 
 to all radios that belong to that talkgroup.  P25 radio identifiers are up to six hexadecimal characters 
