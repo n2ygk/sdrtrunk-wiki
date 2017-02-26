@@ -12,6 +12,7 @@ Table of Contents
 * [Multiple Alias Editor](#multiple-alias-editor)
 * [Examples](#examples)
   * [Example: Create Aliases for an Alias List](#example-create-aliases-for-an-alias-list)
+  * [Example: Attach an Alias List to a Decoding Channel](#example-attach-an-alias-list-to-a-decoding-channel)
   * [Example: P25 Aliases](#example-p25-aliases)
   * [Example: Audio Priority](#example-audio-priority)
   * [Example: Audio Streaming](#example-audio-streaming)
@@ -340,6 +341,27 @@ Repeat these steps and add three more aliases with the following details:
 
 **Figure 4:** New Aliases - ABC Trucking Alias List
 
+Example: Attach an Alias List to a Decoding Channel
+---
+We're going to attach the aliases created in the [first example](#example-create-aliases-for-an-alias-list)
+to our P25 decoding channel configuration so that the aliases will be used during decoding.
+
+Aliases are attached to a channel configuration using the Alias List value that is assigned to
+each alias.  Please refer to the [channels](Channels_V0.3.0.md) wiki page for help in 
+creating a channel configuration and enabling the channel for decoding.  This example assumes
+that you have already created a P25 channel configuration.
+
+1. Click on the **Channels** tab in the application window.
+1. Click on the **Name/Alias** tab in the channel editor window at the bottom.
+1. Select **ABC Trucking** in the Alias List dropdown box.
+1. Click the **Save** button.
+1. Click the **Enable** button to start the channel decoding using the **ABC Trucking** alias list.
+2. The completed channel configuration is shown in **Figure 4a** below.
+
+![Figure 4a: Attach Alias List to Channel Configuration](images/AliasExampleChannelAliasList_V0.3.0.png)
+
+**Figure 4a:** Attach Alias List to Channel Configuration
+
 Example: P25 Aliases
 ---
 In this example, we're going to attach P25 radio identifiers and talkgroups to the ABC Trucking aliases 
@@ -505,3 +527,5 @@ Next, we'll designate our wildcard alias as **Non-Recordable**.
 ![Figure 11: Wildcard Audio Non-Recordable](images/AliasExampleAudioNonRecordable_V0.3.0.png)
 
 **Figure 11:** Wildcard Audio Non-Recordable
+
+Finally, we change our channel configuration to turn on Audio Recording.
