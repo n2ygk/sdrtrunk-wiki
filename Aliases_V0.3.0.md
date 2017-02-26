@@ -314,14 +314,16 @@ in **Figure 3** and it will be loaded into the alias editor on the right-hand si
 1. Click the **Save** button
 1. The completed alias is shown in **Figure 4**
 
-Repeat these steps and add three more aliases with the following details:
+Next, we'll clone the first alias to quickly create a second alias.
+1. Select the ABC Truck 1 alias in the alias table.
+1. Click the **Copy** button.  The copy is created and auto-selected in the editor.
+1. Type a new name for the copy: **ABC Truck 2**
+1. Click the **Save** button.
 
-1. Alias:
-   * **Name:** ABC Truck 2
-   * **List:** ABC Trucking
-   * **Group:** Local Delivery
-   * **Color:** Blue
-   * **Icon:** Van
+Repeat the above steps and add two more aliases with the following details.  Use the first set of 
+steps to create a new **ABC Truck 10** alias, and then use the second set of steps to clone
+the alias and then rename the copy to **ABC Truck 11**.
+
 1. Alias:
    * **Name:** ABC Truck 10
    * **List:** ABC Trucking
