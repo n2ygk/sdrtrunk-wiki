@@ -14,6 +14,7 @@ Table of Contents
   * [Example: Create Aliases for an Alias List](#example-create-aliases-for-an-alias-list)
   * [Example: P25 Aliases](#example-p25-aliases)
   * [Example: Audio Priority](#example-audio-priority)
+  * [Example: Audio Streaming](#example-audio-streaming)
 
 Aliases are a powerful feature in sdrtrunk that enable you to assign meaning to 
 many of the logical identifiers found in radio communication systems.  An 
@@ -408,4 +409,29 @@ listen to the radio calls for the bus fleet.
 
 ![Figure 7: Setting Audio Priority to Do Not Monitor](images/AliasExampleAudioPriority_V0.3.0.png)
 
-**Figure 7:** Setting Audio Priority to Do Not Monitor
+**Figure 7:** Setting Audio Priority to **Do Not Monitor**
+
+Example: Audio Streaming
+---
+In this example, we're going to setup to stream all calls for the ABC Trucking bus fleet
+using the aliases created in the [first example](#example-create-aliases-for-an-alias-list).
+
+In the [audio priority](#example-audio-priority) example, we setup the ABC Trucking bus fleet 
+to Do Not Monitor so that we did not have to listen to bus radio calls on our local computer.
+However, other listeners have requested to hear the bus fleet streaming over the internet.  So, 
+we've already setup a local Icecast audio steraming server and configured an audio stream with 
+a name of **ABC Trucking Audio Stream**.  Next, we'll setup the ABC Trucking buses talkgroup to
+stream to the server.
+
+1. Select the alias for **ABC Trucking-Buses** in the alias table.
+1. Click the **Audio/Identifier** tab in the alias editor.
+1. Click the **New** button and select **Audio Broadcast Channel**.
+1. Click the dropdown list and select **ABC Trucking Audio Stream** from the list.
+   * Note: even though the stream is listed in the drop-down box, you must click the down arrow and
+   select the ABC Trucking Audio Stream entry for it to be recognized.
+1. Click the **Save** button.
+1. The completed P25 audio priority is shown in **Figure 8** below.
+
+![Figure 8: Setup ABC Trucking for Internet Audio Streaming](images/AliasExampleAudioStreaming_V0.3.0.png)
+
+**Figure 8:** Setup ABC Trucking for Internet Audio Streaming
