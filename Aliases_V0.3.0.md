@@ -315,6 +315,7 @@ in **Figure 3** and it will be loaded into the alias editor on the right-hand si
 1. The completed alias is shown in **Figure 4**
 
 Next, we'll clone the first alias to quickly create a second alias.
+
 1. Select the ABC Truck 1 alias in the alias table.
 1. Click the **Copy** button.  The copy is created and auto-selected in the editor.
 1. Type a new name for the copy: **ABC Truck 2**
