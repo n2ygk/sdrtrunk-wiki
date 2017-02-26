@@ -15,6 +15,10 @@ Table of Contents
   * [Example: P25 Aliases](#example-p25-aliases)
   * [Example: Audio Priority](#example-audio-priority)
   * [Example: Audio Streaming](#example-audio-streaming)
+  * [Example: Alias with Wildcard P25 Talkgroup](#example-alias-with-wildcard-p25-talkgroup)
+  * [Example: Audio Recording](#example-audio-recording)
+
+Example: Alias with Wildcard P25 Talkgroup
 
 Aliases are a powerful feature in sdrtrunk that enable you to assign meaning to 
 many of the logical identifiers found in radio communication systems.  An 
@@ -419,7 +423,7 @@ using the aliases created in the [first example](#example-create-aliases-for-an-
 In the [audio priority](#example-audio-priority) example, we setup the ABC Trucking bus fleet 
 to Do Not Monitor so that we did not have to listen to bus radio calls on our local computer.
 However, other listeners have requested to hear the bus fleet streaming over the internet.  So, 
-we've already setup a local Icecast audio steraming server and configured an audio stream with 
+we've already setup a local Icecast audio streaming server and configured an audio stream with 
 a name of **ABC Trucking Audio Stream**.  Next, we'll setup the ABC Trucking buses talkgroup to
 stream to the server.
 
@@ -430,8 +434,74 @@ stream to the server.
    * Note: even though the stream is listed in the drop-down box, you must click the down arrow and
    select the ABC Trucking Audio Stream entry for it to be recognized.
 1. Click the **Save** button.
-1. The completed P25 audio priority is shown in **Figure 8** below.
+1. The completed audio streaming setup is shown in **Figure 8** below.
 
 ![Figure 8: Setup ABC Trucking for Internet Audio Streaming](images/AliasExampleAudioStreaming_V0.3.0.png)
 
 **Figure 8:** Setup ABC Trucking for Internet Audio Streaming
+
+Example: Alias with Wildcard P25 Talkgroup
+---
+We often listen to radio systems that can contain hundreds of user talkgroups and thousands of
+individual radios.  When we don't want to create aliases for each and every one of these 
+users and talkgroups, we can create wildcard aliases as a catch-all alias for large groups
+of these users and talkgroups.  The wildcard alias is useful for matching large groups of users
+and applying actions like **Non-Recordable** or **Do Not Monitor** alias identifiers.
+
+1. In the **Aliases** tab, click the **New** button to create a new Alias.
+1. Setup the alias with the following values:
+   * **Name:** All Other Talkgroups
+   * **List:** ABC Trucking
+   * **Group:** Blacklisted Talkgroups
+   * **Color:** Red
+   * **Icon:** No Icon (default)
+1. Click the **Save** button.
+1. The completed alias is shown in **Figure 9**.
+
+![Figure 9: Wildcard Alias](images/AliasExampleWildcardAlias_V0.3.0.png)
+
+**Figure 9:** Wildcard Alias
+
+Next, we assign a wildcard talkgroup identifier to the alias.  The asterisk (*) is used to
+wildcard individual identifier characters.  Since P25 talkgroups are four hexadecimal 
+characters long, our wildcard pattern must also be four characters long.  We use
+an asterisk to match each hexadecimal digit, so the final pattern will be four asterisks.
+
+**Note:** the four asterisk pattern will only match identifiers that are four characters long,
+like P25 talkgroups.  Since P25 radio identifiers are six hexadecimal characters, they will
+not match this four asterisk pattern.  If we want to match groups of P25 radio identifiers,
+we would use some combination of hexadecimal characters and asterisks to form a six 
+character value.
+
+1. Select the **All Other Talkgroups** alias in the alias table.
+1. Click the **Audio/Identifier** tab in the alias editor.
+1. Click the **New** button at the bottom of the alias editor and select **Talkgroup**.
+1. Type **** (4 wildcard asterisks) in the talkgroup field.
+1. Click the **Save** button.
+1. The completed P25 wildcard talkgroup alias identifier is shown in **Figure 10** below.
+
+![Figure 10: Wildcard Talkgroup](images/AliasExampleWildcardTalkgroup_V0.3.0.png)
+
+**Figure 10:** Wildcard Talkgroup
+
+Example: Audio Recording
+---
+In this example, we're going to turn on audio recording so that we can record only
+the audio from the ABC Trucking bus and local fleets.  Since we do not want to record
+any other talkgroups that may be active on the radio system, we have to create a 
+wildcard alias that will match all other talkgroups.
+
+Follow the [wildcard alias](#example-alias-with-wildcard-p25-talkgroup) example above 
+to create a P25 Alias with a wildcard talkgroup alias identifier.
+
+Next, we'll designate our wildcard alias as **Non-Recordable**.
+
+1. Select the **All Other Talkgroups** alias in the alias table.
+1. Click the **Audio/Identifier** tab in the alias editor.
+1. Click the **New** button at the bottom of the alias editor and select **Audio Non-Recordable**.
+1. Click the **Save** button.
+1. The completed recording blacklisted wildcard talkgroup is show in **Figure 11** below.
+
+![Figure 11: Wildcard Audio Non-Recordable](images/AliasExampleAudioNonRecordable_V0.3.0.png)
+
+**Figure 11:** Wildcard Audio Non-Recordable
