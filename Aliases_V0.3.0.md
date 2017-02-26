@@ -18,6 +18,7 @@ Table of Contents
   * [Example: Audio Streaming](#example-audio-streaming)
   * [Example: Alias with Wildcard P25 Talkgroup](#example-alias-with-wildcard-p25-talkgroup)
   * [Example: Audio Recording](#example-audio-recording)
+  * [Example: LTR Aliases](#example-ltr-aliases)
 
 Aliases are a powerful feature in sdrtrunk that enable you to assign meaning to 
 many of the logical identifiers found in radio communication systems.  An 
