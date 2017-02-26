@@ -19,8 +19,6 @@ Table of Contents
   * [Example: Alias with Wildcard P25 Talkgroup](#example-alias-with-wildcard-p25-talkgroup)
   * [Example: Audio Recording](#example-audio-recording)
 
-Example: Alias with Wildcard P25 Talkgroup
-
 Aliases are a powerful feature in sdrtrunk that enable you to assign meaning to 
 many of the logical identifiers found in radio communication systems.  An 
 alias can represent one or more radios, radio groups, people, vehicles, 
@@ -357,6 +355,11 @@ that you have already created a P25 channel configuration.
 1. Click the **Save** button.
 1. Click the **Enable** button to start the channel decoding using the **ABC Trucking** alias list.
 2. The completed channel configuration is shown in **Figure 4a** below.
+
+**Note:** once you have attached an alias list to a channel configuration, you do not have to 
+repeat this step.  Any changes that you make to the existing aliases in your alias list will
+be reflected in the decoding channel.  You can also add new aliases to the alias list and
+they will be reflected in the results produced by the decoding channel.
 
 ![Figure 4a: Attach Alias List to Channel Configuration](images/AliasExampleChannelAliasList_V0.3.0.png)
 
