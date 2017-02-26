@@ -1,7 +1,5 @@
 **Version:** 0.3.0
 
-Aliases
----
 Table of Contents
 ---
 * [Creating, Deleting and Copying Aliases](#creating,-deleting-and-copying-aliases)
@@ -20,6 +18,8 @@ Table of Contents
   * [Example: Audio Recording](#example-audio-recording)
   * [Example: LTR Aliases](#example-ltr-aliases)
 
+Aliases
+---
 Aliases are a powerful feature in sdrtrunk that enable you to assign meaning to 
 many of the logical identifiers found in radio communication systems.  An 
 alias can represent one or more radios, radio groups, people, vehicles, 
