@@ -561,6 +561,13 @@ alias list in our new LTR channel configuration.
 1. Follow the steps in the [attach alias list example](#example-attach-an-alias-list-to-a-decoding-channel) 
 to attach the ABC Trucking alias list to our LTR decoding channel configuration
 
+**Note:** In the [audio streaming example](#example-audio-streaming) we designated 
+the **ABC Trucking-Buses** alias for audio streaming for the P25 Talkgroup 0013. 
+Now that we have attached an LTR talkgroup to this alias and we're using the 
+**ABC Trucking** alias list in the LTR channel configuration, all P25 calls and 
+all LTR calls from both channels will now be streamed over the 
+**ABC Trucking Audio Stream**.
+
 ![Figure 12: LTR Talkgroup](images/AliasExampleLTRTalkgroup_V0.3.0.png)
 
 **Figure 12:** LTR Talkgroup
