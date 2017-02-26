@@ -345,7 +345,9 @@ We're going to attach the aliases created in the [first example](#example-create
 to our P25 decoding channel configuration so that the aliases will be used during decoding.
 
 Aliases are attached to a channel configuration using the Alias List value that is assigned to
-each alias.  Please refer to the [channels](Channels_V0.3.0.md) wiki page for help in 
+each alias.  
+
+Please refer to the [channels](Channels_V0.3.0) wiki page for help in 
 creating a channel configuration and enabling the channel for decoding.  This example assumes
 that you have already created a P25 channel configuration.
 
@@ -358,8 +360,9 @@ that you have already created a P25 channel configuration.
 
 **Note:** once you have attached an alias list to a channel configuration, you do not have to 
 repeat this step.  Any changes that you make to the existing aliases in your alias list will
-be reflected in the decoding channel.  You can also add new aliases to the alias list and
-they will be reflected in the results produced by the decoding channel.
+be reflected in the decoding channel, so long as each of the aliases continue to be identified
+with the same alias list name.  You can also add new aliases to the alias list and they will 
+be reflected in the results produced by the decoding channel.
 
 ![Figure 4a: Attach Alias List to Channel Configuration](images/AliasExampleChannelAliasList_V0.3.0.png)
 
@@ -532,3 +535,31 @@ Next, we'll designate our wildcard alias as **Non-Recordable**.
 **Figure 11:** Wildcard Audio Non-Recordable
 
 Finally, we change our channel configuration to turn on Audio Recording.
+
+Example: LTR Aliases
+---
+
+In this example we're going to attach an LTR talkgroup to the ABC Trucking aliases 
+that we created in the [first example](#example-create-aliases-for-an-alias-list).
+
+Aliases can have multiple Alias Identifiers.  In this example, ABC Trucking has 
+created a new LTR radio repeater for a small group of their bus fleet, in addition
+to the P25 network that is used by the rest of the ABC Trucking bus fleet.  
+
+Since we have already created an alias for our ABC Trucking bus fleet, we're simply
+going to attach an LTR talkgroup identifier to that alias and then use the ABC Trucking
+alias list in our new LTR channel configuration.
+
+1. Click the **Aliases** tab of the application window.
+1. Select the **ABC Trucking-Buses** alias in the alias table.
+1. In the alias editor window, click the **Audio/Identifier** tab.
+1. Click the **New** button and select **Talkgroup**.
+1. Type the value **0-01-001** for the LTR talkgroup in the box
+1. Click the Save button.
+1. The completed LTR talkgroup alias identifier is shown in **Figure 12** below.
+1. Follow the steps in the [attach alias list example](#example-attach-an-alias-list-to-a-decoding-channel) 
+to attach the ABC Trucking alias list to our LTR decoding channel configuration
+
+![Figure 12: LTR Talkgroup](images/AliasExampleLTRTalkgroup_V0.3.0.png)
+
+**Figure 12:** LTR Talkgroup
