@@ -13,6 +13,7 @@ Table of Contents
 * [Examples](#examples)
   * [Example: Create Aliases for an Alias List](#example-create-aliases-for-an-alias-list)
   * [Example: P25 Aliases](#example-p25-aliases)
+  * [Example: Audio Priority](#example-audio-priority)
 
 Aliases are a powerful feature in sdrtrunk that enable you to assign meaning to 
 many of the logical identifiers found in radio communication systems.  An 
@@ -306,7 +307,7 @@ in **Figure 3** and it will be loaded into the alias editor on the right-hand si
    * **Color:** Blue
    * **Icon:** Van
 1. Click the **Save** button
-1. The completed alias is shown in Figure 4
+1. The completed alias is shown in **Figure 4**
 
 Repeat these steps and add three more aliases with the following details:
 
@@ -353,7 +354,7 @@ ABC Truck aliases we created earlier.
 1. Click the **New button** at the bottom of the alias editor and select **Talkgroup**.
 1. Type A1234B in the talkgroup field.
 1. Click the **Save** button.
-1. The completed P25 alias identifier is shown in Figure 5 below.
+1. The completed P25 alias identifier is shown in **Figure 5** below.
 
 Repeat these steps and add the following P25 radio identifiers to the remaining ABC Trucking aliases:
 * ABC Truck 2: **A1234C**
@@ -369,10 +370,10 @@ P25 talkgroup aliases.
 
 1. Select the alias for **ABC Trucking-Local** in the alias table.
 1. Click the **Audio/Identifier** tab in the alias editor.
-1. Click the **New button** at the bottom of the alias editor and select **Talkgroup**.
+1. Click the **New** button at the bottom of the alias editor and select **Talkgroup**.
 1. Type **0012** in the talkgroup field.
 1. Click the **Save** button.
-1. The completed P25 alias identifier is shown in Figure 6 below.
+1. The completed P25 alias identifier is shown in **Figure 6** below.
 
 Repeat these steps to add a talkgroup to the **ABC Trucking-Buses** alias.
 * ABC Trucking-Buses: **0013**
@@ -381,5 +382,30 @@ Repeat these steps to add a talkgroup to the **ABC Trucking-Buses** alias.
 
 **Figure 6:** Adding a P25 Talkgroup to ABC Trucking-Local Alias
 
+Example: Audio Priority
+---
+In this example, we're going to assign an audio priority to the ABC Trucking talkgroup aliases
+that were created in the [first example](#example-create-aliases-for-an-alias-list).  Since we 
+want to listen to the ABC Trucking local deliveries and we do not want to listen to the ABC Trucking
+bus fleet, we'll assign an audio priority of **10** to the local delivery talkgroup and we'll assign
+an audio priority of **Do Not Monitor** to the bus talkgroup.
 
+1. Select the alias for **ABC Trucking-Local** in the alias table.
+1. Click the **Audio/Identifier** tab in the alias editor.
+1. Click the **New** button and select **Audio Priority**.
+1. Adjust the slider to change the value to **Priority: 10**
+1. Click the **Save** button.
 
+Next, we set an audio priority for the **ABC Trucking-Buses** alias so that we do not have to 
+listen to the radio calls for the bus fleet.
+
+1. Select the alias for **ABC Trucking-Buses** in the alias table.
+1. Click the **Audio/Identifier** tab in the alias editor.
+1. Click the **New** button and select **Audio Priority**.
+1. Move the slider all the way to the right until it reads **Priority: Do Not Monitor**
+1. Click the **Save** button.
+1. The completed P25 audio priority is shown in **Figure 7** below.
+
+![Figure 7: Setting Audio Priority to Do Not Monitor](images/AliasExampleAudioPriority_V0.3.0.png)
+
+**Figure 7:** Setting Audio Priority to Do Not Monitor
