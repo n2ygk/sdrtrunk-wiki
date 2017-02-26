@@ -42,4 +42,20 @@ Decoders
 
 Menu Items
 ---
+#### File > Logs and Recordings
+Opens a file explorer to your user directory to view the logs and recordings folders.
+
+#### File > Icon Manager
+Opens the Icon Manager dialog where you can import additional icons to use for your aliases.
+
+#### File > Exit
+Closes the applicaiton
+
+#### View > Show Streaming Status
+Toggles visibility of the streaming status panel
+
+#### Screen Capture
+Creates a screen shot picture and stores the image in your Screen Captures folder.  Use the 
+Logs and Recordings menu item to open a file explorer and browse to the Screen Captures folder.
+
 
