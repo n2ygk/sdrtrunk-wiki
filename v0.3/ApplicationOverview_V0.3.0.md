@@ -1,6 +1,6 @@
 ### Application Overview ###
 
-  * [Audio Panel](v0.3/AudioPanel_V0.3.0.md)
+  * [Audio Panel](AudioPanel_V0.3.0)
   * [Now Playing](NowPlaying_V0.3.0.md)
   * [Aliases](Aliases_V0.3.0.md)
   * [Channels](Channels_V0.3.0.md)
