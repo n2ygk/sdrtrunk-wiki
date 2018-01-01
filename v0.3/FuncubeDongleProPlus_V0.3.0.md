@@ -1,9 +1,7 @@
-**Version:** 0.3.0
-
 Funcube Dongle Pro Plus Tuner Configuration
 ---
 
-![Figure 1: Funcube Dongle Pro Plus Tuner Configuration](images/FuncubeDongleProPlus_V0.3.0.png)
+![Figure 1: Funcube Dongle Pro Plus Tuner Configuration](v0.3/images/FuncubeDongleProPlus_V0.3.0.png)
 
 **Figure 1:** Funcube Dongle Pro Plus Tuner Configuration
 

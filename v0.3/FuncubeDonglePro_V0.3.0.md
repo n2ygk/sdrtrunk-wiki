@@ -3,7 +3,7 @@
 Funcube Dongle Pro Tuner Configuration
 ---
 
-![Figure 1: Funcube Dongle Pro Tuner Configuration](images/FuncubeDonglePro_V0.3.0.png)
+![Figure 1: Funcube Dongle Pro Tuner Configuration](v0.3/images/FuncubeDonglePro_V0.3.0.png)
 
 **Figure 1:** Funcube Dongle Pro Tuner Configuration
 

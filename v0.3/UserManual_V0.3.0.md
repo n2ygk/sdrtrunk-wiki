@@ -1,5 +1,3 @@
-**Version:** 0.3.0
-
 SDRTrunk User Manual
 ---
 
@@ -13,7 +11,7 @@ power and the tunable bandwidth of each of the tuners attached to your computer.
 also supports automatically creating and tuning to traffic channels in trunked 
 radio systems when decoding the system control channel. 
 
-![Figure 1: Application Overview](images/ApplicationOverview_V0.3.0.png)
+![Figure 1: Application Overview](v0.3/images/ApplicationOverview_V0.3.0.png)
 
 **Figure 1:** Application Overview showing a single Airspy tuner decoding multiple 
 trunked radio control channels and automatically generating traffic channels for
@@ -49,7 +47,7 @@ Opens a file explorer to your user directory to view the logs and recordings fol
 Opens the Icon Manager dialog where you can import additional icons to use for your aliases.
 
 #### File > Exit
-Closes the applicaiton
+Closes the application
 
 #### View > Show Streaming Status
 Toggles visibility of the streaming status panel

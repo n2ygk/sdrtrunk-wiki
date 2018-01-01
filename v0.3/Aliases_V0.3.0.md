@@ -1,5 +1,3 @@
-**Version:** 0.3.0
-
 Table of Contents
 ---
 * [Creating, Deleting and Copying Aliases](#creating,-deleting-and-copying-aliases)
@@ -36,7 +34,7 @@ are unlimited for triggered actions.
 Aliases also allow you to define audio monitoring priority, recording, and 
 network audio streaming of audio associated with the alias when active.
 
-![Figure 1: Alias Table and Single Alias Editor](images/Aliases.png)
+![Figure 1: Alias Table and Single Alias Editor](v0.3/images/Aliases_V0.3.0.png)
 
 **Figure 1:** Alias Table and Single Alias Editor
 
@@ -50,7 +48,7 @@ allowing multiple search and row filtering options.
 
 Each of the single alias editor options are described later in this document.
 
-![Figure 2: Alias Table and Multiple Alias Editor](images/MultipleAliasEditor.png)
+![Figure 2: Alias Table and Multiple Alias Editor](v0.3/images/MultipleAliasEditor_V0.3.0.png)
 
 **Figure 2:** Alias Table and Multiple Alias Editor
 
@@ -203,7 +201,7 @@ Standard, and Tait 1200 decoders.
 ##### Audio Broadcast Channel (Streaming)
 This audio setting designates an audio broadcast (streaming) channel.  Any
 audio calls associated with the alias will be streamed across the specified
-streaming channel. See the [Streaming](Streaming) page for details on 
+streaming channel. See the [Streaming](Streaming_V0.3.0) page for details on 
 configuring audio streaming channels.
 
 ##### Audio Non-Recordable
@@ -296,7 +294,7 @@ tab.
 Examples
 ---
 
-![Figure 3: New Alias](images/AliasCreateNew_V0.3.0.png)
+![Figure 3: New Alias](v0.3/images/AliasCreateNew_V0.3.0.png)
 
 **Figure 3:** Create New Alias
 
@@ -352,7 +350,7 @@ the alias two more times and then rename the copies to **ABC Truck 11** and **AB
    * **Icon:** Transport Bus
 1. Your completed aliases should resemble the aliases shown in **Figure 4**.
 
-![Figure 4: New Aliases - ABC Trucking](images/AliasExampleABCTrucking_V0.3.0.png)
+![Figure 4: New Aliases - ABC Trucking](v0.3/images/AliasExampleABCTrucking_V0.3.0.png)
 
 **Figure 4:** New Aliases - ABC Trucking Alias List
 
@@ -381,7 +379,7 @@ be reflected in the decoding channel, so long as each of the aliases continue to
 with the same alias list name.  You can also add new aliases to the alias list and they will 
 be reflected in the results produced by the decoding channel.
 
-![Figure 4a: Attach Alias List to Channel Configuration](images/AliasExampleChannelAliasList_V0.3.0.png)
+![Figure 4a: Attach Alias List to Channel Configuration](v0.3/images/AliasExampleChannelAliasList_V0.3.0.png)
 
 **Figure 4a:** Attach Alias List to Channel Configuration
 
@@ -411,7 +409,7 @@ Repeat these steps and add the following P25 radio identifiers to the remaining 
 * ABC Truck 10: **A12400**
 * ABC Truck 11: **A12401**
 
-![Figure 5: Adding a P25 Radio Identifier to ABC Truck 1 Alias](images/AliasExampleRadioIdentifier_V0.3.0.png)
+![Figure 5: Adding a P25 Radio Identifier to ABC Truck 1 Alias](v0.3/images/AliasExampleRadioIdentifier_V0.3.0.png)
 
 **Figure 5:** Adding a P25 Radio Identifier to ABC Truck 1 Alias
 
@@ -428,7 +426,7 @@ P25 talkgroup aliases.
 Repeat these steps to add a talkgroup to the **ABC Trucking-Buses** alias.
 * ABC Trucking-Buses: **0013**
 
-![Figure 6: Adding a P25 Talkgroup to ABC Trucking-Local Alias](images/AliasExampleTalkgroup_V0.3.0.png)
+![Figure 6: Adding a P25 Talkgroup to ABC Trucking-Local Alias](v0.3/images/AliasExampleTalkgroup_V0.3.0.png)
 
 **Figure 6:** Adding a P25 Talkgroup to ABC Trucking-Local Alias
 
@@ -456,7 +454,7 @@ listen to the radio calls for the bus fleet.
 1. Click the **Save** button.
 1. The completed P25 audio priority is shown in **Figure 7** below.
 
-![Figure 7: Setting Audio Priority to Do Not Monitor](images/AliasExampleAudioPriority_V0.3.0.png)
+![Figure 7: Setting Audio Priority to Do Not Monitor](v0.3/images/AliasExampleAudioPriority_V0.3.0.png)
 
 **Figure 7:** Setting Audio Priority to **Do Not Monitor**
 
@@ -483,7 +481,7 @@ Trucking buses talkgroup to stream to the server.
 1. Click the **Save** button.
 1. The completed audio streaming setup is shown in **Figure 8** below.
 
-![Figure 8: Setup ABC Trucking for Internet Audio Streaming](images/AliasExampleAudioStreaming_V0.3.0.png)
+![Figure 8: Setup ABC Trucking for Internet Audio Streaming](v0.3/images/AliasExampleAudioStreaming_V0.3.0.png)
 
 **Figure 8:** Setup ABC Trucking for Internet Audio Streaming
 
@@ -505,7 +503,7 @@ and applying actions like **Non-Recordable** or **Do Not Monitor** alias identif
 1. Click the **Save** button.
 1. The completed alias is shown in **Figure 9**.
 
-![Figure 9: Wildcard Alias](images/AliasExampleWildcardAlias_V0.3.0.png)
+![Figure 9: Wildcard Alias](v0.3/images/AliasExampleWildcardAlias_V0.3.0.png)
 
 **Figure 9:** Wildcard Alias
 
@@ -527,7 +525,7 @@ character value.
 1. Click the **Save** button.
 1. The completed P25 wildcard talkgroup alias identifier is shown in **Figure 10** below.
 
-![Figure 10: Wildcard Talkgroup](images/AliasExampleWildcardTalkgroup_V0.3.0.png)
+![Figure 10: Wildcard Talkgroup](v0.3/images/AliasExampleWildcardTalkgroup_V0.3.0.png)
 
 **Figure 10:** Wildcard Talkgroup
 
@@ -549,7 +547,7 @@ Next, we'll designate our wildcard alias as **Non-Recordable**.
 1. Click the **Save** button.
 1. The completed recording blacklisted wildcard talkgroup is show in **Figure 11** below.
 
-![Figure 11: Wildcard Audio Non-Recordable](images/AliasExampleAudioNonRecordable_V0.3.0.png)
+![Figure 11: Wildcard Audio Non-Recordable](v0.3/images/AliasExampleAudioNonRecordable_V0.3.0.png)
 
 **Figure 11:** Wildcard Audio Non-Recordable
 
@@ -586,6 +584,6 @@ Now that we have attached an LTR talkgroup to this alias and we're using the
 all LTR calls from both channels will now be streamed over the 
 **ABC Trucking Audio Stream**.
 
-![Figure 12: LTR Talkgroup](images/AliasExampleLTRTalkgroup_V0.3.0.png)
+![Figure 12: LTR Talkgroup](v0.3/images/AliasExampleLTRTalkgroup_V0.3.0.png)
 
 **Figure 12:** LTR Talkgroup

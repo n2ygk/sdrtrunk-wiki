@@ -12,7 +12,7 @@ monitor.  Click the **Enable** button in the channel configuration editor to sta
 a channel decoding.  If you shut down the application and restart it later, any
 channels that were enabled will automatically start again.
 
-![Figure 1: Channels Table - Name/Alias Editor](images/ChannelsNameEditor.png)
+![Figure 1: Channels Table - Name/Alias Editor](v0.3/images/ChannelsNameEditor_V0.3.0.png)
 **Figure 1:** Channels Table - Name/Alias Editor
 
 All channel configuration editing and management is accessible in the **Channels**
@@ -94,11 +94,11 @@ affect decoding.
 
 #### Alias List
 Choose an alias list name from the drop-down list, or type a new alias list name.
-The values in the list are pulled from any [Aliases](Aliases) that you may 
+The values in the list are pulled from any [Aliases](Aliases_V0.3.0) that you may 
 have already created.  
 
 If you type a new alias list name for your channel configuration, be sure to use
-that alias list name for any aliases that you create in the [Aliases](Aliases)
+that alias list name for any aliases that you create in the [Aliases](Aliases_V0.3.0)
 table.  When you start your channel decoding, any aliases with the matching alias
 list name will be assembled into an alias list for use with the channel.  If you
 add new aliases while your channel is currently decoding, they will be automatically
@@ -120,7 +120,7 @@ quickly filter down to a related set of channel configurations in the channels
 table.
 
 
-![Figure 2: Channels Table - Source Editor](images/ChannelsSourceEditor.png)
+![Figure 2: Channels Table - Source Editor](v0.3/images/ChannelsSourceEditor_V0.3.0.png)
 **Figure 2:** Channels Table - Source Editor
 
 Channels Table - Source Editor
@@ -140,7 +140,7 @@ external scanner or radio to feed a small subset of decoders.  Decoders that
 work with sound card audio: **MPT-1327**, **Fleetsync**, **MDC-1200**, 
 **Tait 1200** and **LoJack**.
 
-![Figure 3: Channels Table - Decoder Editor](images/ChannelsDecoderEditor.png)
+![Figure 3: Channels Table - Decoder Editor](v0.3/images/ChannelsDecoderEditor_V0.3.0.png)
 **Figure 3:** Channels Table - Decoder Editor
 
 Channels Table - Decoder Editor
@@ -153,7 +153,8 @@ decoders.  See below for details on auxiliary decoders.
 Refer to the [Decoders](Decoders) page for details and configuration for each
 primary decoder type.
 
-![Figure 4: Channels Table - Aux Decoders Editor](images/ChannelsAuxDecoderEditor.png)
+![Figure 4: Channels Table - Aux Decoders Editor](v0.3/images/ChannelsAuxDecoderEditor_V0.3.0.png)
+
 **Figure 4:** Channels Table - Aux Decoders Editor
 
 Channels Table - Aux Decoders Editor
@@ -168,7 +169,7 @@ transmissions in older analog radio systems.
 Refer to the [Decoders](Decoders) page for details and configuration for each
 auxiliary decoder type.
 
-![Figure 5: Channels Table - Logging Editor](images/ChannelsLoggingEditor.png)
+![Figure 5: Channels Table - Logging Editor](v0.3/images/ChannelsLoggingEditor_V0.3.0.png)
 **Figure 5:** Channels Table - Logging Editor
 
 Channels Table - Logging Editor
@@ -187,7 +188,7 @@ This option creates a log file containing decoded messages in readable text form
 #### Call Events
 This option creates a log file containing the call events and times.
 
-![Figure 6: Channels Table - Recording Editor](images/ChannelsRecordingEditor.png)
+![Figure 6: Channels Table - Recording Editor](v0.3/images/ChannelsRecordingEditor_V0.3.0.png)
 **Figure 6:** Channels Table - Recording Editor
 
 Channels Table - Recording Editor

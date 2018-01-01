@@ -20,7 +20,7 @@ When the streaming queue is empty, MP3 silence frames are streamed to maintain a
 consistent connection to the remote server.  When silence is streaming, the 
 metadata is updated to read '_Scanning..._'.
 
-![Figure 1: Streaming Tab](images/Streaming.png)
+![Figure 1: Streaming Tab](v0.3/images/Streaming_V0.3.0.png)
 **Figure 1:** Streaming Tab
 
 Figure 1 shows the streaming configuration tab where you can add, copy and delete
@@ -95,7 +95,7 @@ below
 5. Click **Save**
 6. Attach this stream to one or more Aliases.
 
-## [Aliases](Alias) and Broadcast Channels
+## [Aliases](Aliases_V0.3.0) and Broadcast Channels
 
 Aliases are used for designating specific radio users and/or groups for streaming.  
 You can attach one or more Broadcast Channel identifiers to each alias.  When a 

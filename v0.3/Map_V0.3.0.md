@@ -17,6 +17,6 @@ will be plotted.
 Drag the map to re-center the view and use the mouse wheel to zoom in or out.  
 Right-click on the map to store the location and zoom level as the map default.
 
-![Map Display](images/Map_V0.3.0.png)
+![Map Display](v0.3/images/Map_V0.3.0.png)
 
 **Figure 1:** Map Display

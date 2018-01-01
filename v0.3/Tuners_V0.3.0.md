@@ -1,5 +1,3 @@
-**Version:** 0.3.0
-
 Tuners
 ---
 The tuners tab lists all tuners currently recognized and available for use by the sdrtrunk
@@ -8,7 +6,7 @@ one of those configurations as the default configuration for the tuner.  The app
 attempts to reconfigure your tuner to the same settings used the last time that you ran the
 software.
 
-![Figure 1: Tuners](images/Tuners_V0.3.0.png)
+![Figure 1: Tuners](v0.3/images/Tuners_V0.3.0.png)
 
 **Figure 1:** Tuners View 
 

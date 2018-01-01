@@ -6,7 +6,7 @@ The **Now Playing** tab provides a convenient summary screen to monitor when you
 are decoding channels and monitoring audio.  It displays a summary of channels and
 provides access to decoding details, messages and call events for each channel.
 
-![Figure 1: Application Overview with Now Playing Displayed](images/ApplicationOverview_V0.3.0.png)
+![Figure 1: Application Overview with Now Playing Displayed](v0.3/images/ApplicationOverview_V0.3.0.png)
 **Figure 1:** Application Overview with Now Playing tab
 
 Decoding Channel Table
@@ -63,7 +63,7 @@ Channel Information
 The lower half of the **Now Playing** screen shows additional information when you select/click on a 
 row in the channels table above.
 
-![Figure 2: Now Playing with Channel Details View](images/NowPlayingDetailsView_V0.3.0.png)
+![Figure 2: Now Playing with Channel Details View](v0.3/images/NowPlayingDetailsView_V0.3.0.png)
 **Figure 2:** Now Playing with Channel Details View
 
 Details View
@@ -83,7 +83,7 @@ The summary report is generated when you first select a channel and click on the
 You can regenerate the report with the latest summary information from the decoders when you
 click on the **Refresh** button.
 
-![Figure 3: Now Playing with Channel Events View](images/NowPlayingEventsView_V0.3.0.png)
+![Figure 3: Now Playing with Channel Events View](v0.3/images/NowPlayingEventsView_V0.3.0.png)
 **Figure 3:** Now Playing with Channel Events View
 
 Events View
@@ -118,7 +118,7 @@ Channel frequency for the event
 #### Details
 Message, GPS location, status, or additional details about the event.
 
-![Figure 4: Now Playing with Channel Messages View](images/NowPlayingMessagesView_V0.3.0.png)
+![Figure 4: Now Playing with Channel Messages View](v0.3/images/NowPlayingMessagesView_V0.3.0.png)
 **Figure 4:** Now Playing with Channel Messages View
 
 Messages View

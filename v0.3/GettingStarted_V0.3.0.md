@@ -1,5 +1,3 @@
-**Version:** 0.3.x
-
 ## Getting started with SDRTrunk ##
 
 SDRtrunk is an integrated application for demodulating radio signals and 
@@ -27,17 +25,17 @@ processing workload.
 
 ### Setup ###
 
-  * [Linux](SetupLinux_V0.3.0.md)
-  * [Windows](SetupWindows_V0.3.0.md)
+  * [Linux](SetupLinux_V0.3.0)
+  * [Windows](SetupWindows_V0.3.0)
 
 ### Application Overview ###
 
-The [application overview](v0.3/ApplicationOverview_V0.3.0.md) article describes the various
+The [application overview](ApplicationOverview_V0.3.0) article describes the various
 components in the sdrtrunk application
 
 ### Configuration ###
 
 The Channels tab at the center of the application is the central control for configuring and 
-managing channel definitions.  Please refer to the [Channels](Channels_V0.3.0.md) wiki page for
+managing channel definitions.  Please refer to the [Channels](Channels_V0.3.0) wiki page for
 instructions on creating channel definitions and starting channels decoding.
 

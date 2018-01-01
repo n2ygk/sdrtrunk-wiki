@@ -1,5 +1,3 @@
-**Version:** 0.3.x
-
 # Channel Spectrum #
 
 The channel spectrum window allows you to view the dynamic frequency content of

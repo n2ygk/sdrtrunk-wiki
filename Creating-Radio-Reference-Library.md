@@ -1,6 +1,8 @@
 # Creating a java library for the Radio Reference web service
 
-The Radio Reference API uses an older WSDL format that is not compatible with modern versions of wsimport (2.x+).  Generating a library from this WSDL requires an older version of Apache Axis.  Go to http://apache.is.co.za/axis/axis/java/1.4/ and download axis-bin-1_4.zip.
+The Radio Reference API uses an older WSDL format that is not compatible with modern 
+versions of wsimport (2.x+).  Generating a library from this WSDL requires an older version of Apache Axis.  
+Go to http://apache.is.co.za/axis/axis/java/1.4/ and download axis-bin-1_4.zip.
 
 Extract axis 1.4 into a directory and you should have the following files (among others) in a /libs folder:
 

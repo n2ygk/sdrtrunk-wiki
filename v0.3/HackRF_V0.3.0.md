@@ -1,9 +1,7 @@
-**Version:** 0.3.0
-
 HackRF Tuner Configuration
 ---
 
-![Figure 1: HackRF Tuner Configuration](images/HackRF_V0.3.0.png)
+![Figure 1: HackRF Tuner Configuration](v0.3/images/HackRF_V0.3.0.png)
 
 **Figure 1:** HackRF Tuner Configuration
 

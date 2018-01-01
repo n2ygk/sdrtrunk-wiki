@@ -41,7 +41,7 @@ different audio device.
 You can select mono audio playback to have any playback audio routed to both 
 speakers.  The mono audio playback is shown in Figure 1.
 
-![Audio Panel with Mono Playback](images/AudioPanelMono_V0.3.0.png)
+![Audio Panel with Mono Playback](v0.3/images/AudioPanelMono_V0.3.0.png)
 
 **Figure 1:** Audio Playback Panel with Mono Audio
 
@@ -51,7 +51,7 @@ audio playback over a stereo audio output.  Each audio channel will be managed
 by the Audio Manager and all audio produced by all decoding channels will be
 routed to these two channels on a priority basis, as shown in Figure 2.
 
-![Audio Panel with Stereo Playback](images/AudioPanelStereo_V0.3.0.png)
+![Audio Panel with Stereo Playback](v0.3/images/AudioPanelStereo_V0.3.0.png)
 
 **Figure 2:** Audio Playback Panel with Stereo Audio
 
@@ -69,6 +69,6 @@ audio volume of each channel via this context menu.
 Each channel will show a RED M in the panel when the audio is muted either via
 the master mute button, or by the channel mute context menu, as shown in Figure 3.
 
-![Audio Panel with Muted Audio](images/AudioPanelMuted_V0.3.0.png)
+![Audio Panel with Muted Audio](v0.3/images/AudioPanelMuted_V0.3.0.png)
 
 **Figure 3:** Audio Playback Panel with Muted Audio
