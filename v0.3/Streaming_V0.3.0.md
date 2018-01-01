@@ -108,7 +108,7 @@ radio ID has Channel A and Channel B attached, and the talkgroup has Channel B a
 Channel C attached, then the call would be streamed to all three channels. 
 
 ### Attaching a Broadcast Channel to an Individual Alias
-1. Create an [Alias List](AliasList) and attach it to your decoding [Channel Configuration](Channel)
+1. Create an [Alias List](Aliases_V0.3.0) and attach it to your decoding [Channel Configuration](Channels_V0.3.0)
 1. In the **Aliases** tab, select the alias you want to stream
 1. In the Alias editor screen, switch to the **Audio/Identifier** tab
 1. Click **New** and select **Audio Broadcast Channel**
@@ -117,13 +117,13 @@ Channel C attached, then the call would be streamed to all three channels.
 1. Repeat these steps to add additional broadcast channels for the alias.
 
 ### Attaching a Broadcast Channel to Multiple Aliases
-1. Create an [Alias List](AliasList) and attach it to your decoding [Channel Configuration](Channel)
+1. Create an [Alias List](Aliases_V0.3.0) and attach it to your decoding [Channel Configuration](Channels_V0.3.0)
 1. In the **Aliases** tab, select the the set of aliases that you want to modify
 1. In the multiple alias editor, place a check in the **Stream** entry
 1. Select the broadcast channel from the drop-down list
 1. Click **Save**
 
-![Figure 2: Now Playing with Streaming Status Panel](images/StreamingStatusPanel.png)
+![Figure 2: Now Playing with Streaming Status Panel](v0.3/images/StreamingStatusPanel_V0.3.0.png)
 **Figure 2:** Now Playing with Streaming Status Panel Showing
 
 ## Streaming Status Panel

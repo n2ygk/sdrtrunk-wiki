@@ -5,14 +5,14 @@ traffic/voice/data call following when a tuner is available that can monitor
 both the control channel and any traffic channels within the available bandwidth
 of the tuner, or across multiple tuners.
 
-## P-25 Phase I##
+## P-25 Phase I
 Decodes FDMA Common Air Interface (CAI) C4FM modulation and Linear Simulcast 
 Modulation (LSM).
 
-## P-25 Phase II##
+## P-25 Phase II
 Phase II TDMA decoding is not currently supported.
 
-## P-25 Hybrid (Phase I/II)##
+## P-25 Hybrid (Phase I/II)
 P25 hybrid systems use both Phase 1 control channels and Phase I and Phase II
 traffic channels, providing transition support for users with a combination of
 Phase I and Phase II radios.
@@ -21,7 +21,7 @@ TDMA configuration messages that are broadcast on Phase I control channels are
 decoded.  Currently these include the TDMA timing synchronization and TDMA 
 channel identifier messages.
 
-## Audio Vocoders ##
+## Audio Vocoders 
 
 ### IMBE ###
 APCO-25 Phase I audio calls use the multi-band excitation model vocoder to

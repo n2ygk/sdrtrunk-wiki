@@ -22,7 +22,7 @@ The info tab displays information about the tuner:
 
 ## Using the Airspy ##
 
-![Figure 1: Airspy Tuner Configuration](v0.3/images/Airspy_V0.3.0)
+![Figure 1: Airspy Tuner Configuration](v0.3/images/Airspy_V0.3.0.png)
 
 ## Updating Firmware ##
 
