@@ -12,4 +12,4 @@
   * [Spectral Display](../SpectralDisplay_V0.3.0.md)
   * [Waterfall Display](../WaterfallDisplay_V0.3.0.md)
   
-![Figure 1: Application Overview](../v0.3/images/ApplicationOverviewAnnotated_V0.3.0.png)
+![Figure 1: Application Overview](v0.3/images/ApplicationOverviewAnnotated_V0.3.0.png)
