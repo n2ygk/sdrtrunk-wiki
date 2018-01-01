@@ -467,10 +467,12 @@ using the aliases created in the [first example](#example-create-aliases-for-an-
 
 In the [audio priority](#example-audio-priority) example, we setup the ABC Trucking bus fleet 
 to Do Not Monitor so that we did not have to listen to bus radio calls on our local computer.
-However, other listeners have requested to hear the bus fleet streaming over the internet.  So, 
-we've already setup a local Icecast audio streaming server and configured an audio stream with 
-a name of **ABC Trucking Audio Stream**.  Next, we'll setup the ABC Trucking buses talkgroup to
-stream to the server.
+However, other listeners have requested to hear the bus fleet streaming over the internet.  This
+example assumes that we've already setup a local Icecast audio streaming server and configured 
+an audio stream with a name of **ABC Trucking Audio Stream**.  Next, we'll setup the ABC 
+Trucking buses talkgroup to stream to the server.
+
+**Note:** see the [Streaming](Streaming_V0.3.0) page for details on setting up streaming.
 
 1. Select the alias for **ABC Trucking-Buses** in the alias table.
 1. Click the **Audio/Identifier** tab in the alias editor.

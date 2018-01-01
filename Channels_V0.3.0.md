@@ -18,7 +18,7 @@ channels that were enabled will automatically start again.
 All channel configuration editing and management is accessible in the **Channels**
 tab of the application. 
 
-Viewing, Sorting, and Filtering Channels
+Viewing, Sorting, and Filtering Channel definitions
 ---
 
 #### Sorting
