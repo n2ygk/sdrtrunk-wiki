@@ -19,10 +19,7 @@ owners.
 
 ## Adding JMBE to SDRTrunk for decoding MBE audio ##
 
-* [JMBE Download Site](https://github.com/DSheirer/jmbe/releases)
-* Download the **jmbe\_builder.zip** (windows) or the **jmbe\_builder.tar.gz** (linux) file to your computer and uncompress the file.
-
-* Run the **make\_jmbe\_library\_windows.bat** (windows) or the **make\_jmbe\_library\_linux.sh** (linux) file.  This will download the source code and create the **jmbe-x.x.x.jar** file.  The file that gets created will have version numbers in place of the x's in the filename.
+* [JMBE Download Site](https://github.com/DSheirer/jmbe/releases) Follow the instructions on this site for building the JMBE library.
 
 * Copy the **jmbe-x.x.x.jar** file to the same folder where you run the sdrtrunk scripts to start the sdrtrunk program.
 
