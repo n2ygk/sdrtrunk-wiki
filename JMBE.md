@@ -21,18 +21,30 @@ owners.
 
 * [JMBE Download Site](https://github.com/DSheirer/jmbe/releases) Follow the instructions on this site for building the JMBE library.
 
-* Copy the **jmbe-x.x.x.jar** file to the same folder where you run the sdrtrunk scripts to start the sdrtrunk program.
+* You can use the compiled **jmbe-x.x.x.jar** file right where you compiled it, or it may make sense to copy it to a more permanent location on your computer that is always accessible for sdrtrunk.
 
-* Start SDRTrunk normally and the program will automatically discover and use the jmbe library.
+* Start the SDRTrunk application.
+
+* Open the **View >> Preferences** menu item to open the Preferences window.
+
+* In the **Decoder >> JMBE Audio Library** section, click the **Change...** button to specify the 
+location for the 'jmbe-1.0.0.jar' library is located. (or whichever version you just compiled)
+
+* Start (or restart) any P25 decoder channels to start using the audio library.
 
 ## Troubleshooting ##
 
-If you download, compile and copy the JMBE library jar file to the same directory as the SDRTrunk application, you should not have any issues.
+SDRTrunk will generate several log entries to let you know if it discovered the jmbe library correctly and where it was looking for the library:
 
-SDRTrunk will generate a log entry to let you know if it discovered the jmbe library correctly for each P25 channel that you have decoding:
+> 16:59:28.404 INFO  i.g.d.a.c.m.JmbeAudioModule - Loading JMBE library from [/home/denny/JMBE/jmbe-1.0.0.jar]
 
-> 09:38:54.166 INFO  d.p.audio.P25AudioOutput - JMBE audio conversion library successfully loaded - P25 audio will be available
+> 16:59:28.415 INFO  i.g.d.a.c.m.JmbeAudioModule - JMBE audio conversion library loaded: JMBE Audio Conversion Library v1.0.0
 
-Or, when the library cannot be found, each channel will log:
+P25 Phase 1 channels when started will log the following entry:
 
-> 09:38:54.166 INFO  d.p.audio.P25AudioOutput - JMBE audio conversion  library NOT FOUND
+> 16:59:28.415 INFO  i.g.d.a.c.m.ImbeAudioModule - JMBE audio conversion library IMBE CODEC successfully loaded - P25-1 audio will be available
+
+P25 Phase 2 channels when started will log the following entry:
+> 16:59:28.415 INFO  i.g.d.a.c.m.AmbeAudioModule - AMBE CODEC successfully loaded - P25-2/DMR/NXDN audio will be available
+
+Note: Phase 2, DMR and NXDN protocols all use the same audio codec.  Decoder support for DMR and NXDN may be added at a future time
