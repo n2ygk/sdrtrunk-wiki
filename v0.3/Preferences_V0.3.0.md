@@ -3,7 +3,7 @@ Preferences
 The preferences dialog allows you to change settings that affect the way
 that sdrtrunk operates and displays decoded data.
 
-![Figure 1: Preferences Dialog](v0.3/images/Preferences_V0.3.0.png)
+![Figure 1: Preferences Dialog](v0.3/images/Preferences_V0.4.0.png)
 
 **Figure 1:** Preferences Dialog
 
