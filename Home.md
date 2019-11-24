@@ -19,7 +19,9 @@ This application uses some of the fantastic components available from [JIDE Soft
 
 **Requirements**
 
-* [Java](http://www.oracle.com/technetwork/java/javase/downloads/index.html) 8 or newer
+* Java 11 or newer
+  * [Liberica OpenJDK] (https://bell-sw.com/)
+  * [Oracle](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
 [Supported Tuners](Tuners_V0.3.0)
 
