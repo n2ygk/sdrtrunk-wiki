@@ -52,7 +52,7 @@ Closes the application
 #### View > Show Streaming Status
 Toggles visibility of the streaming status panel
 
-#### View > [Preferences](Preferences_V0.4.0)
+#### View > [Preferences](Preferences_V0.3.0)
 Opens the preferences dialog
 
 #### Screen Capture
