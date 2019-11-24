@@ -52,6 +52,9 @@ Closes the application
 #### View > Show Streaming Status
 Toggles visibility of the streaming status panel
 
+#### View > [Preferences](Preferences_V0.4.0)
+Opens the preferences dialog
+
 #### Screen Capture
 Creates a screen shot picture and stores the image in your Screen Captures folder.  Use the 
 Logs and Recordings menu item to open a file explorer and browse to the Screen Captures folder.
