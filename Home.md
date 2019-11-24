@@ -44,6 +44,7 @@ This application uses some of the fantastic components available from [JIDE Soft
   * [Passport](Passport_V0.3.0) - FM demodulator and Passport trunked radio signaling decoder.
   * [P-25 Phase 1 C4FM](APCO25_V0.3.0) - FM demodulator with P25 message decoder and automatic trunked channel following.
   * [P-25 Phase 1 LSM](APCO25_V0.3.0) - Quadrature demodulator with P25 message decoder and automatic trunked channel following.
+  * [P-25 Phase 2](APCO25_V0.3.0) - Phase 2 traffic channels.
   * [Tait 1200](Tait1200_V0.3.0) - decodes Tait CCDI protocol GPS location bursts.
 
 Note: nomitive use of protocol names are for identification. Registered trademarks are the property of their respective owners.
