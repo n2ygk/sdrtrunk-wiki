@@ -1,4 +1,10 @@
-**Version:** 0.3.x
+## Setup Linux - sdrtrunk Version: 0.4.x
+
+1. Download the latest release for the Linux operating system from https://github.com/DSheirer/sdrtrunk/releases
+1. Use a zip utility such as 7-zip to unzip the release
+1. Run the script: **/bin/sdr-trunk**
+
+## Setup Linux - sdrtrunk Version: 0.3.x
 
 1. Install Java JRE version 8 or newer from http://www.oracle.com/java.  Note: if you are using airspy or hackrf, your computer should have 8GB or more of memory and you should use the 64-bit (x64) version of the java JRE.
 
