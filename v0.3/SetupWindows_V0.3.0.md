@@ -1,4 +1,10 @@
-**Version:** 0.3.x
+## Setup Windows - sdrtrunk Version: 0.4.x
+
+1. Download the latest release for the Windows operating system from https://github.com/DSheirer/sdrtrunk/releases
+1. Use a zip utility such as 7-zip to unzip the release
+1. Run the script: **/bin/sdr-trunk**
+
+## Setup Windows - sdrtrunk Version: 0.3.x
 
 1. Install Java JRE version 8 or newer from http://www.oracle.com/java.  Note: if you are using the airspy or hackrf tuners, your computer should have 8GB of memory or more and use the 64-bit (x64) version of the java JRE.
 
