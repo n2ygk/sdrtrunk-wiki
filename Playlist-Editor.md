@@ -11,6 +11,7 @@ The playlist editor is made up of the following components:
 
 \*\*Radio Reference access requires a premium subscription
 
+![Playlist Editor](images/playlists_editor.png)
 ## Playlists Tab
 The playlist tab allows you to manage your playlists.  Only one playlist can be active (selected) at any time. A default playlist (**default.xml**) is automatically created for you when you use the software for the first time.
 
