@@ -1,13 +1,15 @@
 # Playlist Editor
 
-Playlists are an essential part of sdrtrunk.  All of the decoding, channel selection, streaming, aliasing of talkgroups and radio identifiers, etc is controlled by playlists.  The playlist editor gives you access to each of these pieces and includes fully integrated access to the world-wide database of radio network information at radioreference.com (when you have paid premium subscription).
+Playlists are an essential part of sdrtrunk.  All of the decoding, channel selection, streaming, aliasing of talkgroups and radio identifiers, etc is controlled by playlists.  The playlist editor gives you access to each of these pieces and includes fully integrated access to the world-wide database of radio network information at radioreference.com\*\*.
 
 The playlist editor is made up of the following components:
 * **Playlists** - manage all of your playlists and select the current playlist
 * **Channels** - create channel and decoder configurations and start/stop decoding
 * **Aliases** - create aliases and names for a variety of identifiers like talkgroups and radio IDs
 * **Streaming** - manage audio streaming and assign aliases to streaming channels
-* **Radio Reference** - online radio system database for easy downloading radio systems and talkgroups
+* **Radio Reference\*\*** - online radio system database for easy downloading radio systems and talkgroups
+
+\*\*Radio Reference access requires a premium subscription
 
 ## Playlists Tab
 The playlist tab allows you to manage your playlists.  Only one playlist can be active (selected) at any time. A default playlist (**default.xml**) is automatically created for you when you use the software for the first time.
