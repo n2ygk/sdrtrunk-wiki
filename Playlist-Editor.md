@@ -1,5 +1,7 @@
 # Playlist Editor
 
+Description ....
+
 ## Playlist Tab
 The playlist tab allows you to manage your playlists.  Only one playlist can be active (selected) at any time. A default playlist (**default.xml**) is automatically created for you when you use the software for the first time.
 
