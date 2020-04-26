@@ -1,5 +1,3 @@
-# Playlist Editor
-
 Playlists are an essential part of sdrtrunk.  All of the decoding, channel selection, streaming, aliasing of talkgroups and radio identifiers, etc is controlled by playlists.  The playlist editor gives you access to each of these pieces and includes fully integrated access to the world-wide database of radio network information at radioreference.com\*\*.
 
 The playlist editor provides the following components:
