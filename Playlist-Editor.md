@@ -161,11 +161,11 @@ Ths is ony available for certain decoders (P25)
 
 ## Aliases
 There are three ways to view and edit aliases:
-* **View By: Alias** - view aliases in an alias list and edit individual aliases.
-* **View By: Identifier** - view each of the identifiers and aliases, sorted by identifier, for an alias list.  This
+* **[View By: Alias](Playlist-Editor#view-by-alias-editor)** - view aliases in an alias list and edit individual aliases.
+* **[View By: Identifier](Playlist-Editor#view-by-identifier-editor)** - view each of the identifiers and aliases, sorted by identifier, for an alias list.  This
 view allows you to look at aliases from an identifier perspective so that you can see which identifiers (e.g. talkgroups)
 are mapped to each alias.
-* **View By: Record** - quick editor to turn on/off recording for aliases in an alias list.
+* **[View By: Record](Playlist-Editor#view-by-record-editor)** - quick editor to turn on/off recording for aliases in an alias list.
 
 ### View By Alias Editor
 This editor provides a list of aliases in an alias list and allows you to select identifiers, control audio recording
