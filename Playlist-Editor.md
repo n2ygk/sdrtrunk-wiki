@@ -20,13 +20,13 @@ The playlist table provides a list of playlist files available to sdrtrunk.  The
 * **Select** - makes the selected playlist the active playlist.  This will unload the current playlist and load the selected playlist.  Any actively decoding channels will be stopped.  All channels, aliases and stream configurations from the current playlist will be removed and the channels, aliases and stream configurations for the selected playlist will be loaded.
 * **New** - creates a new empty playlist.
 * **Add** - adds a playlist to the editor.  Use this button to add other playlists to the editor that are in different folders than the sdrtrunk playlist folder.
-* **Remove** - removes the currently selected playlist from sdrtrunk.  Does NOT delete the file.
-* **Clone** - creates a comlete copy of the currently selected playlist.
+* **Remove** - removes the currently selected playlist from sdrtrunk.  This does NOT delete the file.
+* **Clone** - creates a complete copy of the currently selected playlist.
 * **Delete** - removes the currently selected playlist from sdrtrunk AND deletes the file from the file system.
 
 ## Channels
 The channels tab lists the channel configurations for the currently selected playlist.  A channel configuration has
-all of the details needed to setup a decoder for a channel to include logging and some recording settings.  
+the details needed to set up a decoder for a channel to include logging and some recording settings.  
 
 ![Channel Editor](images/channel_editor.png)
 
@@ -310,7 +310,7 @@ top of the tab is a table of stream configurations and buttons for creating or d
 * **Delete** - deletes the selected streaming configuration.
 
 **NOTE**: use the **Radio Reference** tab to login to radioreference.com before you attempt to create any Broadcastify
-streams.
+feeds.
 
 ![Streaming Configuration Editor](images/streaming_configuration.png)
 
@@ -325,19 +325,70 @@ The editor contains various additional fields required for each of the audio str
 
 
 ### Streaming - Aliases Editor
-The aliases tab provides easy control over selecting aliases for an audio stream.
+The aliases tab provides easy control over selecting aliases for an audio stream.  Aliases in the **Available** list are 
+available to add to the stream.  Aliases listed in the **Selected** list are the aliases that are currently selected for
+the stream.  Use the left/right arrow buttons to select aliases to stream or to remove aliases that are currently
+selected for streaming.
 
 ![Streaming Configuration Editor](images/streaming_alias_selection.png)
 
 * **Search** - search for aliases by alias list, group, or name.  When you type characters in the search box, both 
 the available and selected lists are filtered to aliases that match your search text.
-* **Availabe** - aliases available for streaming
+* **Available** - aliases available for streaming
 * **Selected** - aliases that will be streamed
 * **Arrow Buttons** - select alias(es) in either list and use the arrow buttons to move to the other list.  Use the 
 Shift or Control keys in combination with mouse clicks to select multiple aliases.
 
 ## Radio Reference
-Work in progress ...
+The radio reference tab provides access to radio system and talkgroup details contained in the 
+[RadioReference.com](https://www.radioreference.com/premium/) online database.  
+
+**Note:** access to this database requires a premium subscription.
+
+### Radio Reference - Login
+The Login button is located in the upper-right corner of the playlist editor tab.  Click the button to open the login 
+window.
+
+![Radio Reference Login](images/radio_reference_login.png)
+
+* **User Name** - user name for RadioReference
+* **Password** - password for RadioReference  
+* **Show** - shows the password or displays asterisks to hide the password (*)
+* **Store Login Credentials** - stores your username and password on your computer and will automatically login to 
+RadioReference each time you launch the software.  
+**WARNING** if you choose this option, your login credentials will be
+stored on your computer to your local user profile using clear plaintext without any protection or encryption.
+* **Test Connection** - tests to determine if the user name and password are valid and the premium account subscription
+is not expired.
+* **Cancel** - closes the login dialog without making any changes
+* **OK** = closes the login dialog and attempts to login with the user name and password.
+
+### Radio Reference - Overview
+The top of the radio reference editor tab provides user account information, a login button, and three dropdown boxes
+allowing you to select **Country**, **State** and **County** filters.  As you change each filter, the other filters 
+will reset to display new options.  For example, if you change the Country filter, the State filter will update with
+the states for that country and the County filter will be cleared until you select a new state.
+
+The radio reference editor stores the filters and systems or agencies that you last access so that these same values
+are selected and restored each time you launch the playlist editor.
+
+Below the Country, State and County filters are tabs to display the search results for trunked systems and agencies at 
+each of the National, State and County levels.
+
+![Radio Reference Overview](images/radio_reference_overview.png)
+
+### Radio Reference - Trunked System: State and County
+These trunked system tabs show the search results for the currently selected Country, State and County filters. The
+**System** drop-down box allows you to select from each of the trunked radio systems.
+
+### Radio Reference - Trunked System: System View
+
+
+
+TODO: put a screen shot of the talkgroup view here
+### Radio Reference - Trunked System: Talkgroup View
+
+
 
 # Access The Playlist Editor
 Work in progress ...
