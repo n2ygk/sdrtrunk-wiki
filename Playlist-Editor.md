@@ -3,6 +3,7 @@
 * [Playlists](#playlists)
 * [Channels](#channels)
 * [Aliases](#aliases)
+  * [Alias Lists](#alias-list)
 * [Streaming](#streaming)
 * [Radio Reference](#radio-reference)
   * [Agencies](#radio-reference---nationalstatecounty-agencies)
@@ -11,8 +12,9 @@
   * [How To: Setup Channels](#how-to-setup-channels)
   * [How To: Setup Aliases](#how-to-setup-aliases)
   * [How To: Record Audio](#how-to-record-audio)
-  * [How To: Stream Audio](#how-to-stream-audio)
   * [How To: Block Audio](#how-to-block-audio)
+  * [How To: Setup Audio Streaming](#how-to-setup-an-audio-stream)
+  * [How To: Stream Audio with Aliases](#how-to-assign-aliases-to-an-audio-stream)
   * [How To: Import Agencies from Radio Reference](#how-to-import-agencies-from-radio-reference)
   * [How To: Import Trunked Systems from Radio Reference](#how-to-import-trunked-systems-from-radio-reference)
   * [How To: Import Talkgroups from Radio Reference](#how-to-import-talkgroups-from-radio-reference)
@@ -23,20 +25,22 @@ identifiers, etc are controlled by playlists.  The playlist editor gives you acc
 fully integrated access to the world-wide database of radio network information at radioreference.com\*\*.
 
 The playlist editor provides the following components:
-* **[Playlists](Playlist-Editor#playlists)** - manage all of your playlists and select the current playlist
-* **[Channels](Playlist-Editor#channels)** - create channel and decoder configurations and start/stop decoding
-* **[Aliases](Playlist-Editor#aliases)** - create aliases and names for a variety of identifiers like talkgroups and 
+* **[Playlists](#playlists)** - manage all of your playlists and select the current playlist
+* **[Channels](#channels)** - create channel and decoder configurations and start/stop decoding
+* **[Aliases](#aliases)** - create aliases and names for a variety of identifiers like talkgroups and 
 radio IDs
-* **[Streaming](Playlist-Editor#streaming)** - manage audio streaming and assign aliases to streaming channels
-* **[Radio Reference](Playlist-Editor#radio-reference)**\*\* - online radio system database for easy downloading radio 
+  * **[Alias Lists](#alias-list)** - organize your aliases
+* **[Streaming](#streaming)** - manage audio streaming and assign aliases to streaming channels
+* **[Radio Reference](#radio-reference)**\*\* - online radio system database for easy downloading radio 
 systems and talkgroups
 
 \*\*Radio Reference access requires a premium subscription from [radioreference.com](http://radioreference.com/premium)
-
+***
 ![Accessing the Playlist Editor](images/access_playlist_editor.png)
 ## Access The Playlist Editor in sdrtrunk
 * **View Menu** provides a menu option to open the playlist editor
 * **Tabs** also has a quick launch tab that opens the playlist editor
+***
 
 ## Playlists
 The playlist tab provides options for managing your playlists.  Only one playlist can be selected (active) at any 
@@ -59,6 +63,7 @@ folders than the sdrtrunk playlist folder.
 * **Remove** - removes the currently selected playlist from sdrtrunk.  This does NOT delete the file.
 * **Clone** - creates a complete copy of the currently selected playlist.
 * **Delete** - removes the currently selected playlist from sdrtrunk AND deletes the file from the file system.
+***
 
 ## Channels
 The channels tab lists the channel configurations for the currently selected playlist.  A channel configuration has
@@ -85,7 +90,7 @@ have a channel configuration setup and simply need to create another channel wit
 you can use a different frequency.
 * **Delete** - deletes the currently selected channel.  If the channel is currently processing, it prompts you to stop
 the channel.
-
+***
 ### Channel Item Editor
 Below the table of channel configurations is the channel item editor that is used for configuring individual channels.
 Select a channel configuration in the channels table to load it into the channel item editor.
@@ -194,8 +199,29 @@ Ths is ony available for certain decoders (P25)
 * **Traffic Channel Baseband I/Q (.wav)** - same, for traffic channels.
 * **Traffic Channel Demodulated Bitstream (.bits)** - same, for traffic channels.
 * **Traffic Channel MBE Audio COCDE Frames (.mbe)** - same, for traffic channels.
+***
 
 ## Aliases
+Aliases provide a powerful way to assign textual meaning to a variety of numbers and identifiers you encounter in radio 
+communications like talkgroups and radio IDs.  You can assign aliases to multiple sets of identifiers and identifier
+value ranges.  For example, if you want to alias an entire fire station and all of their radios, you can create an 
+alias and add the talkgroup for the fire station and also add each of the individual radio IDs used by the members of
+the fire station.
+
+Aliases can be coupled with responses and actions such as recording, streaming or muting audio for the alias.  Alias
+actions allow you to specify responses that should happen when the alias is active, such as Beep the computer, play
+a sound clip, or run a computer script where your imagination is the only limit to the scope of the response.
+
+### Alias List
+Aliases are organized in sdrtrunk using a concept of alias lists.  An alias list groups a set of aliases and indicates
+that each of those aliases will be used as a set.  When you setup a channel configuration for decoding, you can then
+select the alias list name to use for that channel.  Each of the aliases that belong to the alias list will then be used
+by the decoder channel to assign meaning, responses and actions to identifiers generated during decoding.
+
+You normally create one alias list for each channel configuration in your playlist.  However, if you have several
+channel configurations that are all part of the same system, you can share a common alias list across all of these 
+channels.  Alias lists provide a convenient way to organize your aliases and assign them to your channel configurations.
+
 There are three ways to view and edit aliases:
 * **[View By: Alias](Playlist-Editor#view-by-alias-editor)** - view aliases in an alias list and edit individual aliases.
 * **[View By: Identifier](Playlist-Editor#view-by-identifier-editor)** - view each of the identifiers and aliases, 
@@ -204,6 +230,7 @@ that you can see which identifiers (e.g. talkgroups)
 are mapped to each alias.
 * **[View By: Record](Playlist-Editor#view-by-record-editor)** - quick editor to turn on/off recording for aliases in 
 an alias list.
+***
 
 ### View By Alias Editor
 This editor provides a list of aliases in an alias list and allows you to select identifiers, control audio recording
@@ -318,6 +345,7 @@ Performs the action repeatedly until the user clicks the OK button in the dialog
 
 ##### Test
 Test the action configuration to ensure it operates correctly.
+***
 
 ### View By Identifier Editor
 This editor provides a filtered list of identifiers and alias so that you can see all of the identifiers of each type
@@ -328,6 +356,7 @@ This editor provides a filtered list of identifiers and alias so that you can se
 * **Alias List** - select the alias list to view
 * **Identifier Type** - select the identifier type to view
 * **View Alias** - opens the selected alias in the **View By Alias** editor
+***
 
 ### View By Record Editor
 This editor provides easy management of alias recording.
@@ -339,6 +368,7 @@ This editor provides easy management of alias recording.
 alias name or the alias group in both lists.
 * **Arrow Buttons** - allow you to move aliases between the record and don't record lists.  You can select multiple
 aliases by using the Shift or Control keys in combination with mouse clicks.
+***
 
 ## Streaming
 This tab is for creating audio streaming configurations and selecting aliases for individual audio streams.  At the 
@@ -376,6 +406,7 @@ the available and selected lists are filtered to aliases that match your search 
 * **Selected** - aliases that will be streamed
 * **Arrow Buttons** - select alias(es) in either list and use the arrow buttons to move to the other list.  Use the 
 Shift or Control keys in combination with mouse clicks to select multiple aliases.
+***
 
 ## Radio Reference
 The radio reference tab provides access to radio system and talkgroup details contained in the 
@@ -387,6 +418,7 @@ The radio reference tab provides access to radio system and talkgroup details co
 * [Trunked Radio Systems](#radio-reference---statecounty-trunked-system)
   * [System View](#radio-reference---trunking-system-view)
   * [Talkgroup View](#radio-reference---trunking-talkgroup-view)
+***
   
 ### Radio Reference - Login
 The Login button is located in the upper-right corner of the playlist editor tab.  Click the button to open the login 
@@ -405,6 +437,7 @@ stored on your computer to your local user profile using clear plaintext without
 is not expired.
 * **Cancel** - closes the login dialog without making any changes
 * **OK** = closes the login dialog and attempts to login with the user name and password.
+***
 
 ### Radio Reference - Overview
 The top of the radio reference editor tab provides user account information, a login button, and three dropdown boxes
@@ -419,6 +452,7 @@ Below the Country, State and County filters are tabs to display the search resul
 each of the National, State and County levels.
 
 ![Radio Reference Overview](images/radio_reference_overview.png)
+***
 
 ### Radio Reference - State/County Trunked System
 These trunked system tabs show the search results for the currently selected Country, State and/or County filters. 
@@ -429,6 +463,7 @@ sdrtrunk doesn't support the protocol (**red** circle-slash).  When you select a
 the editor updates the **System View** and **Talkgroup View** tabs with site channel and talkgroup details for the system.
 
 ![Radio Reference System Selection Combo Box](images/radio_reference_supported_systems.png)
+***
 
 ### Radio Reference - Trunking System View
 This view provides details about the sites, channels and frequencies for the trunked radio system.  It allows you to 
@@ -470,7 +505,7 @@ that you want to associate with this channel
 * **Create Channel Configuration** creates a channel configuration and adds it to the Channels tab.
 * **Go to Channel Editor** when checked, automatically takes you to the Channels tab when you click the create button, 
 with your new channel configuration selected in the channel editor.
-
+***
 ![Radio Reference Trunking Talkgroup View](images/radio_reference_talkgroup_view.png)
 ### Radio Reference - Trunking Talkgroup View
 The talkgroup view provides a list of talkgroups and descriptions for the selected trunked system.  Use this view to
@@ -479,13 +514,13 @@ left side provides a list of talkgroup values and descriptions.  The **Alias** c
 that you currently have aliased in your playlist for the currently selected **Alias List**.  If the alias column value 
 is empty for any talkgroup, you can use the editor to the right to alias that talkgorup value.
 
-* **Import To Alias** select an alias list where you want the new aliases created.  
+* **Import To Alias List** select an alias list where you want the new aliases created.  
 **NOTE:** an alias list name is required and it must match the alias list name that you specify in any channel 
-configuration so that the aliases will be used for any calls for the channel.  Each playlist can have multiple alias
-lists and you normally create one alias list for each channel configuration.
+configuration so that the aliases will be used for any calls for the channel. 
 * **New Alias List** creates a new alias list and selects it in the **Import To Alias** box.
 * **Search*** type any text here to quickly filter the talkgroup table.  The search text will filter against the 
 talkgroup value, description and alias columns.
+***
 
 #### Talkgroup Alias Editor
 * **Set Encrypted Talkgroups To Muted** automatically sets the alias to **Do Not Monitor** when the talkgroup is 
@@ -514,6 +549,7 @@ alias for the same talkgroup value within the current alias list.
 
 * **View/Edit Alias** takes you to the aliases tab and loads the currently selected alias into the alias editor so 
 that you can configure additional alias options.
+***
 
 ![Radio Reference Agency View](images/radio_reference_agencies.png)
 ### Radio Reference - National/State/County Agencies
@@ -549,15 +585,76 @@ enable options for creating sdrtrunk channel configurations for those frequencie
   * **View Channel Editor After Create** when checked takes you to the channel editor and selects the channel 
   configuration so that you can specify additional channel options after you click the **Create** button.
   * **Create**
+***
 
 ## Quick Setup Tips
 
 ### How To: Setup Channels
+This setup guide describes how to setup a channel configuration for decoding a radio channel in sdrtrunk.  In order to
+use this setup guide, you must have at least one tuner setup correctly in sdrtrunk and know the frequency and radio 
+protocol used for the channel.
+1. Click the **Channels** tab
+1. Click the **New** button and select a radio protocol from the list
+1. The channel is created, added to the bottom of the list, and selected in the channel editor at the bottom
+1. Enter a **Name** for the channel.
+1. In the **Source** section, enter a **Frequency** value in megahertz.  (e.g. 450.325)
+1. In the **Decoder** section, change options as needed for the selected protocol
+1. Click the **Save** button.
+1. Click the **Play** button to start the decoder.
+1. Optional: select an alias list if you want to use aliases with this channel.
+![How To Setup Channels](images/how_to_setup_channel.png)
+***
+
 ### How To: Setup Aliases
+This setup guide describes how to create an alias list and create an alias with a talkgroup identifier.  You can select
+the alias list that you create with this guide in any channel configuration to attach this alias to the channel.
+1. Click the **Aliases** tab
+1. Click the View By: **Alias** tab
+1. Select an **Alias List** or create a **New Alias List**
+1. Click the **New** button
+1. A new alias is created and selected in the alias editor below.
+1. Enter an **Alias** value
+1. Optional: enter a **Group** for the alias
+1. In the **Identifiers** section, click the **Add Identifier** button and select an identifier that you wish to 
+assign to the alias (e.g. APCO25 Talkgroup)
+1. A new alias identifier will be added to the list in the **Identifiers** section and an editor will appear.
+1. Enter a value for the identifier.
+1. Click the **Save** button
+![How To Setup Aliases](images/how_to_setup_alias.png)
+***
+
 ### How To: Record Audio
-### How To: Stream Audio
+This setup guide describes how to turn on recording for an alias.  In order to use this setup guide, you must [create an
+alias list](#how-to-setup-aliases) and you must [create a channel configuration](#how-to-setup-channels) and the alias 
+list must be attached in the channel configuration.
+
+**Option 1**: Use the **View By: Alias** Editor
+1. Click the **Aliases** tab
+1. Click the View By: **Alias** tab
+1. Select an **Alias List** that contains the alias you want to record
+1. Select the alias in the list of aliases that appears.
+1. In the editor below, click the **Record** switch to on or off.
+1. Click the **Save** button.
+![How To Record Audio - Option 1](images/how_to_record_option_1.png)
+
+**Option 2**: Use the **View By: Record** Editor
+
+***
+
+### How To: Setup an Audio Stream
+***
+
+### How To: Assign Aliases to an Audio Stream
+***
+
 ### How To: Block Audio
+***
 ### How To: Import Agencies from Radio Reference
+
+***
 ### How To: Import Trunked Systems from Radio Reference
+***
+
 ### How To: Import Talkgroups from Radio Reference
+***
 
