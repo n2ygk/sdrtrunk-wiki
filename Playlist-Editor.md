@@ -8,7 +8,7 @@
 * [Radio Reference](#radio-reference)
   * [Agencies](#radio-reference---nationalstatecounty-agencies)
   * [Trunked Systems](#radio-reference---statecounty-trunked-system)
-* [Quick Setup / How-To Guides](#quick-setup-tips)
+* [Quick Setup / How-To Guides](#quick-setup-guides)
   * [How To: Setup Channels](#how-to-setup-channels)
   * [How To: Setup Aliases](#how-to-setup-aliases)
   * [How To: Record Audio](#how-to-record-audio)
@@ -233,8 +233,8 @@ an alias list.
 ***
 
 ### View By Alias Editor
-This editor provides a list of aliases in an alias list and allows you to select identifiers, control audio recording
-and listening priority and assign actions to the alias.
+This editor provides a list of aliases in an alias list and allows you to select identifiers, control audio recording,
+streaming, and listening priority and assign actions to the alias.
 
 ![View By Alias Editor](images/view_by_alias_editor.png)
 
@@ -587,7 +587,7 @@ enable options for creating sdrtrunk channel configurations for those frequencie
   * **Create**
 ***
 
-## Quick Setup Tips
+## Quick Setup Guides
 
 ### How To: Setup Channels
 This setup guide describes how to setup a channel configuration for decoding a radio channel in sdrtrunk.  In order to
