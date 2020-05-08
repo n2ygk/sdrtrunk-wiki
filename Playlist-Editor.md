@@ -1,25 +1,61 @@
-Playlists are an essential part of sdrtrunk.  All of the decoding, channel selection, streaming, aliasing of talkgroups and radio identifiers, etc is controlled by playlists.  The playlist editor gives you access to each of these pieces and includes fully integrated access to the world-wide database of radio network information at radioreference.com\*\*.
+## Table of Contents
+* [Accessing the Playlist Editor](#access-the-playlist-editor)
+* [Playlists](#playlists)
+* [Channels](#channels)
+* [Aliases](#aliases)
+* [Streaming](#streaming)
+* [Radio Reference](#radio-reference)
+  * [Agencies](#radio-reference---nationalstatecounty-agencies)
+  * [Trunked Systems](#radio-reference---statecounty-trunked-system)
+* [Quick Setup / How-To Guides](#quick-setup-tips)
+  * [How To: Setup Channels](#how-to-setup-channels)
+  * [How To: Setup Aliases](#how-to-setup-aliases)
+  * [How To: Record Audio](#how-to-record-audio)
+  * [How To: Stream Audio](#how-to-stream-audio)
+  * [How To: Block Audio](#how-to-block-audio)
+  * [How To: Import Agencies from Radio Reference](#how-to-import-agencies-from-radio-reference)
+  * [How To: Import Trunked Systems from Radio Reference](#how-to-import-trunked-systems-from-radio-reference)
+  * [How To: Import Talkgroups from Radio Reference](#how-to-import-talkgroups-from-radio-reference)
+  
+## Overview
+Playlists are an essential part of sdrtrunk.  Decoding, channel selection, streaming, aliasing of talkgroups and radio 
+identifiers, etc are controlled by playlists.  The playlist editor gives you access to each of these pieces and includes 
+fully integrated access to the world-wide database of radio network information at radioreference.com\*\*.
 
 The playlist editor provides the following components:
 * **[Playlists](Playlist-Editor#playlists)** - manage all of your playlists and select the current playlist
 * **[Channels](Playlist-Editor#channels)** - create channel and decoder configurations and start/stop decoding
-* **[Aliases](Playlist-Editor#aliases)** - create aliases and names for a variety of identifiers like talkgroups and radio IDs
+* **[Aliases](Playlist-Editor#aliases)** - create aliases and names for a variety of identifiers like talkgroups and 
+radio IDs
 * **[Streaming](Playlist-Editor#streaming)** - manage audio streaming and assign aliases to streaming channels
-* **[Radio Reference](Playlist-Editor#radio-reference)**\*\* - online radio system database for easy downloading radio systems and talkgroups
+* **[Radio Reference](Playlist-Editor#radio-reference)**\*\* - online radio system database for easy downloading radio 
+systems and talkgroups
 
-\*\*Radio Reference access requires a premium subscription
+\*\*Radio Reference access requires a premium subscription from [radioreference.com](http://radioreference.com/premium)
+
+![Accessing the Playlist Editor](images/access_playlist_editor.png)
+## Access The Playlist Editor in sdrtrunk
+* **View Menu** provides a menu option to open the playlist editor
+* **Tabs** also has a quick launch tab that opens the playlist editor
 
 ## Playlists
-The playlist tab allows you to manage your playlists.  Only one playlist can be active (selected) at any time. A default playlist (**default.xml**) is automatically created for you when you use the software for the first time.
+The playlist tab provides options for managing your playlists.  Only one playlist can be selected (active) at any 
+time. A default playlist (**default.xml**) is automatically created for you when you use the software for the first 
+time.
 
-The playlist table provides a list of playlist files available to sdrtrunk.  The **Selected** column indicates the currently active/selected playlist with a green checkmark.
+The playlist table provides a list of playlist files available to sdrtrunk.  The **Selected** column indicates the 
+currently active/selected playlist with a green checkmark.
 
 ![Playlist Editor](images/playlists_editor.png)
 
 ### Playlist Manager Buttons
-* **Select** - makes the selected playlist the active playlist.  This will unload the current playlist and load the selected playlist.  Any actively decoding channels will be stopped.  All channels, aliases and stream configurations from the current playlist will be removed and the channels, aliases and stream configurations for the selected playlist will be loaded.
+* **Select** - makes the selected playlist the active playlist.  This will unload the current playlist and load the 
+selected playlist.  Any actively decoding channels will be stopped.  All channels, aliases and stream configurations 
+from the current playlist will be removed and the channels, aliases and stream configurations for the selected playlist 
+will be loaded.
 * **New** - creates a new empty playlist.
-* **Add** - adds a playlist to the editor.  Use this button to add other playlists to the editor that are in different folders than the sdrtrunk playlist folder.
+* **Add** - adds a playlist to the editor.  Use this button to add other playlists to the editor that are in different 
+folders than the sdrtrunk playlist folder.
 * **Remove** - removes the currently selected playlist from sdrtrunk.  This does NOT delete the file.
 * **Clone** - creates a complete copy of the currently selected playlist.
 * **Delete** - removes the currently selected playlist from sdrtrunk AND deletes the file from the file system.
@@ -98,19 +134,19 @@ the site, if your computer has enough processing power to decode all of those ch
 systems.  Use LSM for trunked P25 systems that are configured for simulcast.
 
 ##### APCO25 Phase 2 Decoder - Individual Channels
-***Note: all APCO25 Phase 2 systems use an APCO25 Phase 1 control channel***.  Use a Phase 1 decoder for the Phase 2 system
-and sdrtrunk will automatically create the Phase 2 traffic channels for you.  However, if you want to listen to the 
-Phase 2 channels individually, you must supply the descramble settings for the channel.
+***Note: all APCO25 Phase 2 systems use an APCO25 Phase 1 control channel***.  Use a Phase 1 decoder for the Phase 2 
+system and sdrtrunk will automatically create the Phase 2 traffic channels for you.  However, if you want to listen to 
+the Phase 2 channels individually, you must supply the descramble settings for the channel.
 * **WACN** - wide area communications network (WACN) for the P25 network
 * **System** - system identifier
 * **NAC** - network access code
 
 ##### LTR Decoder
-* **Direction** - choose which side of the repeater you want to monitor, either the input side (mobile radio to repeater)
+* **Direction** - choose which side of the repeater you want to monitor, either the input side (mobile radio to repeater),
 or the output side (repeater to mobile radio).  ISW = input, OSW = output
 
 ##### LTR-Net Decoder
-* **Direction** - choose which side of the repeater you want to monitor, either the input side (mobile radio to repeater)
+* **Direction** - choose which side of the repeater you want to monitor, either the input side (mobile radio to repeater),
 or the output side (repeater to mobile radio).  ISW = input, OSW = output
 
 ##### MPT-1327 Decoder
@@ -162,10 +198,12 @@ Ths is ony available for certain decoders (P25)
 ## Aliases
 There are three ways to view and edit aliases:
 * **[View By: Alias](Playlist-Editor#view-by-alias-editor)** - view aliases in an alias list and edit individual aliases.
-* **[View By: Identifier](Playlist-Editor#view-by-identifier-editor)** - view each of the identifiers and aliases, sorted by identifier, for an alias list.  This
-view allows you to look at aliases from an identifier perspective so that you can see which identifiers (e.g. talkgroups)
+* **[View By: Identifier](Playlist-Editor#view-by-identifier-editor)** - view each of the identifiers and aliases, 
+sorted by identifier, for an alias list.  This view allows you to look at aliases from an identifier perspective so 
+that you can see which identifiers (e.g. talkgroups)
 are mapped to each alias.
-* **[View By: Record](Playlist-Editor#view-by-record-editor)** - quick editor to turn on/off recording for aliases in an alias list.
+* **[View By: Record](Playlist-Editor#view-by-record-editor)** - quick editor to turn on/off recording for aliases in 
+an alias list.
 
 ### View By Alias Editor
 This editor provides a list of aliases in an alias list and allows you to select identifiers, control audio recording
@@ -342,9 +380,14 @@ Shift or Control keys in combination with mouse clicks to select multiple aliase
 ## Radio Reference
 The radio reference tab provides access to radio system and talkgroup details contained in the 
 [RadioReference.com](https://www.radioreference.com/premium/) online database.  
-
 **Note:** access to this database requires a premium subscription.
 
+* [Login](#radio-reference---login)
+* [Overview](#radio-reference---overview)
+* [Trunked Radio Systems](#radio-reference---statecounty-trunked-system)
+  * [System View](#radio-reference---trunking-system-view)
+  * [Talkgroup View](#radio-reference---trunking-talkgroup-view)
+  
 ### Radio Reference - Login
 The Login button is located in the upper-right corner of the playlist editor tab.  Click the button to open the login 
 window.
@@ -367,7 +410,7 @@ is not expired.
 The top of the radio reference editor tab provides user account information, a login button, and three dropdown boxes
 allowing you to select **Country**, **State** and **County** filters.  As you change each filter, the other filters 
 will reset to display new options.  For example, if you change the Country filter, the State filter will update with
-the states for that country and the County filter will be cleared until you select a new state.
+the states for that country, and the County filter will be cleared until you select a new state.
 
 The radio reference editor stores the filters and systems or agencies that you last access so that these same values
 are selected and restored each time you launch the playlist editor.
@@ -377,22 +420,144 @@ each of the National, State and County levels.
 
 ![Radio Reference Overview](images/radio_reference_overview.png)
 
-### Radio Reference - Trunked System: State and County
-These trunked system tabs show the search results for the currently selected Country, State and County filters. The
-**System** drop-down box allows you to select from each of the trunked radio systems.
+### Radio Reference - State/County Trunked System
+These trunked system tabs show the search results for the currently selected Country, State and/or County filters. 
 
-### Radio Reference - Trunked System: System View
+* **System** contains the trunked radio system search results.  The system drop-down box (see graphic below) lists each 
+system and protocol and uses icons to indicate if sdrtrunk supports the system protocol (**green** checkbox) or if 
+sdrtrunk doesn't support the protocol (**red** circle-slash).  When you select a trunked radio system from the list, 
+the editor updates the **System View** and **Talkgroup View** tabs with site channel and talkgroup details for the system.
 
+![Radio Reference System Selection Combo Box](images/radio_reference_supported_systems.png)
 
+### Radio Reference - Trunking System View
+This view provides details about the sites, channels and frequencies for the trunked radio system.  It allows you to 
+easily create sdrtrunk channel configuration(s) to monitor each site and channel.
 
-TODO: put a screen shot of the talkgroup view here
-### Radio Reference - Trunked System: Talkgroup View
+* **Sites Table** shows a list of sites for the selected trunked system.  Select one of the rows to see the site 
+details and channel frequencies.
 
+![Radio Reference Site Selection List](images/radio_reference_site_list.png)
 
+* **Channel Configuration Editor** allows you to select one or more site channels/frequencies and create an sdrtrunk
+channel configuration that you will use to decode the site.
 
-# Access The Playlist Editor
-Work in progress ...
+![Radio Reference Channel Configuration Editor](images/radio_reference_channel_editor.png)
 
-# Quick Setup Tips
-Work in progress ...
+The left side of the channel configuration editor contains a table of channel frequencies and channel 
+types.  **Control** indicates a control channel and **Alternate** indicates an alternate control channel.  
+
+The editor on the right side has options you select to create a channel configuration for use in sdrtrunk.  The editor
+automatically selects the optimal combination of **Frequencies** and **Configurations** for the system
+that you've selected.  However, you may have to change these values depending on the system.
+
+* **Frequencies** choose from types of channels to select from the frequencies table where:
+  * **Control** selects only the control channel
+  * **Control & Alternates** selects both the control channel and each of the alternate control channels
+  * **Selected** uses the channel(s) that you select from the table.  Use shift or ctrl key in combination with mouse 
+  clicks to select multiple channels
+  * **All** selects all channels listed in the table
+* **Configurations** specifies how many channel configurations to create:
+  * **Single** combines all frequencies into a single channel configuration
+  * **For Each Frequency** creates a channel configuration for each frequency
+* **System** for the channel configuration.  Use the pre-filled value, or type your own.
+* **Site** for the channel configuration.  Use the pre-filled value, or type your own.
+* **Name** for the channel configuration.  Use the pre-filled value, or type your own.
+* **Alias List** to use with this channel.  
+**NOTE:** an alias list name is required and it must match the alias list name that you select for each of the aliases 
+that you want to associate with this channel
+* **New Alias List** button to create a new alias list to use with this channel.
+* **Create Channel Configuration** creates a channel configuration and adds it to the Channels tab.
+* **Go to Channel Editor** when checked, automatically takes you to the Channels tab when you click the create button, 
+with your new channel configuration selected in the channel editor.
+
+![Radio Reference Trunking Talkgroup View](images/radio_reference_talkgroup_view.png)
+### Radio Reference - Trunking Talkgroup View
+The talkgroup view provides a list of talkgroups and descriptions for the selected trunked system.  Use this view to
+create aliases for some or all of the known talkgroup values that are available on radio reference.  The table on the
+left side provides a list of talkgroup values and descriptions.  The **Alias** column highlights the talkgroup values
+that you currently have aliased in your playlist for the currently selected **Alias List**.  If the alias column value 
+is empty for any talkgroup, you can use the editor to the right to alias that talkgorup value.
+
+* **Import To Alias** select an alias list where you want the new aliases created.  
+**NOTE:** an alias list name is required and it must match the alias list name that you specify in any channel 
+configuration so that the aliases will be used for any calls for the channel.  Each playlist can have multiple alias
+lists and you normally create one alias list for each channel configuration.
+* **New Alias List** creates a new alias list and selects it in the **Import To Alias** box.
+* **Search*** type any text here to quickly filter the talkgroup table.  The search text will filter against the 
+talkgroup value, description and alias columns.
+
+#### Talkgroup Alias Editor
+* **Set Encrypted Talkgroups To Muted** automatically sets the alias to **Do Not Monitor** when the talkgroup is 
+designated as an encrypted talkgroup.
+* **Import All Talkgroups** creates aliases for all talkgroup values listed in the table that don't currently have an 
+alias in the selected alias list (the **EASY** button)
+
+![Radio Reference Trunking Talkgroup View](images/radio_reference_talkgroup_editor.png)
+
+#### Radio Reference Talkgroup Details
+* **Talkgroup** lists the talkgroup value
+* **Alpha Tag** specified by radio reference.  The alias name is pre-filled with this same value.
+* **Description** of the talkgroup
+
+If the currently selected talkgroup does not contain an alias, the **Create Talkgroup Alias** editor appears.  Otherwise,
+the **View/Edit Alias** button appears.
+
+#### Create Talkgroup Alias
+* **Name** to use for the alias.
+* **Group** classifies the alias into a group to support quick searching in the **Aliases** tab
+* **Create Talkgroup Alias** creates an alias for the talkgroup.
+
+#### View/Edit Alias
+If the currently selected talkgroup is already aliased, you can view or edit this alias, but you cannot create another
+alias for the same talkgroup value within the current alias list.
+
+* **View/Edit Alias** takes you to the aliases tab and loads the currently selected alias into the alias editor so 
+that you can configure additional alias options.
+
+![Radio Reference Agency View](images/radio_reference_agencies.png)
+### Radio Reference - National/State/County Agencies
+
+These agency tabs show the search results for the currently selected Country, State and/or County filters. The agency 
+view allows you to select from a variety of non-trunked radio channels used by various agencies at the National, State 
+and County level.
+
+#### Radio Reference - Agency List
+At the top of the agency view is a list of agencies.  Select an agency to view frequency details for the agency and to
+enable options for creating sdrtrunk channel configurations for those frequencies.
+
+#### Radio Reference - Agency Details
+* **Category** filters the list of agency channels below.
+* **Sub-Category** filters the list of agency channels below.
+* **Agency Channel Table** shows the filtered list of agency channels
+  * **Description** of the agency channel
+  * **Frequency** for the channel
+  * **Mode** describes the modulation or protocol used for the channel
+  
+#### Radio Reference - Agency Channel Editor
+* **Radio Reference Details** section
+  * **Alpha Tag** is an abbreviated label for the channel
+  * **Tone** details any CTCSS or CDCSS connect tone required to access the channel
+  * **Mode** describes the modulation or protocol used for the channel
+  * **Frequency** for the channel
+* **Create Channel Configuration** section to create an sdrtrunk channel configuration
+  * **System** label to use for the channel configuration.  Defaults to the channel **Category**
+  * **Site** label to use for the channel configuration. Defaults to the channel **Sub-Category**
+  * **Name** label to use for the channel configuration. Defaults to the channel **Alpha Tag**
+  * **Decoder** that will be used by sdrtrunk for the channel configuration.  This value is automatically selected 
+  based on the **Mode** indicated for the agency channel
+  * **View Channel Editor After Create** when checked takes you to the channel editor and selects the channel 
+  configuration so that you can specify additional channel options after you click the **Create** button.
+  * **Create**
+
+## Quick Setup Tips
+
+### How To: Setup Channels
+### How To: Setup Aliases
+### How To: Record Audio
+### How To: Stream Audio
+### How To: Block Audio
+### How To: Import Agencies from Radio Reference
+### How To: Import Trunked Systems from Radio Reference
+### How To: Import Talkgroups from Radio Reference
 
