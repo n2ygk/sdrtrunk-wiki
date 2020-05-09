@@ -9,6 +9,7 @@
   * [Agencies](#radio-reference---nationalstatecounty-agencies)
   * [Trunked Systems](#radio-reference---statecounty-trunked-system)
 * [Quick Setup / How-To Guides](#quick-setup-guides)
+  * [How To: Create a Playlist Copy](#how-to-create-a-copy-of-your-playlist)
   * [How To: Setup Channels](#how-to-setup-channels)
   * [How To: Setup Aliases](#how-to-setup-aliases)
   * [How To: Record Audio](#how-to-record-audio)
@@ -592,6 +593,7 @@ enable options for creating sdrtrunk channel configurations for those frequencie
 ***
 
 ## Quick Setup / How To Guides
+* [How To: Create a Playlist Copy](#how-to-create-a-copy-of-your-playlist)
 * [How To: Setup Channels](#how-to-setup-channels)
 * [How To: Setup Aliases](#how-to-setup-aliases)
 * [How To: Record Audio](#how-to-record-audio)
@@ -605,6 +607,18 @@ enable options for creating sdrtrunk channel configurations for those frequencie
 * [How To: Import Agencies from Radio Reference](#how-to-import-agencies-from-radio-reference)
 * [How To: Import Trunked Systems from Radio Reference](#how-to-import-trunked-systems-from-radio-reference)
 * [How To: Import Talkgroups from Radio Reference](#how-to-import-talkgroups-from-radio-reference)
+
+### How To: Create a Copy of Your Playlist
+This setup guide describes how to create a copy of your (default) playlist and use the copy playlist.
+
+1. Click on the **Playlist** tab.
+2. Select the playlist that you want to copy.
+3. Click the **Clone** button.
+4. Enter a new filename for the playlist copy.
+5. Select the new copy playlist.
+6. Click the **Select** button to start using the new playlist copy.
+![How To Create a Playlist Copy](images/how_to_create_playlist_copy.png)
+***
 
 ### How To: Setup Channels
 This setup guide describes how to setup a channel configuration for decoding a radio channel in sdrtrunk.  In order to
