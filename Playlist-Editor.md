@@ -12,7 +12,7 @@
   * [How To: Setup Channels](#how-to-setup-channels)
   * [How To: Setup Aliases](#how-to-setup-aliases)
   * [How To: Record Audio](#how-to-record-audio)
-  * [How To: Block Audio](#how-to-block-audio)
+  * [How To: Block (Mute) Audio](#how-to-blockmute-audio)
   * [How To: Setup Audio Streaming](#how-to-setup-an-audio-stream)
   * [How To: Stream Audio with Aliases](#how-to-assign-aliases-to-an-audio-stream)
   * [How To: Import Agencies from Radio Reference](#how-to-import-agencies-from-radio-reference)
@@ -588,6 +588,15 @@ enable options for creating sdrtrunk channel configurations for those frequencie
 ***
 
 ## Quick Setup Guides
+* [How To: Setup Channels](#how-to-setup-channels)
+* [How To: Setup Aliases](#how-to-setup-aliases)
+* [How To: Record Audio](#how-to-record-audio)
+* [How To: Block (Mute) Audio](#how-to-blockmute-audio)
+* [How To: Setup Audio Streaming](#how-to-setup-an-audio-stream)
+* [How To: Stream Audio with Aliases](#how-to-assign-aliases-to-an-audio-stream)
+* [How To: Import Agencies from Radio Reference](#how-to-import-agencies-from-radio-reference)
+* [How To: Import Trunked Systems from Radio Reference](#how-to-import-trunked-systems-from-radio-reference)
+* [How To: Import Talkgroups from Radio Reference](#how-to-import-talkgroups-from-radio-reference)
 
 ### How To: Setup Channels
 This setup guide describes how to setup a channel configuration for decoding a radio channel in sdrtrunk.  In order to
@@ -638,19 +647,115 @@ list must be attached in the channel configuration.
 ![How To Record Audio - Option 1](images/how_to_record_option_1.png)
 
 **Option 2**: Use the **View By: Record** Editor
+1. Click the **Aliases** tab
+1. Click the View By: **Record** tab
+1. Select an **Alias List** that contains the alias you want to record
+1. Select an alias in the **Don't Record Audio** list
+1. Click the **>** arrow button to move the alias over to the **Record Audio** list.
+![How To Record Audio - Option 2](images/how_to_record_option_2.png)
+***
 
+### How To: Block/Mute Audio
+This setup guide describes how to block or mute playback of audio for an alias.  In order to use this setup guide, you 
+must [create an alias list](#how-to-setup-aliases) and you must [create a channel configuration](#how-to-setup-channels) 
+and the alias list must be attached in the channel configuration.
+
+1. Click the **Aliases** tab
+1. Click the View By: **Alias** tab
+1. Select an **Alias List** that contains the alias you want to record
+1. Select the alias in the list of aliases that appears.
+1. In the editor below, click the **Listen** switch to off.
+1. Click the **Save** button.
+![How To Block or Mute Audio](images/how_to_block_audio.png)
 ***
 
 ### How To: Setup an Audio Stream
+This setup guide describes how to setup sdrtrunk to stream to an audio streaming server.  Once you've setup your stream
+configuration, use the [assign aliases to an audio stream](#how-to-assign-aliases-to-an-audio-stream) quick
+start guide to select aliases to stream.
+
+1. Click the **Streaming** tab
+1. Click the **New** button and select a streaming audio server type.
+1. A new stream configuration is created and loaded into the editor in the **Configuration** tab below.
+1. Enter a unique **Name** for this audio stream.
+1. Fill out the details in the editor.
+1. Click the **Enabled** button so that the stream will turn on (now and each time you restart the application).
+1. Click the **Save** button.
+1. In the table above, the **Stream Status** should show **Connected**.  If there is an error, it will be displayed
+in this column.
+![How To Setup an Audio Stream](images/how_to_setup_audio_stream.png)
+***
+
+### How To: Setup Broadcastify Calls
+This setup guide describes how to setup sdrtrunk to stream to the Broadcastify Calls service. Once you've setup your 
+stream configuration, use the [assign aliases to an audio stream](#how-to-assign-aliases-to-an-audio-stream) quick
+start guide to select aliases to stream.
+
+1. Click the **Streaming** tab
+1. Click the **New** button and select **Broadcastify Calls** from the list.
+1. A new Broadcastify Calls configuration is created and loaded into the editor in the **Configuration** tab below.
+1. Enter a unique **Name** for this configuration.
+1. Enter your **API Key** and **System ID** number into the editor.
+1. Click the **Enabled** button so that the stream will turn on (now and each time you restart the application).
+1. Click the **Save** button.
+1. In the table above, the **Stream Status** should show **Connected**.  If there is an error, it will be displayed
+in this column.
+
+**NOTE:** sdrtrunk will allow you to stream ***ANY*** aliased talkgroup to this service.  Please ensure you select only
+the aliased talkgroups that belong to the trunked radio system that is identified by the system id.
+
+**NOTE:** if you setup two Broadcastify Calls configurations to stream two sites for the same trunked radio system, 
+you will need to create a separate alias list for each site, where each alias list contains the same set of aliased 
+talkgroups and then assign the aliases from each alias list to the matching Broadcastify Calls configuration.  Ensure, 
+that each alias is configured to stream to just one Broadcastify Calls configuration, otherwise you could be sending 
+duplicate audio calls to the service.
+![How To Setup Broadcastify Calls](images/how_to_setup_broadcastify_calls.png)
+***
+
+### How To: Setup a Broadcastify Feed
+This setup guide describes how to setup sdrtrunk to stream to the Broadcastify Feeds service.  This guide assumes that
+you [have logged into radio reference](#how-to-login-to-radio-reference). Once you've setup your 
+stream configuration, use the [assign aliases to an audio stream](#how-to-assign-aliases-to-an-audio-stream) quick
+start guide to select aliases to stream.
+
+1. Click the **Streaming** tab
+1. Click the **New** button and select one of your Broadcastify Feeds that appear in the list.
+1. A new Broadcastify Feed configuration is created and loaded into the editor in the **Configuration** tab below.
+1. The configuration details are automatically updated from your radio reference account.
+1. Click the **Enabled** button so that the stream will turn on (now and each time you restart the application).
+1. Click the **Save** button.
+1. In the table above, the **Stream Status** should show **Connected**.  If there is an error, it will be displayed
+in this column.
+![How To Setup a Broadcastify Feed](images/how_to_setup_broadcastify_feed.png)
 ***
 
 ### How To: Assign Aliases to an Audio Stream
+This setup guide describes how to assign aliases to an audio stream or a Broadcastify Feed or Calls channel.  This 
+guide assumes that you have [setup an audio stream](#how-to-setup-an-audio-stream) and you have 
+[setup aliases](#how-to-setup-aliases).
+
+**Option 1**: Use the Alias Configuration editor
+1. Click the **Aliases** tab
+1. Click the **View By: Alias** tab
+1. Select an **Alias List** that contains the alias that you want to stream.
+1. Click to select an alias in the list.  The alias appears in the editor below.
+1. Expand the **Streaming** section if it is not expanded.
+1. Select an audio stream from the **Available** audio streams list.
+1. Click the **>** arrow button to move the selected audio stream to the **Selected** list.
+![How To Assign Aliases to an Audio Stream - Option 1](images/how_to_assign_aliases_to_stream_option_1.png)
+
+**Option 2**: Use the Streaming editor
+1. Click the **Streaming** tab
+1. Click the **Aliases** tab in the editor below
+1. Select an alias from the **Available** list that is not currently assigned to stream.
+1. Click the **>** arrow button to move the alias to the **Selected** to stream list.
+![How To Assign Aliases to an Audio Stream](images/how_to_assign_aliases_to_stream_option_2.png)
 ***
 
-### How To: Block Audio
+### How To: Login to Radio Reference
 ***
+
 ### How To: Import Agencies from Radio Reference
-
 ***
 ### How To: Import Trunked Systems from Radio Reference
 ***
