@@ -14,7 +14,11 @@
   * [How To: Record Audio](#how-to-record-audio)
   * [How To: Block (Mute) Audio](#how-to-blockmute-audio)
   * [How To: Setup Audio Streaming](#how-to-setup-an-audio-stream)
-  * [How To: Stream Audio with Aliases](#how-to-assign-aliases-to-an-audio-stream)
+  * [How To: Setup Broadcastify Calls](#how-to-setup-broadcastify-calls)
+  * [How To: Setup Broadcastify Feeds](#how-to-setup-broadcastify-feeds)
+  * [How To: Assign Aliases to an Audio Stream](#how-to-assign-aliases-to-an-audio-stream)
+  * [How To: Login to Radio Reference](#how-to-login-to-radio-reference)
+  * [How To: Search Radio Reference](#how-to-search-radio-reference-for-agencies-and-trunked-systems)
   * [How To: Import Agencies from Radio Reference](#how-to-import-agencies-from-radio-reference)
   * [How To: Import Trunked Systems from Radio Reference](#how-to-import-trunked-systems-from-radio-reference)
   * [How To: Import Talkgroups from Radio Reference](#how-to-import-talkgroups-from-radio-reference)
@@ -22,7 +26,7 @@
 ## Overview
 Playlists are an essential part of sdrtrunk.  Decoding, channel selection, streaming, aliasing of talkgroups and radio 
 identifiers, etc are controlled by playlists.  The playlist editor gives you access to each of these pieces and includes 
-fully integrated access to the world-wide database of radio network information at radioreference.com\*\*.
+fully integrated access to the world-wide database of radio network information at RadioReference.com\*\*.
 
 The playlist editor provides the following components:
 * **[Playlists](#playlists)** - manage all of your playlists and select the current playlist
@@ -34,7 +38,7 @@ radio IDs
 * **[Radio Reference](#radio-reference)**\*\* - online radio system database for easy downloading radio 
 systems and talkgroups
 
-\*\*Radio Reference access requires a premium subscription from [radioreference.com](http://radioreference.com/premium)
+\*\*Radio Reference access requires a premium subscription from [RadioReference.com](http://radioreference.com/premium)
 ***
 ![Accessing the Playlist Editor](images/access_playlist_editor.png)
 ## Access The Playlist Editor in sdrtrunk
@@ -587,13 +591,17 @@ enable options for creating sdrtrunk channel configurations for those frequencie
   * **Create**
 ***
 
-## Quick Setup Guides
+## Quick Setup / How To Guides
 * [How To: Setup Channels](#how-to-setup-channels)
 * [How To: Setup Aliases](#how-to-setup-aliases)
 * [How To: Record Audio](#how-to-record-audio)
 * [How To: Block (Mute) Audio](#how-to-blockmute-audio)
 * [How To: Setup Audio Streaming](#how-to-setup-an-audio-stream)
-* [How To: Stream Audio with Aliases](#how-to-assign-aliases-to-an-audio-stream)
+* [How To: Setup Broadcastify Calls](#how-to-setup-broadcastify-calls)
+* [How To: Setup Broadcastify Feeds](#how-to-setup-broadcastify-feeds)
+* [How To: Assign Aliases to an Audio Stream](#how-to-assign-aliases-to-an-audio-stream)
+* [How To: Login to Radio Reference](#how-to-login-to-radio-reference)
+* [How To: Search Radio Reference](#how-to-search-radio-reference-for-agencies-and-trunked-systems)
 * [How To: Import Agencies from Radio Reference](#how-to-import-agencies-from-radio-reference)
 * [How To: Import Trunked Systems from Radio Reference](#how-to-import-trunked-systems-from-radio-reference)
 * [How To: Import Talkgroups from Radio Reference](#how-to-import-talkgroups-from-radio-reference)
@@ -712,7 +720,7 @@ duplicate audio calls to the service.
 ![How To Setup Broadcastify Calls](images/how_to_setup_broadcastify_calls.png)
 ***
 
-### How To: Setup a Broadcastify Feed
+### How To: Setup Broadcastify Feeds
 This setup guide describes how to setup sdrtrunk to stream to the Broadcastify Feeds service.  This guide assumes that
 you [have logged into radio reference](#how-to-login-to-radio-reference). Once you've setup your 
 stream configuration, use the [assign aliases to an audio stream](#how-to-assign-aliases-to-an-audio-stream) quick
@@ -753,13 +761,80 @@ guide assumes that you have [setup an audio stream](#how-to-setup-an-audio-strea
 ***
 
 ### How To: Login to Radio Reference
+This setup guide describes how to login to Radio Reference API service.  This guide assumes that you have a valid 
+username and password for RadioReference.com and that you have an active [premium](http://radioreference.com/premium) 
+subscription.
+
+1. Click the **Radio Reference** tab
+1. Click the **Login** button
+1. The Login Editor window will appear
+1. Enter your radio reference **User Name** and **Password**
+1. Check the **Store Login Credentials** box if you want sdrtrunk to automatically login each time or uncheck this box
+if you want sdrtrunk to remove any stored login credentials and prompt you each time.
+1. Click the **Test Connection** button.  If successful, a green check mark will appear.
+1. Click the **OK** button to close the login window.
+1. Your username and premium account expiration date appears at the top of the playlist editor.
+
+![How To Radio Reference Login Button](images/how_to_radio_reference_login_button.png)
+
+![How To Radio Reference Login](images/how_to_radio_reference_login.png)
+***
+
+### How To: Search Radio Reference for Agencies and Trunked Systems
+This setup guide describes how to search radio reference to find radio information for Agencies and Trunked radio 
+systems at the National, State and County levels.  This guide assumes that you have 
+[logged into radio reference](#how-to-login-to-radio-reference).
+
+1. Click the **Radio Reference Tab**
+1. Select a **Country**
+1. (Optional) Select a **State**
+1. (Optional) Select a **County**
+1. Notice that the National, State and County Agencies and Trunked Systems tabs update with the search results.
+![How To Search Radio Reference](images/how_to_search_radio_reference.png)
 ***
 
 ### How To: Import Agencies from Radio Reference
+This setup guide describes how to import an agency channel frequency into a new sdrtrunk channel configuration.  This 
+guide assumes that you have [searched radio reference](#how-to-search-radio-reference-for-agencies-and-trunked-systems) 
+and have agency results in either the **County Agencies**, **State Agencies**, or **National Agencies** tabs.
+
+1. Click the **Radio Reference Tab**
+1. Click an agency search results tab: **County Agencies**, **State Agencies**, or **National Agencies** 
+1. Select an agency in the agency list.  The agency details are show in the editor below.
+1. Select a radio channel frequency from the list in the lower left corner.
+1. Modify the **System**, **Site**, and **Name** options, if desired.
+1. Check the **View Channel Editor After Create** box if you want to see the channel configuration after creating it.
+1. Click the **Create** button to create the channel configuration.
+![How To Import Radio Reference Agencies](images/how_to_import_radio_reference_agencies.png)
 ***
 ### How To: Import Trunked Systems from Radio Reference
+This setup guide describes how to import a trunked system into a new sdrtrunk channel configuration.  This 
+guide assumes that you have [searched radio reference](#how-to-search-radio-reference-for-agencies-and-trunked-systems) 
+and have trunked system results in either the **County Trunked Systems**, or **State Trunked Systems** tabs.
+
+1. Click the **Radio Reference Tab**
+1. Click a search results tab: **County Trunked Systems**, or **State Trunked Systems**
+1. Select a **System** from the list
+1. Click the **System View** tab
+1. Select a **Site** in the sites list
+1. Change the **Frequencies** or **Configurations** buttons as needed.  The default values should be fine.
+1. Select an **Alias List** or create a **New Alias List** in the lower-right corner editor.
+1. Check the **Go To Channel Editor** to further edit and start the channel once created.
+1. Click the **Create Channel Configuration** button to create the channel configuration.
+![How To Import Radio Reference Trunked Systems](images/how_to_import_radio_reference_trunked_systems.png)
 ***
 
 ### How To: Import Talkgroups from Radio Reference
+This setup guide describes how to import talkgroups from radio reference and create aliases.  This 
+guide assumes that you have [searched radio reference](#how-to-search-radio-reference-for-agencies-and-trunked-systems) 
+and have trunked system results in either the **County Trunked Systems**, or **State Trunked Systems** tabs.
+
+1. Click the **Radio Reference Tab**
+1. Click a search results tab: **County Trunked Systems**, or **State Trunked Systems**
+1. Select a **System** from the list
+1. Click the **Talkgroup View** tab
+1. Select an **Import To Alias List** where you want to create the aliases, or click **New Alias List**
+1. Click the **Import All Talkgroups** button.
+![How To Import Radio Reference Talkgroups](images/how_to_import_radio_reference_talkgroups.png)
 ***
 
