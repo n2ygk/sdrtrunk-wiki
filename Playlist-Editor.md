@@ -695,9 +695,10 @@ in this column.
 ***
 
 ### How To: Setup Broadcastify Calls
-This setup guide describes how to setup sdrtrunk to stream to the Broadcastify Calls service. Once you've setup your 
-stream configuration, use the [assign aliases to an audio stream](#how-to-assign-aliases-to-an-audio-stream) quick
-start guide to select aliases to stream.
+This setup guide describes how to setup sdrtrunk to stream to the Broadcastify Calls service using the 
+[Playlist Editor](#). Once you've setup your stream configuration, use the 
+[assign aliases to an audio stream](#how-to-assign-aliases-to-an-audio-stream) quick start guide to select aliases 
+to stream.
 
 1. Click the **Streaming** tab
 1. Click the **New** button and select **Broadcastify Calls** from the list.
