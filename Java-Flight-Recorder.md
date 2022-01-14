@@ -1,5 +1,7 @@
 Java Flight Recorder (JFR) can be used to create a recording of the sdrtrunk application while it is running, to capture statistics about how the application is performing.  These recordings are useful in investigating performance or memory leaks.
 
+# Create a JFR Recording
+
 1. Start sdrtrunk and enable any decoding channels.  Allow the application to run for at least 10 seconds.
 2. Open a shell or command line
 3. Get the Process ID for the sdrtrunk application
@@ -8,9 +10,9 @@ Type: ```jcmd```
 
 This will show a list of running java applications and their Process ID.  Look for this line (the number at the beginning is your process ID):
 ```
-205925 io.github.dsheirer.gui.SDRTrunk
+212161 io.github.dsheirer.gui.SDRTrunk
 ```
-In this example, 205925 is the process ID or PID.  We'll use the PID value in the next series of steps.  Substitute this number wherever you see PID in the next steps.
+In this example, 212161 is the process ID or PID.  We'll use the PID value in the next series of steps.  Substitute this number wherever you see PID in the next steps.
 
 4. Start a Java Flight Recorder recording.
 
