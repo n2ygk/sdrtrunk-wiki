@@ -23,6 +23,7 @@
   * [How To: Import Agencies from Radio Reference](#how-to-import-agencies-from-radio-reference)
   * [How To: Import Trunked Systems from Radio Reference](#how-to-import-trunked-systems-from-radio-reference)
   * [How To: Import Talkgroups from Radio Reference](#how-to-import-talkgroups-from-radio-reference)
+  * [How To: Use NBFM Squelch](#how-to-use-nbfm-squelch)
   
 ## Overview
 Playlists are an essential part of sdrtrunk.  Decoding, channel selection, streaming, aliasing of talkgroups and radio 
@@ -172,6 +173,8 @@ the site, if your computer has enough processing power to decode all of those ch
 
 ##### NBFM Decoder
 * **Channel Bandwidth** - specifies the bandwidth of the FM channel.  Most channels use bandwidth of 12.5 kHz.
+* **Squelch Threshold** - specifies the threshold (-100 to 0) in decibels for the power squelch.  Set this value to just above the current noise floor.
+* **Talkgroup To Assign** - a static talkgroup number (1 - 65535) to assign to the audio segments generated from this channel.  This enables you to use all of the alias features (recording, streaming, etc.) with NBFM audio segments. 
 
 ##### Passport Decoder
 The passport decoder has no additional settings.
@@ -852,4 +855,23 @@ and have trunked system results in either the **County Trunked Systems**, or **S
 1. Click the **Import All Talkgroups** button.
 ![How To Import Radio Reference Talkgroups](images/how_to_import_radio_reference_talkgroups.png)
 ***
+
+### How To: Setup and Use NBFM Squelch
+1. Click the **Channels** tab
+1. Click the **New** button and select the **NBFM** decoder
+1. Enter a **Frequency** value in the **Source** section.
+1. Select 12.5 or 25.0 kHz channel bandwidth.  
+1. Leave the **Squelch Threshold** setting as is, for now.
+1. Click **Play** button to start the channel.
+1. Switch to the main sdrtrunk window
+1. Select the channel that's playing in the **Now Playing** window
+1. Click the **Channel** tab in the lower section.
+1. Adjust the **Squelch Threshold** (blue line) up or down so that it's slightly above the current noise floor represented by the solid grey bar.  Monitor the channel to ensure that when the signal is active it exceeds the threshold and you hear audio.
+
+Note: the noise floor changes each time you change the gain settings or sample rate of your tuner and you must adjust the squelch threshold with each of those changes.
+
+![image](https://user-images.githubusercontent.com/4079756/159229963-f4d990bb-ef2f-4193-b02c-cda3921cdcbd.png)
+
+
+
 
