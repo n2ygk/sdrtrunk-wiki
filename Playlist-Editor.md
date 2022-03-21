@@ -24,6 +24,7 @@
   * [How To: Import Trunked Systems from Radio Reference](#how-to-import-trunked-systems-from-radio-reference)
   * [How To: Import Talkgroups from Radio Reference](#how-to-import-talkgroups-from-radio-reference)
   * [How To: Setup and Use NBFM Squelch](#how-to-setup-and-use-nbfm-squelch)
+  * [How To: Use Aliases With NBFM Decoder](#how-to-use-aliases-with-nbfm-decoder)
   
 ## Overview
 Playlists are an essential part of sdrtrunk.  Decoding, channel selection, streaming, aliasing of talkgroups and radio 
