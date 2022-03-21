@@ -857,7 +857,7 @@ and have trunked system results in either the **County Trunked Systems**, or **S
 ***
 
 ### How To: Setup and Use NBFM Squelch
-1. Click the **Channels** tab
+1. In the Playlist editor, click the **Channels** tab
 1. Click the **New** button and select the **NBFM** decoder
 1. Enter a **Frequency** value in the **Source** section.
 1. Select 12.5 or 25.0 kHz channel bandwidth.  
@@ -872,6 +872,21 @@ Note: the noise floor changes each time you change the gain settings or sample r
 
 ![image](https://user-images.githubusercontent.com/4079756/159229963-f4d990bb-ef2f-4193-b02c-cda3921cdcbd.png)
 
+### How To: Use Aliases With NBFM Decoder
+1. In Playlist editor, click the **Channels** tab
+1. Select an existing NBFM channel or create a new one: [How To: Setup and Use NBFM Squelch](#how-to-setup-and-use-nbfm-squelch)
+1. Select an existing **Alias List** or create a **New Alias List** by clicking the button and entering a new alist list name.
+1. In the **Decoder: NBFM** section enter a **Talkgroup To Assign** value in the range 1 - 65535
+1. Click **Save** button
+1. Click the **Aliases** tab
+1. Select the same **Alias List** that you specified in the channel.
+1. Click **New** button to create a new Alias.
+1. In the editor at the bottom, enter an **Alias**
+1. Click the **Add Identifier** button and select **NBFM** and **Talkgroup**
+1. Enter the same **NBFM Talkgroup** value that you entered in the NBFM Channel configuration for **Talkgroup To Assign**
+1. Configure the remaining alias settings for Listen, Record, Streaming and actions.
+1. Click **Save**
+1. In the **Channels** tab, select your new NBFM channel and click the **Play** button. 
 
 
 
