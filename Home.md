@@ -1,8 +1,8 @@
 # Overview
 
 sdrtrunk is a java application for decoding and trunk tracking multiple analog and digital radio channels across 
-multiple USB dongle tuners and/or sound card inputs from scanner radios.  The application provides local monitoring of 
-decoded audio, recording, and streaming of audio to local and remote streaming services.
+multiple USB dongle tuners or baseband recordings. The application provides local monitoring of decoded audio, 
+recording, and streaming of audio to local and remote streaming services.
 
 ## Radio Protocols
 sdrtrunk can decode the following radio protocols:
