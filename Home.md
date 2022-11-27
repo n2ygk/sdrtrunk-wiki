@@ -44,7 +44,7 @@ operating systems have not yet been tested.
 
 ### Software Defined Radios (SDR)
 
-Refer to the [Tuners](Tuners.md) documentation for specific details on supported SDRs
+Refer to the [Tuners](Tuners) documentation for specific details on supported SDRs
 
 * Airspy (Mini, R1, R2)
 * Funcube Dongle (Pro, Plus)
