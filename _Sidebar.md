@@ -1,16 +1,16 @@
 # Getting Started
-* [README](README.md)
-* [Getting Started](Getting-Started.md)
+* [README](https://github.com/DSheirer/sdrtrunk#readme)
+* [Getting Started](https://github.com/DSheirer/sdrtrunk/wiki/Getting-Started)
 * [Download Application Bundle](https://github.com/DSheirer/sdrtrunk/releases)
-* [Help / Support](Support.md)
+* [Help / Support](https://github.com/DSheirer/sdrtrunk/wiki/Support)
 * Change Log
 * Frequently Asked Questions (FAQ)
 
 # User Manual
-* [Overview](Home.md)
-* [Getting Started](Getting-Started.md)
-* [SDR Tuners & Dongles](Tuners.md)
-* [Playlist Editor](Playlist-Editor.md)
+* [Overview](https://github.com/DSheirer/sdrtrunk/wiki)
+* [Getting Started](https://github.com/DSheirer/sdrtrunk/wiki/Getting-Started)
+* [SDR Tuners & Dongles](https://github.com/DSheirer/sdrtrunk/wiki/Tuners)
+* [Playlist Editor](https://github.com/DSheirer/sdrtrunk/wiki/Playlist-Editor)
 * User Preferences Editor
 
 # Contributing
