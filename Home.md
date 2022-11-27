@@ -1,52 +1,56 @@
-**SDRTrunk**
+# Overview
 
-SDRTrunk is a java application for decoding and trunk tracking multiple analog 
-and digital radio channels across multiple USB dongle tuners and/or sound card 
-inputs from scanner radios.
+sdrtrunk is a java application for decoding and trunk tracking multiple analog and digital radio channels across 
+multiple USB dongle tuners and/or sound card inputs from scanner radios.  The application provides local monitoring of 
+decoded audio, recording, and streaming of audio to local and remote streaming services.
 
-* [Getting Started](GettingStarted_V0.3.0)
-* [User's Manual](UserManual_V0.3.0)
-* [Download](https://github.com/DSheirer/sdrtrunk/releases)
-* [Support](https://groups.google.com/forum/#!forum/sdrtrunk)
+## Radio Protocols
+sdrtrunk can decode the following radio protocols:
 
-This application uses some of the fantastic components available from [JIDE Software](www.jidesoft.com).
+* **AM** - AM demodulator
+* **APCO-25 Phase 1 (C4FM/Simulcast)** - P25 message decoder and automatic trunked channel following.
+* **APCO-25 Phase 2** - Phase 1 control channels with automatic Phase 2 trunked channel following.
+* **Fleetsync II** - FM demodulator and decoder for ANI, Acknowledge, Status, Paging and GPS bursts
+* **FM/NBFM** - narrow-band FM demodulator with squelch control.
+* **LJ1200** - FM demodulator and decoder for LoJack data bursts on 173.075 MHz in US.
+* **LTR-Net** - FM demodulator and LTR-Net trunked radio signaling decoder
+* **LTR-Standard** - FM demodulator and Logic Trunked Radio (LTR) trunked radio signaling decoder
+* **MDC-1200** - FM demodulator and decoder for MDC-1200 ANI bursts.
+* **MPT-1327** - FM demodulator and MPT-1327 trunked radio signaling decoder and automatic trunked channel following.
+* **Passport** - FM demodulator and Passport trunked radio signaling decoder.
+* **Tait 1200** - FM demodulator and decoder for Tait CCDI protocol GPS location bursts.
 
-**Operating Systems**
+## Documentation
 
-* [Linux](SetupLinux_V0.3.0)
-* [Windows](SetupWindows_V0.3.0)
-* Any operating system supported by Java and libusb, however other systems have not yet been tested 
+Access links in the sidebar for Getting Started, User Manual and other support documentation.
 
-**Requirements**
+## Requirements
 
-* Java 11 or newer
-  * [Liberica OpenJDK] (https://bell-sw.com/)
-  * [Oracle](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+sdrtrunk is released as a stand-alone application bundle that does not have to be installed.  Simply download and
+unzip/untar the application and run the launch script.  sdrtrunk releases include a complete Java Runtime
+Environment (JRE) so that you do NOT have to install Java.  The bundled OpenJDK JRE is a lightweight version of the
+full JRE that has been stripped down to include only the minimum components needed to run the sdrtrunk application.
 
-[Supported Tuners](Tuners_V0.3.0)
+### Operating System
 
-  * [Airspy](Airspy_V0.3.0)
-  * [Funcube Dongle Pro](FuncubeDonglePro_V0.3.0) (1.0)
-  * [Funcube Dongle Pro Plus](FuncubeDongleProPlus_V0.3.0) (2.0)
-  * [HackRF](HackRF_V0.3.0)
-  * [RTL-2832 with Elonics E4000](E4000_V0.3.0)
-  * [RTL-2832 with Rafael Micro R820T or R820T2](R820T_V0.3.0)
-  * [Sound card(s) connected to scanner audio output](SoundCard_V0.3.0) 
+sdrtrunk application bundles are available for the following **64-bit** operating systems 
 
-**Decoders**
+* Linux
+* OS-X
+* Windows
 
-  * [AM](AM_V0.3.0) - AM demodulator
-  * [Fleetsync II](Fleetsync2_V0.3.0) - decodes ANI, Acknowledge, Status, Paging and GPS bursts
-  * [LJ1200](LoJack_V0.3.0) - decodes LoJack data bursts on 173.075 MHz in US.
-  * [LTR-Standard](LTR_V0.3.0) - FM demodulator and Logic Trunked Radio (LTR) trunked radio signaling decoder
-  * [LTR-Net](LTRNet_V0.3.0) - FM demodulator and LTR-Net trunked radio signaling decoder
-  * [MDC-1200](MDC1200_V0.3.0) - decodes MDC-1200 ANI bursts.
-  * [MPT-1327](MPT1327_V0.3.0) - FM demodulator and MPT-1327 trunked radio signaling decoder and automatic trunked channel following.
-  * [NBFM](NBFM_V0.3.0) - narrow-band FM demodulator.
-  * [Passport](Passport_V0.3.0) - FM demodulator and Passport trunked radio signaling decoder.
-  * [P-25 Phase 1 C4FM](APCO25_V0.3.0) - FM demodulator with P25 message decoder and automatic trunked channel following.
-  * [P-25 Phase 1 LSM](APCO25_V0.3.0) - Quadrature demodulator with P25 message decoder and automatic trunked channel following.
-  * [P-25 Phase 2](APCO25_V0.3.0) - Phase 2 traffic channels.
-  * [Tait 1200](Tait1200_V0.3.0) - decodes Tait CCDI protocol GPS location bursts.
+Note: sdrtrunk, as a Java-based application, can run on any operating system supported by Java and libusb.  However, other 
+operating systems have not yet been tested.
+
+### Software Defined Radios (SDR)
+
+Refer to the [Tuners](Tuners.md) documentation for specific details on supported SDRs
+
+* Airspy (Mini, R1, R2)
+* Funcube Dongle (Pro, Plus)
+* HackRF (HackRF One, Jawbreaker, RAD1O)
+* RTL-2832 (E4000, R820T, R820T2)
 
 Note: nomitive use of protocol names are for identification. Registered trademarks are the property of their respective owners.
+
+This application uses some of the fantastic components available from [JIDE Software](www.jidesoft.com).
