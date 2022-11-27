@@ -50,12 +50,12 @@ application bundle.
 
 ## Read the User's Manual
 The user's manual is documented in this wiki.  Use the links in the sidebar to navigate to the various documentation
-sections.  Please read the [Playlist Editor](Playlist-Editor.md) documentation so that you understand how to correctly
+sections.  Please read the [Playlist Editor](Playlist-Editor) documentation so that you understand how to correctly
 configure sdrtrunk.
 
 ## Setup Software Defined Radio (SDR) Dongles
-See the [Tuners](Tuners.md) documentation for Operating System (OS) specific setup instructions for each supported SDR
-dongle/tuner type. Carefully read the section on **Calibrating SDR Tuners** in the [Tuners](Tuners.md) section of the
+See the [Tuners](Tuners) documentation for Operating System (OS) specific setup instructions for each supported SDR
+dongle/tuner type. Carefully read the section on **Calibrating SDR Tuners** in the [Tuners](Tuners) section of the
 user manual **BEFORE** you try to decode any signals.
 
 ## Launch the Application
@@ -88,8 +88,8 @@ sdrtrunk attempts to select the correct (ie default) audio playback device from 
 do anything to setup your computer's audio system.  However, some computers are configured in a not-so-standard fashion 
 and sdrtrunk may need your help in selecting the correct audio playback devices.
 
-The [User Preferences Dialog](User-Preferences.md) documentation describes how to select alternate audio playback devices.
+The [User Preferences Dialog](User-Preferences) documentation describes how to select alternate audio playback devices.
 
 ## Create Channels and Aliases To Start Decoding
-The [Playlist Editor](Playlist-Editor.md) section describes how to configure channels and aliases for decoding and
+The [Playlist Editor](Playlist-Editor) section describes how to configure channels and aliases for decoding and
 also details how to setup audio monitoring, recording and streaming.

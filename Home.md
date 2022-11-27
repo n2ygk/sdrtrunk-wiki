@@ -53,4 +53,4 @@ Refer to the [Tuners](Tuners) documentation for specific details on supported SD
 
 Note: nomitive use of protocol names are for identification. Registered trademarks are the property of their respective owners.
 
-This application uses some of the fantastic components available from [JIDE Software](www.jidesoft.com).
+This application uses some of the fantastic components available from [JIDE Software](http://www.jidesoft.com).

@@ -11,7 +11,7 @@
 * [Getting Started](https://github.com/DSheirer/sdrtrunk/wiki/Getting-Started)
 * [SDR Tuners & Dongles](https://github.com/DSheirer/sdrtrunk/wiki/Tuners)
 * [Playlist Editor](https://github.com/DSheirer/sdrtrunk/wiki/Playlist-Editor)
-* User Preferences Editor
+* [User Preferences Editor](User-Preferences)
 
 # Contributing
 * Developers
