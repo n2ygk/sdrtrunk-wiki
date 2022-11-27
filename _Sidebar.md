@@ -1,5 +1,5 @@
 # Getting Started
-* [README](README)
+* [README](https://github.com/DSheirer/sdrtrunk#readme)
 * [Getting Started](Getting-Started)
 * [Download Application Bundle](https://github.com/DSheirer/sdrtrunk/releases)
 * [Help / Support](Support)
