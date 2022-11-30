@@ -161,3 +161,16 @@ recordings, and MBE frame recordings are stored.
 
 ## Source
 ### Tuner Channelizer
+SDR tuners capture a broad swath of the frequency spectrum containing multiple radio channels.  sdrtrunk 
+employs a channelizer to extract each radio channel for decoding.  sdrtrunk provides two channelizers to choose from.
+![Image of the user preferences editor with the Source category and the Tuner Channelizer editor pane showing](images/user_preferences_tuner_channelizer.png "User Preferences Editor - Tuner Channelizer")
+
+* **Heterdyne** - the heterdyne channelizer applies a mixing frequency to mix the channel of interest
+down to the zero frequency and then it uses a sequence of half-band decimation filters to incrementally
+divide the sample rate and bandwidth in half.  These half-band decimation filters are computationally
+efficient.  However, the filters do not provide a sharp cutoff at the channel band edges and this can sometimes 
+allow bleedover from strong adjacent channels.  Use this channelizer if you are only decoding a few channels to
+reduce the processing workload.
+* **Polyphase** - the polyphase channelizer uses a single filter and an FFT to break the entire bandwidth of the SDR
+into equal bandwidth channels.  This channelizer is more efficient than the heterodyne channelizer when you are decoding 
+three or more channels at the same time.  This is the default channelizer.
