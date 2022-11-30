@@ -12,7 +12,7 @@
 * [SDR Tuners & Dongles](Tuners)
 * [Playlist Editor](Playlist-Editor)
 * [User Preferences Editor](User-Preferences)
-* [Icon Manager](Icon-Manager.md)
+* [Icon Manager](Icon-Manager)
 
 # Contributing
 * Developers
