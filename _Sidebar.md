@@ -10,8 +10,6 @@
 * [Overview](Home)
 * [Getting Started](Getting-Started)
 * [SDR Tuners & Dongles](Tuners)
-
-
 * [Primary Application Window](Primary-Application)
 * [Playlist Editor](Playlist-Editor)
 * [User Preferences Editor](User-Preferences)
