@@ -1,8 +1,7 @@
 # Icon Manager
 Access the Icon Manager from the main application window via the **View** menu.
-sdrtrunk provides a set of standard icons that can be used in with Aliases 
-(see [Playlist Editor](Playlist-Editor.md)) to display an icon next to talkgroups, individual radios
-and other identifiers.  You can also add your own custom icons.
+sdrtrunk provides a set of standard icons that can be used with Aliases (see [Playlist Editor](Playlist-Editor)) to 
+display an icon next to talkgroups, individual radios and other identifiers.  You can also add your own custom icons.
 
 These icons are used in the **Now Playing** window in the columns where talkgroups and radio identifiers
 are listed.
