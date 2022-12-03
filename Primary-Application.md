@@ -75,7 +75,7 @@ also displays the frequency value and current zoom levels when you hover your mo
 ![Image of the context menu that appears when you right-click on the spectral display panel](images/spectral_display_context_menu.png "Spectral Display Context MenuA")
 
 ### Spectral Display - Context Menus
-
+Use a mouse right-click anywhere in the spectral display area to access the context menus.
 
 * **Channels** Menu - displays a list of channels currently under the cursor area and presents menu option(s) to display 
 each channel in the [Playlist Editor](Playlist-Editor)
@@ -138,6 +138,7 @@ The waterfall panel displays a running history of the frequency content from the
 ![Image of the context menu that appears when you right-click on the waterfall panel](images/waterfall_context_menu.png "Waterfall Context MenuA")
 
 ### Waterfall - Context Menus
+Use a mouse right-click anywhere in the waterfall display area to access the context menus.
 
 * **Pause** Menu - toggles on/off pausing of the waterfall display.  This allows you to pause the display to inspect the frequency
 values for signals that have appeared in the recent past history so that you can configure a decoding channel for the 
@@ -297,7 +298,10 @@ control when the channel uses the NBFM decoder.  Each decoding channel produces 
 and those measurement details are displayed in the **Power(dB)** meter.  This meter is not calibrated and the power 
 readings are as measured from the digitized channel sample stream.
 
-**Note:** the power meter details will be empty until you select a channel in the Decoding Channels table.
+**Note:** the power meter details will be empty until you select a channel in the Now Playing Decoding Channels table.  
+Additionally, the peak power measurement is reset each time you navigate away from the channel tab view by clicking on 
+another tab in the selected channel tabbed views or by selecting another channel in the Decoding Channels table while
+continuing to view the channel view tab for the selected channel.
 
 * **Power (dB)** - meter that displays squelch and power measurement details for the currently selected channel.
   * **Grey Bar** - current power level
@@ -327,13 +331,15 @@ Displays an Open Street Maps view for displaying geo-registered events produced 
 like APCO25, DMR and Fleetsync can produce radio GPS position reports and display those reports on the map.
 
 ### Map Controls
-* **Zoom** - use your mouse scroll wheel to zoom in/out of the map
-* **Drag** - use your mouse left-click and hold to drag and reposition the map view.
-* **Context Menu** - user your mouse to right-click anywhere in the map area to access the context menu.
-  * **Set Default Location & Zoom** Menu - stores the map's current center point and zoom level as the default map view 
+* **Zoom** - mouse scroll wheel controls zoom in/out of the map
+* **Drag** - mouse left-click and hold to drag and reposition the map view.
+* **Context Menu** - mouse right-click anywhere in the map area to access the context menu.
+  * **Set Default Location & Zoom** Menu - stores the map's current view coordinates and zoom level as the default map view 
 used when the application starts.
 
 ## Tuners
+The tuners tab displays a list of tuners currently accessible by the sdrtrunk application.  See the [Tuners](Tuners)
+wiki page for details on configuring and using the SDR tuners.
 
 ## Playlist Editor
 
