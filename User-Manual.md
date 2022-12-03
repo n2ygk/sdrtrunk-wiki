@@ -9,13 +9,14 @@ details how to use the sdrtrunk application feature.
   * [Getting Started](#getting-started)
   * [Concepts](#concepts)
     * [Where To Find Radio Signals](#where-to-find-radio-signals)
+    * [Playlist Editor](#playlist-editor)
     * [Tuners & Software Defined Radios (SDR)](#tuners--software-defined-radios--sdr-)
     * [Channels](#channels)
     * [Decoders](#decoders)
     * [Aliases](#aliases)
     * [Audio Playback](#audio-playback)
-    * [Audio Recording](#audio-recording)
-    * [Audio Streaming](#audio-streaming)
+    * [Recording](#recording)
+    * [Streaming](#streaming)
 <!-- TOC -->
 
 ## Getting Started
@@ -36,10 +37,15 @@ includes a plugin to browse and select radio channels and automatically setup ch
 decode the channels so that you can listen to audio.  You need a [Premium Subscription](https://www.radioreference.com/premium/) 
 to access the radio reference database from sdrtrunk's playlist editor. 
 
+
 * **[RTL-SDR.com](https://www.rtl-sdr.com/)** - this website is geared to the SDR hobby but also includes blog entries 
-* and a Signal ID wiki to help you visually identify signals you may see in the radio spectrum.
+and a Signal ID wiki to help you visually identify signals you may see in the radio spectrum.
+
+
 * **Other Websites/Social Media** - there are many social media and local and regional websites that contain details on 
 radio systems and signals that you may encounter when using sdrtrunk and other SDR applications.
+
+
 * **Just Start Exploring** - sdrtrunk allows you to manual tune and view the radio spectrum around you and then you can 
 select radio channel frequencies to decode.
 
