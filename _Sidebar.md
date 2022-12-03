@@ -15,8 +15,8 @@
 
 # Support
 * [Help / Support](Support)
-* Frequently Asked Questions (FAQ)
-* Change Log
+* [Frequently Asked Questions (FAQ)](FAQ)
+* [Change Log](Change-Log)
 
 # Contributing
-* Developers
+* [Developers](Developing)
