@@ -4,6 +4,20 @@ sidebar menu displayed alongside each wiki page.  This user's manual overview wi
 high-level concepts and themes and then directs the reader to the appropriate wiki page that 
 details how to use the sdrtrunk application feature.
 
+<!-- TOC -->
+* [sdrtrunk User Manual](#sdrtrunk-user-manual)
+  * [Getting Started](#getting-started)
+  * [Concepts](#concepts)
+    * [Where To Find Radio Signals](#where-to-find-radio-signals)
+    * [Tuners & Software Defined Radios (SDR)](#tuners--software-defined-radios--sdr-)
+    * [Channels](#channels)
+    * [Decoders](#decoders)
+    * [Aliases](#aliases)
+    * [Audio Playback](#audio-playback)
+    * [Audio Recording](#audio-recording)
+    * [Audio Streaming](#audio-streaming)
+<!-- TOC -->
+
 ## Getting Started
 The [Getting Started](Getting-Started) wiki details the steps that you need to complete to initially setup the software 
 and related SDR and tuner hardware devices.
@@ -28,6 +42,11 @@ to access the radio reference database from sdrtrunk's playlist editor.
 radio systems and signals that you may encounter when using sdrtrunk and other SDR applications.
 * **Just Start Exploring** - sdrtrunk allows you to manual tune and view the radio spectrum around you and then you can 
 select radio channel frequencies to decode.
+
+### Playlist Editor
+The playlist editor is the central tool for configuring the sdrtrunk application to decode radio signals.  sdrtrunk uses 
+the concept of playlists to organize channels and aliases.  The [Playlist Editor](Playlist-Editor) wiki contains 
+information to help you understand how to configure channels, decoders and aliases.
 
 ### Tuners & Software Defined Radios (SDR)
 sdrtrunk uses SDRs/Tuners to select individual radio channels for decoding.  SDRs can tune/receive a wide chunk of radio 
@@ -76,10 +95,12 @@ Playback and muting of audio produced by each decoding channel is controlled by 
 [Playlist Editor](Playlist-Editor) wiki for details on how to configure Aliases to control the playback and
 muting of radio audio.
 
-### Audio Recording
+### Recording
 Recording of audio produced by each decoding channel is controlled by Aliases.  See the
-[Playlist Editor](Playlist-Editor) wiki for details on how to configure Aliases to control recording of call audio.
+[Playlist Editor](Playlist-Editor) wiki for details on how to configure Aliases to control recording of call audio.  Additionally, 
+the playlist editor wiki provides details on how to setup logging and recording of messages, events, and
+baseband sample data produced by the channel decoders.
 
-### Audio Streaming
+### Streaming
 Streaming of audio produced by each decoding channel is controlled by Aliases.  See the [Playlist Editor](Playlist-Editor) 
 wiki for details on how to configure Aliases to control streaming of call audio.
