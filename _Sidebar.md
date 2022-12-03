@@ -1,11 +1,8 @@
 # Getting Started
-* [Wiki Home Page](Home)
-* [README](https://github.com/DSheirer/sdrtrunk#readme)
+* [Wiki Home](Home)
 * [Getting Started](Getting-Started)
 * [Download Application Bundle](https://github.com/DSheirer/sdrtrunk/releases)
-* [Help / Support](Support)
-* Change Log
-* Frequently Asked Questions (FAQ)
+* [README](https://github.com/DSheirer/sdrtrunk#readme)
 
 # User Manual
 * [User Manual](User-Manual)
@@ -15,6 +12,11 @@
 * [Playlist Editor](Playlist-Editor)
 * [User Preferences Editor](User-Preferences)
 * [Icon Manager](Icon-Manager)
+
+# Support
+* [Help / Support](Support)
+* Frequently Asked Questions (FAQ)
+* Change Log
 
 # Contributing
 * Developers
