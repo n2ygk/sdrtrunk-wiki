@@ -1,4 +1,5 @@
 # Getting Started
+* [Wiki Home Page](Home)
 * [README](https://github.com/DSheirer/sdrtrunk#readme)
 * [Getting Started](Getting-Started)
 * [Download Application Bundle](https://github.com/DSheirer/sdrtrunk/releases)
@@ -7,7 +8,7 @@
 * Frequently Asked Questions (FAQ)
 
 # User Manual
-* [Overview](Home)
+* [User Manual](User-Manual)
 * [Getting Started](Getting-Started)
 * [Tuners & SDRs](Tuners)
 * [Primary Application Window](Primary-Application)
