@@ -18,6 +18,7 @@
   * [Calibrating SDR Tuners](#calibrating-sdr-tuners)
     * [Calibrating Tuner PPM](#calibrating-tuner-ppm)
     * [Calibrating Tuner Gain](#calibrating-tuner-gain)
+  * [SDRPlay RSPduo](###sdrplay-rspduo)
   * [Supported SDRs](#supported-sdrs)
 <!-- TOC -->
 ## Overview
@@ -53,6 +54,9 @@ Some dongles require the Zadig USB driver software:
 * [Zadig Website](https://zadig.akeo.ie/)
 * [RTL-SDR Zadig Articles](https://www.rtl-sdr.com/tag/zadig/)
 
+SDRPlay RSP tuner support requires installing the API.  Note: the API is installed/included when you install SDRUno application.
+* [SDRPlay Software Download](https://www.sdrplay.com/softwarehome/)
+
 </details>
 
 <details><summary>Linux / OS-X</summary>
@@ -67,6 +71,9 @@ are available here: https://github.com/DSheirer/sdrtrunk/tree/master/src/main/re
 **rtl-sdr.rules**
 
 Ensure that the user account used to start the application also has access to these dongle resources.
+
+SDRPlay RSP tuner support requires installing the API.  Note: the API is installed/included when you install SDRUno application.
+* [SDRPlay Software Download](https://www.sdrplay.com/softwarehome/)
 
 </details>
 
@@ -206,6 +213,15 @@ steps to adjust tuner gain:
 
 **Noise Floor** - the general level of the frequency spectrum display in the areas where there are no signals.
 
+## SDRPlay RSPduo
+The RSPduo can be configured for either single tuner or dual tuner.  In single tuner mode, you have access up to 10 MHz sample rate.  In dual-tuner mode, you have access to two tuners each operating up to 2 MHz sample rate.  You must configure sdrtrunk for how you want to use the RSPduo.
+
+Open the User Preferences dialog and select the Tuners tab to access the RSPduo tuner selection mode that sdrtrunk uses when starting the application.  You can also access this dialog from the RSPduo tuner editor screen when you select the RSPduo in the Tuners tab.  In this dialog, you can choose how sdrtrunk configures your RSPduo.  If you make any changes to this setting, you must restart sdrtrunk:
+
+* Single Tuner 1 - configures for single tuner 1 mode
+* Single Tuner 2 - configures for single tuner 2 mode
+* Dual Tuner - configures for dual, tuner 1 and 2 mode
+
 ## Supported SDRs
 sdrtrunk supports the following SDR dongles:
 
@@ -213,4 +229,5 @@ sdrtrunk supports the following SDR dongles:
 * Funcube Dongle (Pro, Plus)
 * HackRF (HackRF One, Jawbreaker, RAD1O)
 * RTL-2832 (E4000, R820T, R820T2)
+* SDRPlay (RSP1, RSP1A, RSP2/pro, RSPduo, RSPdx)
 
