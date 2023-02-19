@@ -229,5 +229,5 @@ sdrtrunk supports the following SDR dongles:
 * Funcube Dongle (Pro, Plus)
 * HackRF (HackRF One, Jawbreaker, RAD1O)
 * RTL-2832 (E4000, R820T, R820T2)
-* SDRPlay (RSP1, RSP1A, RSP2/pro, RSPduo, RSPdx)
+* SDRPlay (RSP1, RSP1A, RSP2/pro, RSPduo, RSPdx) in Version 0.6.0
 
