@@ -18,7 +18,7 @@
   * [Calibrating SDR Tuners](#calibrating-sdr-tuners)
     * [Calibrating Tuner PPM](#calibrating-tuner-ppm)
     * [Calibrating Tuner Gain](#calibrating-tuner-gain)
-  * [SDRPlay RSPduo](###sdrplay-rspduo)
+  * [SDRPlay RSPduo](#sdrplay-rspduo)
   * [Supported SDRs](#supported-sdrs)
 <!-- TOC -->
 ## Overview
