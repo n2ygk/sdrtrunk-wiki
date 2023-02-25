@@ -33,6 +33,21 @@ The **/build/distributions** folder will contain the zip file of the compiled pr
 gradlew.bat clean run
 ```
 
+## Creating Release Distributions (from Gradle)
+
+### Create Current OS Release Using Local Installed JDK
+```
+./gradlew runtimeZipCurrent
+```
+### Create Windows Releases With Automatic JDK Download
+```
+./gradlew runtimeZipWindows
+```
+### Create Linux/Mac Releases With Automatic JDK Download
+```
+./gradlew runtimeZipOthers
+```
+
 
 ## Development
 All dependencies/versions are controlled from build.gradle.
