@@ -39,11 +39,11 @@ gradlew.bat clean run
 ```
 ./gradlew runtimeZipCurrent
 ```
-### Create Windows Releases With Automatic JDK Download
+### Create Windows (x86-64 & aarch64) Releases With Automatic JDK Download
 ```
 ./gradlew runtimeZipWindows
 ```
-### Create Linux/Mac Releases With Automatic JDK Download
+### Create Linux (x86-64 & aarch64) and Mac (x86-64 & aarch64) Releases With Automatic JDK Download
 ```
 ./gradlew runtimeZipOthers
 ```
