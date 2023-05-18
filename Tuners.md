@@ -19,6 +19,7 @@
     * [Calibrating Tuner PPM](#calibrating-tuner-ppm)
     * [Calibrating Tuner Gain](#calibrating-tuner-gain)
   * [SDRPlay RSPduo](#sdrplay-rspduo)
+  * [SDRPlay on Mac OS](#sdrplay-on-mac-os)
   * [Supported SDRs](#supported-sdrs)
 <!-- TOC -->
 ## Overview
