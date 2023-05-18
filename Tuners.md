@@ -224,7 +224,7 @@ Open the User Preferences dialog and select the Tuners tab to access the RSPduo 
 * Dual Tuner - configures for dual, tuner 1 and 2 mode
 
 ## SDRPlay on Mac OS
-See the [FAQ](FAQ) wiki for instructions on creating a symbolic link to the sdrplay API driver that sdrtrunk can use.
+See the [FAQ](FAQ#how-can-i-use-sdrplay-receivers-on-a-mac-os-computer) wiki for instructions on creating a symbolic link to the sdrplay API driver that sdrtrunk can use.
 
 ## Supported SDRs
 sdrtrunk supports the following SDR dongles:
