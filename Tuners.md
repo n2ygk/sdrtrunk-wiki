@@ -236,7 +236,7 @@ See the [FAQ](FAQ#how-can-i-use-sdrplay-receivers-on-a-mac-os-computer) wiki for
 ## Supported SDRs
 sdrtrunk supports the following SDR dongles:
 
-* Airspy (Mini, R1, R2)
+* Airspy (Mini, R1, R2, Discovery HF+)
 * Funcube Dongle (Pro, Plus)
 * HackRF (HackRF One, Jawbreaker, RAD1O)
 * RTL-2832 (E4000, R820T, R820T2)
