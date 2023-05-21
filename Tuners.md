@@ -214,7 +214,12 @@ steps to adjust tuner gain:
 
 **Noise Floor** - the general level of the frequency spectrum display in the areas where there are no signals.
 
-## SDRPlay RSPduo
+## SDRPlay RSP Tuners
+
+### Setting Gain on RSP tuners
+The gain settings for SDRPlay tuners works differently than other tuners.  Enable the automatic gain control (AGC) and set the gain level to the maximum value.  If you see the overload indicator flashing, consider turning down the gain level a tick at a time until the overload subsides. 
+
+### SDRPlay RSPduo
 The RSPduo can be configured for either single tuner or dual tuner.  In single tuner mode, you have access up to 10 MHz sample rate.  In dual-tuner mode, you have access to two tuners each operating up to 2 MHz sample rate.  You must configure sdrtrunk for how you want to use the RSPduo.
 
 Open the User Preferences dialog and select the Tuners tab to access the RSPduo tuner selection mode that sdrtrunk uses when starting the application.  You can also access this dialog from the RSPduo tuner editor screen when you select the RSPduo in the Tuners tab.  In this dialog, you can choose how sdrtrunk configures your RSPduo.  If you make any changes to this setting, you must restart sdrtrunk:
@@ -223,7 +228,7 @@ Open the User Preferences dialog and select the Tuners tab to access the RSPduo 
 * Single Tuner 2 - configures for single tuner 2 mode
 * Dual Tuner - configures for dual, tuner 1 and 2 mode
 
-## SDRPlay on Mac OS
+### SDRPlay on Mac OS
 See the [FAQ](FAQ#how-can-i-use-sdrplay-receivers-on-a-mac-os-computer) wiki for instructions on creating a symbolic link to the sdrplay API driver that sdrtrunk can use.
 
 ## Supported SDRs
