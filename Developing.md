@@ -4,10 +4,12 @@ This wiki will expand to contain details about the sdrtrunk architecture and inf
 to either contribute to the project, experiment with the source code, or use the source code in other projects.
 
 ### OpenJDK
-sdrtrunk requires **Java JDK 19+ with integrated Open JavaFX** libraries. OpenJDK vendors that I use include:
+sdrtrunk requires **Java JDK with integrated Open JavaFX** libraries. OpenJDK vendors that I use include:
 * [Azul Zulu OpenJDK](https://www.azul.com/downloads/?package=jdk)
 * [Bellsoft Liberica OpenJDK](https://bell-sw.com/pages/downloads/#/java-17-lts%20/%20current)
 * [SDKMAN](https://sdkman.io/) - not an SDK vendor, rather an SDK selection tool.  Linux Only
+
+Note: required Java JDK is currently locked at JDK 19.x until Gradle 8.2 is released.
 
 Use the gradle wrapper to build the source code:
 
