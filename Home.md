@@ -10,6 +10,7 @@ sdrtrunk can decode the following radio protocols:
 * **AM** - AM demodulator
 * **APCO-25 Phase 1 (C4FM/Simulcast)** - P25 message decoder and automatic trunked channel following.
 * **APCO-25 Phase 2** - Phase 1 control channels with automatic Phase 2 trunked channel following.
+* **DCS** - Digital Coded Squelch (DCS) decoder for NBFM channels
 * **Fleetsync II** - FM demodulator and decoder for ANI, Acknowledge, Status, Paging and GPS bursts
 * **FM/NBFM** - narrow-band FM demodulator with squelch control.
 * **LJ1200** - FM demodulator and decoder for LoJack data bursts on 173.075 MHz in US.
