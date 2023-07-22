@@ -3,7 +3,7 @@
 ## User Help & Questions
 There are a number of sdrtrunk users that provide online help and support to our user community.
 
-### [Discord](https://discord.gg/rYdw9pnA)
+### [Discord](https://discord.gg/HJQaKYE)
 An online chat server with several support channels (#general, #support, #devel)
 
 ### [Google Groups](https://groups.google.com/forum/#!forum/sdrtrunk)
