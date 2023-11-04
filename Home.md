@@ -50,7 +50,7 @@ Refer to the [Tuners](Tuners) documentation for specific details on supported SD
 * Airspy (Mini, R1, R2, Discovery HF+)
 * Funcube Dongle (Pro, Plus)
 * HackRF (HackRF One, Jawbreaker, RAD1O)
-* RTL-2832 (E4000, R820T, R820T2)
+* RTL-2832 (E4000, FC0013, R820T, R820T2, R828D)
 * SDRPlay (RSP1, RSP1A, RSP2, RSPduo, RSPdx)
 
 Note: nomitive use of protocol names are for identification. Registered trademarks are the property of their respective owners.
