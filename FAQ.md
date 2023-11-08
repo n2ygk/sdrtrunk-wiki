@@ -35,3 +35,9 @@ Up to Version 13.4
 1) download the zip file, unzip if needed
 2) In the /bin directory of the application 
 3) Right click > Open on java and accept the prompt
+
+## General
+
+### What does **Audio segment detected with NO to identifiers** mean?
+
+This indicates that sdrtrunk decoded an audio call but it didn't detect any TO radio or talkgroup identifiers.  This can happen when the decode quality is poor and sdrtrunk decodes just enough audio frames to create an audio segment (ie a call), but didn't decode any of the messaging that carries the radio identifiers for that specific call.
