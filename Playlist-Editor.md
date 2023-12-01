@@ -288,6 +288,12 @@ radio call
 ##### Radio ID and Radio ID Range
 Identifies a single radio or a range of radios.  This is typically the FROM identifier in a radio call.
 
+##### Fully Qualified Radio and Fully Qualified Talkgroup
+These alias identifiers are used with APCO25 systems where an ISSI patch allows a remote system user to roam onto the
+local system and to avoid having an identifier collision between the roaming radio and the local radio identifiers,
+the system uses a fully qualified ID (wacn.system.radioID).  When you see fully qualified values appearing in the 
+sdrtrunk calls view, you can use these alias identifiers to correctly alias these roaming/remote users. 
+
 ##### User and Unit Status
 Identifies a numeric user or unit status.  When individual radios transmit a status, they use a numeric value.  The
 radio network defines a meaning for each of these number values and this meaning is not available to sdrtrunk.  If you
