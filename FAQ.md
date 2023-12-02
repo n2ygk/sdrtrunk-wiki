@@ -13,6 +13,10 @@ A: Gain usage for the RSP tuners works differently than other tuners supported b
 
 #### How can I use SDRPlay receivers on a Mac OS Computer?
 
+##### A: **SDRPlay API version 3.12+ for Mac OS**
+
+A new release of API version 3.12 of the Mac OS API was published on 2-Dec-2023.  This release enables sdrtrunk to use the SDRPlay receiverss without requiring any additional steps.  If you downloaded and installed Mac OS API version 3.12 prior to this release date, download a fresh copy and reinstall it.
+ 
 ##### A: **SDRPlay API version 3.11 (and older) for Mac OS**
 
 Java is unable to use the SDRPlay API installed driver as it is named, so you have to create a symbolic link to the driver that uses the filename that sdrtrunk is expecting.  The SDRPlay folks are going to update the installer in a future release to use the *.dylib file extension for their Mac OS driver.
@@ -22,38 +26,6 @@ Type the following in a console window and then start/restart sdrtrunk:
 sudo ln -s /usr/local/lib/libsdrplay_api.so /usr/local/lib/libsdrplay_api.dylib
 ```
 
-##### A: **SDRPlay API version 3.12 for Mac OS**
-
-The installer for this version has some issues.  After installing the API, use the following (additional) instructions:
-
-Run the following commands in an admin window:
-```
-sudo mkdir -p /usr/local/lib
-sudo ln -s /Library/SDRplayAPI/3.12.0/lib/libsdrplay_api.3.12.0 /usr/local/lib/libsdrplay_api.so.3.12
-sudo ln -s /usr/local/lib/libsdrplay_api.so.3.12 /usr/local/lib/libsdrplay_api_arm64.so.3.12
-sudo ln -s /usr/local/lib/libsdrplay_api.so.3.12 /usr/local/lib/libsdrplay_api_x64.so.3.12
-sudo ln -s /usr/local/lib/libsdrplay_api.so.3.12 /usr/local/lib/libsdrplay_api.so.3
-sudo ln -s /usr/local/lib/libsdrplay_api.so.3 /usr/local/lib/libsdrplay_api.so
-sudo ln -s /usr/local/lib/libsdrplay_api.so /usr/local/lib/libsdrplay_api.dylib
-```
-Try sdrtrunk.  If it doesn't work, these additional commands are known to work for Mac M1 Mini:
-```
-sudo cp /Applications/SDRconnect.app/Content/MacOS/libusb-1.0.0.dylib /usr/local/lib/
-```
-(Note this requires SDRconnect to be installed first!)
-
-On my machine the service did not start for some reason, so the following was added:
-```
-sudo launchctl load -w /Library/LaunchDaemons/com.sdrplay.service.plist
-sudo launchctl enable system/com.sdrplay.service
-sudo launchctl start system/com.sdrplay.service
-```
-You can check the service is running by doing this:
-```
-sudo launchctl list | grep -I sdr
-```
-After a reboot the service should run ok without further intervention.
- 
 ***
 ## Launching sdrtrunk Application
 
