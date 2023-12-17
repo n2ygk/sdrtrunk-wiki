@@ -7,13 +7,13 @@ settings are organized by category.
 ## Audio
 The audio tab contains settings for audio playback, recording and call handling.
 
-### Duplicate Calls
-The duplicate calls editor contains settings for managing duplicate call audio that can occur when 
+### Call Management
+The call management editor contains settings for managing patch group streaming and duplicate call audio that can occur when 
 you are decoding multiple sites or control channels from the same trunked system.  In order for this
 duplicate call feature to work you must ensure that each of the decoding channels share a common
 **System** name.
 
-![Image of the user preferences editor with the Audio category and the Duplicate Calls editor pane showing](images/user_preferences_audio_duplicate_calls.png "User Preferences Editor - Duplicate Calls")
+![Image of the user preferences editor with the Audio category and Calls Management editor pane showing](https://github.com/DSheirer/sdrtrunk/assets/4079756/65986c06-116b-40f5-8f5d-20a133496032)
 
 #### Duplicate Call Detection
 This section contains settings for enabling various methods of duplicate call detection.
@@ -30,6 +30,12 @@ The settings in this section determines how duplicate call suppression is applie
 * **Listening** - suppress monitoring of duplicate call audio.
 * **Recording** - suppress recording of duplicate call audio.
 * **Streaming** - suppress streaming of duplicate call audio.
+
+#### Patch Group Streaming.
+
+This setting controls how patch group audio calls are managed for streaming.  The default **Patch Group** setting will stream each patch group call just once using the patch group identifier.  The **Individual Talkgroups** setting will cause the single patch group call to be streamed multiple times, once for each patched talkgroup or radio identifier that is combined within the patch group.  
+
+Note: the **Individual Talkgroups** setting can cause the same call audio to be streamed multiple times where each time the audio is streamed for each distinct talkgroup or radio identifier.  Use caution when assigning talkgroups or radios for streaming to avoid situations where a patched audio call is sent multiple times over the same stream. 
 
 ### MP3
 The MP3 preference editor contains settings that control the conversion/encoding of decoded audio to MP3
