@@ -33,7 +33,10 @@ The settings in this section determines how duplicate call suppression is applie
 
 #### Patch Group Streaming.
 
-This setting controls how patch group audio calls are managed for streaming.  The default **Patch Group** setting will stream each patch group call just once using the patch group identifier.  The **Individual Talkgroups** setting will cause the single patch group call to be streamed multiple times, once for each patched talkgroup or radio identifier that is combined within the patch group.  
+This setting controls how patch group audio calls are managed for streaming.
+
+* **Patch Group** - default setting allows patch group calls to stream just once using the patch group identifier.
+* **Individual Talkgroups** - causes each patch group call to be streamed multiple times, once for each patched talkgroup or radio identifier that is combined within the patch group.  
 
 Note: the **Individual Talkgroups** setting can cause the same call audio to be streamed multiple times where each time the audio is streamed for each distinct talkgroup or radio identifier.  Use caution when assigning talkgroups or radios for streaming to avoid situations where a patched audio call is sent multiple times over the same stream. 
 
