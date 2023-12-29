@@ -17,6 +17,7 @@
   * [How To: Setup Audio Streaming](#how-to-setup-an-audio-stream)
   * [How To: Setup Broadcastify Calls](#how-to-setup-broadcastify-calls)
   * [How To: Setup Broadcastify Feeds](#how-to-setup-broadcastify-feeds)
+  * [How To: Setup Rdio-Scanner Streaming](#how-to-setup-rdio-scanner-streaming)
   * [How To: Assign Aliases to an Audio Stream](#how-to-assign-aliases-to-an-audio-stream)
   * [How To: Login to Radio Reference](#how-to-login-to-radio-reference)
   * [How To: Search Radio Reference](#how-to-search-radio-reference-for-agencies-and-trunked-systems)
@@ -760,6 +761,25 @@ start guide to select aliases to stream.
 1. In the table above, the **Stream Status** should show **Connected**.  If there is an error, it will be displayed
 in this column.
 ![How To Setup a Broadcastify Feed](images/how_to_setup_broadcastify_feed.png)
+***
+
+### How To: Setup Rdio-Scanner Streaming
+This setup guide describes how to setup sdrtrunk to stream to a Rdio-Scanner instance. Once you've setup your 
+stream configuration, use the [assign aliases to an audio stream](#how-to-assign-aliases-to-an-audio-stream) quick
+start guide to select aliases to stream.
+
+1. Click the **Streaming** tab
+1. Click the **New** button and select **Rdio Scanner** from the list.
+1. A new Rdio-Scanner configuration is created and loaded into the editor in the **Configuration** tab below.
+1. Enter a unique **Name** for this configuration.
+1. Enter your **API Key** and **System ID** number into the editor.
+1. Enter your **Rdio-Scanner URL** host name into the editor. Be sure to include the port number if it is not 80 or 443.
+1. Click the **Enabled** button so that the stream will turn on (now and each time you restart the application).
+1. Click the **Save** button.
+1. In the table above, the **Stream Status** should show **Connected**.  If there is an error, it will be displayed
+in this column.
+![How To Setup Rdio-Scanner Streaming](images/how_to_setup_rdio_scanner_streaming.png)
+
 ***
 
 ### How To: Assign Aliases to an Audio Stream
