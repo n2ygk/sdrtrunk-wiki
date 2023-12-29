@@ -778,7 +778,7 @@ start guide to select aliases to stream.
 1. Click the **Save** button.
 1. In the table above, the **Stream Status** should show **Connected**.  If there is an error, it will be displayed
 in this column.
-![How To Setup Rdio-Scanner Streaming](images/how_to_setup_rdio_scanner_streaming.png)
+![How To Setup Rdio-Scanner Streaming](https://github.com/DSheirer/sdrtrunk/assets/78445808/9f184586-3506-4048-8cb4-e4d6229691ab)
 
 ***
 
