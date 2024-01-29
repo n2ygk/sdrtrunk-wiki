@@ -9,7 +9,7 @@ sdrtrunk requires **Java JDK with integrated Open JavaFX** libraries. OpenJDK ve
 * [Bellsoft Liberica OpenJDK](https://bell-sw.com/pages/downloads/#/java-17-lts%20/%20current)
 * [SDKMAN](https://sdkman.io/) - not an SDK vendor, rather an SDK selection tool.  Linux Only
 
-Note: required Java JDK is currently locked at JDK 19.x until Gradle 8.2 is released.
+Note: required Java JDK is currently JDK 20.x
 
 Use the gradle wrapper to build the source code:
 
