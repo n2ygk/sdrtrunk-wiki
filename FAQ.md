@@ -26,6 +26,15 @@ Next, you'll need to discover which additional frequencies are being used by the
 3. Create an MPT1327 channel to decode that traffic channel frequency so that you can capture the CLEAR messages transmitted at the end of the call.
 4. When you're successful, you'll have the channel number to frequency map recovered for the traffic channel where the call occurred, and also the channel number and frequency for the control channel.
 
+**Option 3** - Find the Neighbor Control Channels.
+Larger MPT1327 systems can have several sites.  Each site will have a control channel.  The system will (generally) use the same channel map across all of the sites.
+1. Catalog all of the control channel frequencies that you can find.
+2. Decode the control channel messages and watch for Neighbor site announcements and catalog the neighbor control channel numbers.
+3. Sort the control channel numbers and the control channel frequencies in numeric order
+4. Your lists will generally line-up and you'll end up with recovery of several channel number to frequency values.
+5. If your channel numbers and frequencies don't line up, the system may be using overlapping sub-ranges and you'll need to do a bit more work.
+5. Go the to the 'recover channel maps' section below. 
+
 ##### Recover The Channel Maps
 
 UHF - 450 MHz: 
