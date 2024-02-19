@@ -41,11 +41,13 @@ VHF frequency allocations normally don't follow a clean 12.5 kHz channel raster/
 
 MPT1327 uses channel numbers in the range of 1 to 1023.  A channel step size (ie spacing) of 12.500 kHz is common.  System operators can segment the allowable channel number range into smaller sub-ranges with each using a different base frequency, possibly in chunks of 100 or 200, to map all of their authorized frequencies to logical channel numbers that the MPT1327 system can use.  For example:
 
+Range 1:
 * Base: 150.000000
 * First: 1
 * Last: 199
 * Step: 12500
 
+Range 2:
 * Base: 150.006250
 * First: 200
 * Last: 399
