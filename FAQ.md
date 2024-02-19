@@ -4,6 +4,8 @@
 
 ### MPT-1327
 
+***
+
 #### How do I recover the channel map for an MPT1327 system if I only know the control channel frequency?
 
 Setup a channel configuration to monitor the control channel frequency for a period of time.  Using the events tab, catalog all of the logical channel numbers that are referenced for call events.  sdrtrunk will tell you that it doesn't know the frequency, but that's ok, we just want the channel numbers being used by the system for traffic channels.
@@ -79,6 +81,8 @@ You should note that the above channel map is functionally equivalent to this ch
 In this second channel map example, we just subtracted 12.5 kHz from the base frequency and decreased the first channel number by one.  Using this new range would still map channel 215 to 152.6875 MHz, the same as the first map.  So, in this way, you can adjust your channel map to include lower channel numbers in your range to test if those lower channel numbers are also part of this range, or if they belong in a separate channel map range.
 
 It's best to use a spreadsheet when you're trying to recover the channel number ranges since you can create formulas to auto-calculate the frequencies from the channel numbers using different base frequencies and channel number first-last ranges.  However, if you are able to recover several channel number to frequency mappings, post a new topic here on the Discussions tab, or post a question on Radio Reference and you'll probably get some help figuring out the channel map.
+
+***
 
 ## Tuners
 
