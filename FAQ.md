@@ -41,6 +41,8 @@ VHF - 150-180 MHz:
 
 VHF frequency allocations normally don't follow a clean 12.5 kHz channel raster/spacing and MPT-1327 systems can use several channel ranges that overlap each other so that they can align the channel number ranges that follow a 12.5 kHz channel spacing with the actual licensed frequencies that don't follow a 12.5 kHz channel spacing.
 
+There are also MPT1327 systems that use other channel spacings.  An alternate example might be 20 kHz (20000 Hz) channel spacing.
+
 MPT1327 uses channel numbers in the range of 1 to 1023.  A channel step size (ie spacing) of 12.500 kHz is common.  System operators can segment the allowable channel number range into smaller sub-ranges with each using a different base frequency, possibly in chunks of 100 or 200, to map all of their authorized frequencies to logical channel numbers that the MPT1327 system can use.  For example:
 
 Range 1:
@@ -80,7 +82,7 @@ You should note that the above channel map is functionally equivalent to this ch
 
 In this second channel map example, we just subtracted 12.5 kHz from the base frequency and decreased the first channel number by one.  Using this new range would still map channel 215 to 152.6875 MHz, the same as the first map.  So, in this way, you can adjust your channel map to include lower channel numbers in your range to test if those lower channel numbers are also part of this range, or if they belong in a separate channel map range.
 
-It's best to use a spreadsheet when you're trying to recover the channel number ranges since you can create formulas to auto-calculate the frequencies from the channel numbers using different base frequencies and channel number first-last ranges.  However, if you are able to recover several channel number to frequency mappings, post a new topic here on the Discussions tab, or post a question on Radio Reference and you'll probably get some help figuring out the channel map.
+It's best to use a spreadsheet when you're trying to recover the channel number ranges since you can create formulas to auto-calculate the frequencies from the channel numbers using different base frequencies, step-sizes, and channel number first-last ranges.  However, if you are able to recover several channel number to frequency mappings, post a new topic here on the Discussions tab, or post a question on Radio Reference and ask for help figuring out the channel map.
 
 ***
 
