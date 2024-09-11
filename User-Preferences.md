@@ -24,6 +24,12 @@ duplicate call detection and handling.
 detection is disabled by default because it can have unintended side-effects as documented in the 
 preference editor pane.
 
+Duplicate call detection is designed to work on radio systems where you are monitoring the control channels for multiple sites at the same time.  In P25 networks, the site will rebroadcast call audio on each site where a participating radio is currently registered.  This causes duplicate calls to be decoded by sdrtrunk.
+
+To enable duplicate call detection, make sure that all control channel configurations have the same 'System' name in the channel configuration editor and specify how you want duplicate calls to be handled in the User Preferences as described in the next section.
+
+When the same call is simulcast or duplicated across multiple sites and control channels, sdrtrunk will compare the TO (ie talkgroup) and FROM (ie radio) identifiers and if the values are the same, sdrtrunk will flag all but one of the calls as duplicate.  Each call that is flagged as a duplicate will be handled according to your preferences for listening, recording and streaming.  
+
 #### Duplicate Call Suppression
 The settings in this section determines how duplicate call suppression is applied.
 
