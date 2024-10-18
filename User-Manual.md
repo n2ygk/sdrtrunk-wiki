@@ -31,7 +31,7 @@ radio frequency spectrum they can find signals to decode and listen to audio.  S
 into most of these frequency bands across the spectrum.  However, the sdrtrunk application is designed to work with 
 a small subset of these radio bands, primarily the AM and FM bands and the commercial and trunked radio bands.
 
-* **[Radio Reference](www.radioreference.com)** - the radio reference website provides crowd-sourced observations and 
+* **[Radio Reference](https://www.radioreference.com)** - the radio reference website provides crowd-sourced observations and 
 government-published details about radio systems and users around the world.  sdrtrunk's [Playlist Editor](Playlist-Editor) 
 includes a plugin to browse and select radio channels and automatically setup channel configurations to to tune and
 decode the channels so that you can listen to audio.  You need a [Premium Subscription](https://www.radioreference.com/premium/) 
