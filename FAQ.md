@@ -97,6 +97,23 @@ It's best to use a spreadsheet when you're trying to recover the channel number 
 
 ## Tuners
 
+### Unable To Source Channel From Preferred Tuner
+
+What does this error mean?
+
+```
+2024-12-02 21:18:21.412 INFO  i.g.d.s.t.m.TunerManager - Unable to source channel [851187500] from preferred tuner [RTL2832 SDR/R820T 00000001] - searching for another tuner  [572MB/630MB 90%]
+```
+It means that you have selected a preferred tuner in your channel configuration for your control channel and sdrtrunk is trying to also allocate a traffic channel for that same tuner.  However, sdrtrunk can't allocate the channnel/frequency from the preferred tuner.  There are two possible reasons why this happens:
+
+1. The preferred tuner is already tuned to another frequency and it can't fit the new channel together with all of the current channels within the tuner's bandwidth.
+
+2. The preferred tuner that you selected in your channel configuration is no longer available in the system. 
+
+In the first issue, sdrtrunk will search for another tuner for the traffic channel.  If it can't find a tuner you'll see a call detected event where the details indicate NO TUNER AVAILABLE.  The solution is to add another tuner so that sdrtrunk can tune the additional traffic channel.
+
+For the second issue, you can select another preferred tuner in the channel configuration so that sdrtrunk stops trying to find a non-existent tuner.
+
 ### SDRPlay
 
 ***
