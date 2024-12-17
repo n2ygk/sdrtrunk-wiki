@@ -127,7 +127,23 @@ A: Gain usage for the RSP tuners works differently than other tuners supported b
 
 ##### A: **SDRPlay API version 3.12+ for Mac OS**
 
-A new release of API version 3.12 of the Mac OS API was published on 2-Dec-2023.  This release enables sdrtrunk to use the SDRPlay receiverss without requiring any additional steps.  If you downloaded and installed Mac OS API version 3.12 prior to this release date, download a fresh copy and reinstall it.
+A new release of [API](https://www.sdrplay.com/api/) version 3.15 of the Mac OS API was published on 7-May-2024.  This release enables sdrtrunk to use the SDRPlay receivers without requiring any additional steps.  If you downloaded and installed a Mac OS API version prior to this release date, download a fresh copy and reinstall it.
+
+You may also need to make sure the API service is loaded. If you start sdrtrunk and it reports not
+finding any RSP devices yet you're sure one is plugged in then it may be because the API service
+is not present:
+```
+INFO  i.g.d.s.t.m.TunerManager - Discovered [0] RSP devices from SDRplay API
+```
+
+You can load and check for the service with these steps:
+```
+$ cd /Library/SDRplayAPI/3.15.0
+$ launchctl load plist/com.sdrplay.service.plist
+$ launchctl list | grep sdrplay
+-	78	com.sdrplay.service
+```
+
  
 ##### A: **SDRPlay API version 3.11 (and older) for Mac OS**
 
