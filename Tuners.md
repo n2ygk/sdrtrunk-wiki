@@ -75,8 +75,8 @@ are available here: https://github.com/DSheirer/sdrtrunk/tree/master/src/main/re
 
 Ensure that the user account used to start the application also has access to these dongle resources.
 
-SDRPlay RSP tuner support requires installing the API.  Note: the API is installed/included when you install SDRUno application.
-* [SDRPlay Software Download](https://www.sdrplay.com/softwarehome/)
+SDRPlay RSP tuner support requires installing the API.  Note: the API is installed separately.
+* [SDRPlay API Software Download](https://www.sdrplay.com/api/)
 
 </details>
 
